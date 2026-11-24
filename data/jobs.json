@@ -1,0 +1,3043 @@
+{
+ "meta": {
+  "schema_version": 1,
+  "name": "Job Radar — Regina · Toronto · Alberta",
+  "created": "2026-11-23",
+  "last_run": "2026-11-23",
+  "timezone": "America/Regina",
+  "schedule": "Daily 06:40 America/Regina",
+  "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
+  "regions": {
+   "regina": "Regina (plus Saskatoon / remote roles held by SK employers)",
+   "toronto": "Toronto / GTA (plus Ontario-remote)",
+   "alberta": "Calgary + Edmonton (plus Alberta-remote)"
+  },
+  "categories": {
+   "most_matched": "match_score ≥ 78 and role is realistically winnable now or at graduation",
+   "urgent_apply": "closing ≤ 10 days, a term starting ≤ 2 months (internships), or a fast-moving high-fit role first seen ≤ 3 days ago",
+   "student_track": "compatible with being a full-time grad student: part-time, casual, flexible contract, co-op/internship, on-campus",
+   "ai_frontier": "role designs, evaluates or builds AI products. This is the booming segment to grow into",
+   "remote_canada": "can be done from Regina (remote within Canada)",
+   "grad_2027_pipeline": "recurring program or cohort type to target for a Dec 2027 / Jan 2028 start",
+   "watchlist": "strong-fit employer or closed or blocked post; watch for the next opening"
+  },
+  "scoring": "0–100. +role-family fit (AI product / UX / accessibility / service design highest), +domain overlap (enterprise SaaS, fintech, rules engines, POS, edtech/reading, health), +seniority fit (3–9 yrs), +AI-native tooling asks, +accessibility, +remote-Canada; −engineering-only, −hard eligibility blockers, −junior/print-only.",
+  "salary_note": "salary_min_cad/max_cad are annual CAD; hourly rates are annualized × 2080 h. salary_text keeps the original wording.",
+  "status_values": [
+   "active",
+   "unknown",
+   "likely_closed",
+   "closed",
+   "filled"
+  ],
+  "dedupe_rule": "Same job = same normalized employer + normalized title + region (or same URL). On a repeat sighting: keep first_seen, set last_seen to today, times_seen += 1, append a history event only when something changed.",
+  "size_policy": "When this file passes ~1.5 MB or 2,500 jobs, move jobs with status closed/filled/likely_closed and last_seen older than 120 days to data/archive/jobs-<year>.json, and add the path to meta.archives. runs[] keeps daily summaries forever (it is small).",
+  "archives": []
+ },
+ "runs": [
+  {
+   "date": "2026-11-23",
+   "run_type": "seed",
+   "new": 63,
+   "seen_again": 0,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 12,
+    "toronto": 29,
+    "alberta": 13
+   },
+   "new_by_region": {
+    "regina": 16,
+    "toronto": 29,
+    "alberta": 18
+   },
+   "ai_related_share_active": 0.444,
+   "coverage": {
+    "worked": [
+     "WebSearch across Indeed, Glassdoor, CareerBeacon, Wellfound, Built In, IxDF, ZipRecruiter, ALIS, Alberta job postings, Greenhouse/Lever/Workable ATS pages"
+    ],
+    "blocked_or_thin": [
+     "LinkedIn (search results only)",
+     "Indeed/Glassdoor pages not fetched directly; details from snippets"
+    ]
+   },
+   "notes": "Seed scan. Many postings come from search snippets, so posting dates are often unknown; first_seen is the radar date."
+  }
+ ],
+ "market_signals": [
+  {
+   "id": "cbre-calgary-growth",
+   "date": "2026-08-19",
+   "region": "alberta",
+   "metric": "Tech workforce growth 2022–2025",
+   "value": "+56% (+28,900 jobs), #1 of 50 North American markets",
+   "direction": "up",
+   "source": "Calgary Economic Development / CBRE Scoring Tech Talent 2026",
+   "url": "https://calgaryeconomicdevelopment.com/news/calgary-leads-north-america-in-tech-talent-growth-for-third-year-running/"
+  },
+  {
+   "id": "cbre-calgary-gap",
+   "date": "2026-08-19",
+   "region": "alberta",
+   "metric": "Tech jobs vs tech graduates",
+   "value": "28,900 jobs added vs 3,660 tech grads, a gap of 25,000+ (2nd only to Toronto)",
+   "direction": "up",
+   "source": "Calgary Economic Development / CBRE",
+   "url": "https://calgaryeconomicdevelopment.com/news/calgary-leads-north-america-in-tech-talent-growth-for-third-year-running/"
+  },
+  {
+   "id": "cbre-toronto",
+   "date": "2026-08-19",
+   "region": "toronto",
+   "metric": "Tech jobs added 2022–2025",
+   "value": "+75,000 (most in North America); #3 overall; #5 for AI employment",
+   "direction": "up",
+   "source": "CTV News / CBRE",
+   "url": "https://www.ctvnews.ca/toronto/article/toronto-ranks-third-in-tech-industry-talent-across-north-america/"
+  },
+  {
+   "id": "cbre-ai-concentration",
+   "date": "2026-08-18",
+   "region": "canada",
+   "metric": "Where Canada's AI jobs are",
+   "value": "60% in Toronto, Montreal and Vancouver",
+   "direction": "flat",
+   "source": "CBRE press release",
+   "url": "https://www.cbre.com/press-releases/rapid-growth-ai-related-jobs-boosts-top-markets-cbre-annual-scoring-tech-talent-report"
+  },
+  {
+   "id": "cbre-canada",
+   "date": "2026-08-31",
+   "region": "canada",
+   "metric": "Canadian tech employment, 2025",
+   "value": "+7.6% (+91,300 jobs)",
+   "direction": "up",
+   "source": "CBRE",
+   "url": "https://www.cbre.com/insights/articles/3-takeaways-from-cbres-latest-scoring-tech-talent-report"
+  },
+  {
+   "id": "cbre-edmonton",
+   "date": "2026-08-18",
+   "region": "alberta",
+   "metric": "Edmonton tech-talent rank",
+   "value": "42nd of 50",
+   "direction": "flat",
+   "source": "MobileSyrup / CBRE",
+   "url": "https://mobilesyrup.com/?p=1032186"
+  },
+  {
+   "id": "indeed-ai-mentions",
+   "date": "2025-12-18",
+   "region": "canada",
+   "metric": "Share of Canadian postings mentioning AI",
+   "value": "~6% in 2025 (nearly doubled)",
+   "direction": "up",
+   "source": "Indeed Hiring Lab 2026 report",
+   "url": "https://www.hiringlab.org/en-ca/2025/12/18/indeed-2026-canadian-jobs-hiring-trends-report/"
+  },
+  {
+   "id": "nace-entry-ai",
+   "date": "2026-07-17",
+   "region": "canada",
+   "metric": "Entry-level roles requiring AI skills",
+   "value": "over one-third (NACE spring 2026), about 3× fall 2025",
+   "direction": "up",
+   "source": "Rossul (citing NACE)",
+   "url": "https://www.rossul.com/2026/blog/learning-ux-design-in-2026/"
+  },
+  {
+   "id": "jobbank-ux-surplus",
+   "date": "2026-07-17",
+   "region": "toronto",
+   "metric": "Job Bank outlook, UX designers",
+   "value": "'strong risk of labour surplus' to 2033; 'very limited' in Ontario/Quebec (generalist UX)",
+   "direction": "down",
+   "source": "Rossul (citing Job Bank)",
+   "url": "https://www.rossul.com/2026/blog/learning-ux-design-in-2026/"
+  },
+  {
+   "id": "jobbank-ab-graphic",
+   "date": "2026-07-28",
+   "region": "alberta",
+   "metric": "Alberta graphic designers",
+   "value": "Demand shifting to UX/UI and digital; print declining",
+   "direction": "down",
+   "source": "Job Bank",
+   "url": "https://www.jobbank.gc.ca/marketreport/outlook-occupation/5703/AB"
+  },
+  {
+   "id": "jobbank-sk-graphic",
+   "date": "2025-12-10",
+   "region": "regina",
+   "metric": "Sask. graphic designers outlook 2025–27",
+   "value": "Moderate; Regina balanced 2023–25",
+   "direction": "flat",
+   "source": "Job Bank",
+   "url": "https://www.jobbank.gc.ca/marketreport/outlook-occupation/5703/SK"
+  },
+  {
+   "id": "rh-salary-regina",
+   "market": "Regina",
+   "date": "2026-11-23",
+   "region": "regina",
+   "metric": "UX designer salary (Robert Half)",
+   "value": "$70.6k / $95.1k / $111.8k (low/mid/high)",
+   "direction": "flat",
+   "low": 70568,
+   "mid": 95060,
+   "high": 111793,
+   "source": "Robert Half",
+   "url": "https://www.roberthalf.com/ca/en/job-details/ux-director/regina-sk"
+  },
+  {
+   "id": "rh-salary-toronto",
+   "market": "Toronto",
+   "date": "2026-11-23",
+   "region": "toronto",
+   "metric": "UX designer salary (Robert Half)",
+   "value": "$75.9k / $102.2k / $120.2k",
+   "direction": "flat",
+   "low": 75878,
+   "mid": 102214,
+   "high": 120206,
+   "source": "Robert Half",
+   "url": "https://www.roberthalf.com/ca/en/job-details/product-designer/toronto-on"
+  },
+  {
+   "id": "rh-salary-calgary",
+   "market": "Calgary",
+   "date": "2026-11-23",
+   "region": "alberta",
+   "metric": "UX designer salary, Calgary (Robert Half)",
+   "value": "$76.0k / $102.4k / $120.4k",
+   "direction": "flat",
+   "low": 76024,
+   "mid": 102410,
+   "high": 120436,
+   "source": "Robert Half",
+   "url": "https://www.roberthalf.com/ca/en/job-details/ux-designer/calgary-ab"
+  },
+  {
+   "id": "rh-salary-edmonton",
+   "market": "Edmonton",
+   "date": "2026-11-23",
+   "region": "alberta",
+   "metric": "UX designer salary, Edmonton (Robert Half)",
+   "value": "$74.6k / $100.5k / $118.1k",
+   "direction": "flat",
+   "low": 74569,
+   "mid": 100450,
+   "high": 118131,
+   "source": "Robert Half",
+   "url": "https://www.roberthalf.com/ca/en/job-details/ux-researcher/edmonton-ab"
+  }
+ ],
+ "opportunities": [
+  {
+   "id": "mitacs-accelerate",
+   "name": "Mitacs Accelerate research internship",
+   "org": "Mitacs",
+   "where": "Anywhere in Canada (you stay a U of R student)",
+   "fit": "high",
+   "type": "paid internship",
+   "deadline": "Rolling (6–8 week review)",
+   "cost": "Free to you; company co-funds",
+   "what": "A 4-month paid research internship with a company or non-profit, supervised by your professor. Open to international students. Pitch your dyslexia-search/MINDS thesis to an edtech, library-software or accessibility company and do the internship on that project.",
+   "action": "Ask Orland about a Mitacs-eligible partner (library/edtech/a11y vendor). Draft a 1-page project pitch in December.",
+   "url": "https://uoguelph.ca/research/alerts/print/content/mitacs-accelerate-graduate-internships"
+  },
+  {
+   "id": "amii-aicap",
+   "name": "AI Career Accelerator Program (AICAP) + Work-Integrated Learning (WILOs)",
+   "org": "Amii (Edmonton)",
+   "where": "Edmonton, hybrid",
+   "fit": "medium",
+   "type": "career program + paid part-time AI work",
+   "deadline": "Application-based; check intake",
+   "what": "Probably the Alberta AI program you heard about. Amii's flagship pathway for graduate-level AI talent, with coaching, career exploration and paid WILO placements under 20 h/week. It does NOT guarantee a job: Amii says participation doesn't guarantee placement. It targets technical AI master's/PhD students; non-CS grads are considered in limited cases.",
+   "action": "Apply framing your thesis as applied AI (LLM scaffold + HCI evaluation). Email talent@amii.ca first to ask whether an HCI/AI thesis qualifies.",
+   "url": "https://www.amii.ca/your-career/talent-journey"
+  },
+  {
+   "id": "amii-ml-residency",
+   "name": "ML Residency",
+   "org": "Amii",
+   "where": "Edmonton",
+   "fit": "low-medium",
+   "type": "paid early-career role",
+   "deadline": "Posted on Amii's careers page",
+   "what": "Paid early-career roles on real AI projects with an Amii mentor. Engineering-weighted.",
+   "action": "Watch the Amii careers page from fall 2027.",
+   "url": "https://www.amii.ca/research-talent/talent-development"
+  },
+  {
+   "id": "upper-bound-2027",
+   "name": "Upper Bound 2027 (AI conference) + talent bursaries",
+   "org": "Amii",
+   "where": "Edmonton Convention Centre",
+   "fit": "high",
+   "type": "conference / networking",
+   "deadline": "Event May 18–21, 2027; bursary intake usually opens months ahead",
+   "what": "Canada's largest AI conference (11,000 attendees in 2026). A limited number of talent bursaries go to students and early-career professionals each year, and past bursaries covered travel. Most of Alberta's AI employers are there in one week.",
+   "action": "Apply for a talent bursary as soon as it opens. Submit a poster or demo of MINDS if there's a call.",
+   "url": "https://www.amii.ca/events/upper-bound-2027"
+  },
+  {
+   "id": "national-ai-literacy",
+   "name": "National AI Literacy Initiative (free)",
+   "org": "Government of Canada + Amii",
+   "where": "Online",
+   "fit": "medium",
+   "type": "free training",
+   "deadline": "Launched Sept 2026",
+   "what": "$13M federal program offering free practical AI learning to up to one million post-secondary students. Good for quick badges, but it won't set you apart much.",
+   "action": "Take the courses for badges in an evening or two. Don't spend more time than that.",
+   "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-national-ai-literacy-initiative.html"
+  },
+  {
+   "id": "colabs-utp",
+   "name": "Co.Labs: Uniting the Prairies conference + Expert/X-in-Residence program",
+   "org": "Co.Labs (Sask. tech incubator)",
+   "where": "Saskatoon / Regina",
+   "fit": "high",
+   "type": "networking + paid mentoring",
+   "deadline": "UTP runs yearly (2026–2028 funded)",
+   "what": "Saskatchewan's largest tech event (75+ investors, 150+ startups). Co.Labs also contracts senior specialists, UX/UI among them, to mentor startups one-on-one. That's paid, flexible work that puts you in front of every SK founder.",
+   "action": "Email Co.Labs about the Expert program with your Annex Cloud case study, and attend UTP 2027.",
+   "url": "https://innovationsask.ca/news/colabs"
+  },
+  {
+   "id": "comit-sk",
+   "name": "ComIT AI & Machine Learning Upskilling",
+   "org": "ComIT (funded by Innovation Saskatchewan)",
+   "where": "Online, Saskatchewan",
+   "fit": "later",
+   "type": "free training + job support",
+   "deadline": "Pilot ended Oct 2026; expanded funding Nov 2026",
+   "what": "Three-month AI/ML program with resume, job-search and interview support. Pilot: 21 finished, 11 employed (4 in tech). Only for unemployed or underemployed SK residents, so it's a fallback after graduation.",
+   "action": "Bookmark it for January 2028 if you don't have an offer by then.",
+   "url": "https://www.saskatchewan.ca/government/news-and-media/2026/november/18/innovation-saskatchewan-invests-in-ai-skills-training-and-business-adoption"
+  },
+  {
+   "id": "built-smart-ai",
+   "name": "Built Smart AI (Calgary)",
+   "org": "Manpower Alberta",
+   "where": "Calgary",
+   "fit": "later",
+   "type": "funded training + job placement support",
+   "deadline": "Next cohort Feb 15, 2027",
+   "what": "Government-funded no-code AI program with employer connections and job placement support. Only for unemployed or underemployed Albertans, and aimed at construction and related industries. Only relevant if you move to Calgary without an offer.",
+   "action": "Not for now. A fallback only.",
+   "url": "https://manpowerab.com/workforce-development-programs/built-smart-ai/"
+  },
+  {
+   "id": "vector-scholarship",
+   "name": "Vector Scholarship in AI",
+   "org": "Vector Institute",
+   "where": "Ontario universities only",
+   "fit": "not eligible",
+   "type": "scholarship",
+   "deadline": "n/a",
+   "what": "Entrance award for AI master's students at Ontario universities only, so not available to a U of R student. Listed so you don't spend time on it.",
+   "action": "Skip.",
+   "url": "https://vectorinstitute.ai/?p=15347"
+  },
+  {
+   "id": "provincial-tech-pathways",
+   "name": "Provincial tech nominee pathways (relocation factor)",
+   "org": "AB / SK governments",
+   "where": "Alberta, Saskatchewan",
+   "fit": "context",
+   "type": "immigration context",
+   "deadline": "Ongoing draws",
+   "what": "Alberta's Accelerated Tech Pathway (Express Entry candidates with an Alberta tech job offer, ~600 nominations in 2026). Saskatchewan has a Tech Talent Pathway and a Student category tied to graduating from and working in Saskatchewan. Where you work after graduating can decide which of these you can use.",
+   "action": "Before choosing a city, check which pathway each job offer unlocks (see the sask-pr checklist).",
+   "url": "https://www.cicnews.com/2026/04/alberta-invites-tech-workers-rural-immigrants-and-health-care-candidates-in-latest-draws-0474242.html"
+  }
+ ],
+ "intel": {
+  "updated": "2026-11-23",
+  "headline": "Aim for AI-product UX with an accessibility edge. Target Calgary for the move, Toronto for the AI-design volume, and use Regina as your base until graduation.",
+  "focus_roles": [
+   {
+    "rank": 1,
+    "role": "AI Product Designer / UX for AI experiences",
+    "why": "About half of the high-fit Toronto and Calgary posts in this scan are AI-product roles, and several explicitly ask for Claude Code, Cursor or v0. AI-skilled workers across the US and Canada grew 45% year over year (CBRE). Your Bookkeeper AI human-in-the-loop prototype and the MINDS LLM scaffold are exactly the evidence they ask for.",
+    "titles": [
+     "AI Product Designer",
+     "UX Designer, AI Experiences",
+     "Conversational/Agentic UX Designer",
+     "Product Designer (AI-native)"
+    ]
+   },
+   {
+    "rank": 2,
+    "role": "Accessibility-focused UX (cognitive accessibility)",
+    "why": "Toronto banks, Kobo, YuJa and Fable keep posting accessibility specialist roles (AODA compliance demand). Few designers can claim research on readers with dyslexia, which makes this your differentiator.",
+    "titles": [
+     "Accessibility Specialist",
+     "UX Accessibility Consultant",
+     "Inclusive Design Researcher"
+    ]
+   },
+   {
+    "rank": 3,
+    "role": "Service designer, government digital",
+    "why": "Edmonton has 23 Vantix service-designer seats plus 7 permanent GoA senior service designer seats. Ontario and Saskatchewan buy UX through staffing contracts. Stable, and research-heavy, which suits an HCI master's.",
+    "titles": [
+     "Service Designer",
+     "UX Consultant (public sector)"
+    ]
+   },
+   {
+    "rank": 4,
+    "role": "Senior product designer, fintech / rules-heavy SaaS",
+    "why": "Wagepoint, NDAX, Jobber, Visionpool: the reward-engine and tier-system work transfers directly. A safe fallback track that pays well.",
+    "titles": [
+     "Senior/Staff Product Designer"
+    ]
+   }
+  ],
+  "deprioritize": [
+   "Pure graphic/print roles (Job Bank: print demand declining)",
+   "Generalist junior UI roles in Toronto (surplus risk, crowded)",
+   "AI engineer roles that are engineering-only (low design leverage)"
+  ],
+  "relocation": [
+   {
+    "city": "Calgary",
+    "verdict": "Best place to move after graduating",
+    "why": "#1 tech-talent growth in North America three years running (+56%, 2022–25), with tech jobs far outpacing local tech graduates. UX pay is on par with Toronto (Robert Half mid ~$102k) at much lower living costs. AI-design employers include Robots & Pencils, Wagepoint and NDAX."
+   },
+   {
+    "city": "Toronto",
+    "verdict": "Most AI-design openings, but crowded",
+    "why": "Most new tech jobs and #5 for AI employment, with 60% of Canada's AI jobs in Toronto/Montreal/Vancouver. Junior and generalist UX is saturated, so it pays off only at senior level with an AI or accessibility specialty. Apply remotely first; move only for a strong offer."
+   },
+   {
+    "city": "Edmonton",
+    "verdict": "For the AI network and government service design",
+    "why": "Amii, Upper Bound and Government of Alberta service-design hiring. Ranked 42nd overall by CBRE, so job volume is thinner. Visit for Upper Bound in May 2027; move only for a specific role."
+   },
+   {
+    "city": "Regina",
+    "verdict": "Stay until graduation, maybe a little longer",
+    "why": "Few posts but solid ones (FCC, Cova, Visionpool remote, staffing-agency contracts at $95k mid). Staying is likely worth it if a Saskatchewan-tied pathway matters to you: some routes need Saskatchewan work after graduating. Check this before moving."
+   }
+  ],
+  "prep_plan": [
+   {
+    "window": "Dec 2026 – Feb 2027",
+    "items": [
+     "Rebuild the portfolio around 3 case studies: Journey Engine (enterprise rules → drag-and-drop), MINDS (LLM scaffold for dyslexia, with research method + evaluation), Bookkeeper AI (human-in-the-loop trust).",
+     "Ship MINDS as a live, working prototype built with Claude Code. 'I design and build with AI agents' is the line Toronto posts ask for.",
+     "Apply now to the Summer 2027 internships (Lyft UX Research, Manulife), if your program allows a summer work term.",
+     "Pitch a Mitacs Accelerate project to Orland."
+    ]
+   },
+   {
+    "window": "Mar – Jun 2027",
+    "items": [
+     "Earn an accessibility credential (IAAP CPACC or WAS) and add a WCAG audit case study.",
+     "Submit a thesis paper (e.g., ASSETS/CHI late-breaking) so 'published HCI researcher' is on the CV.",
+     "Attend Upper Bound in Edmonton (May 18–21) on a bursary and book 10 coffee chats with Calgary/Edmonton design leads.",
+     "Take AI-trainer / design-eval contract hours (DataAnnotation-type) within your allowed hours."
+    ]
+   },
+   {
+    "window": "Jul – Sep 2027",
+    "items": [
+     "Write one public piece per month on designing AI for neurodivergent users (LinkedIn/Medium).",
+     "Get in front of Calgary employers: Platform Calgary events, Co.Labs/UTP in Saskatchewan.",
+     "Shortlist 30 target companies (AI-product + accessibility + fintech SaaS) across the 3 regions."
+    ]
+   },
+   {
+    "window": "Oct – Dec 2027",
+    "items": [
+     "Apply in volume for January 2028 starts; Canadian hiring for new grads and seniors picks up in Q1.",
+     "Apply to new-grad cohorts (IBM-type associate programs) and remote-Canada senior roles at the same time.",
+     "Negotiate using the Robert Half bands on this page."
+    ]
+   }
+  ],
+  "apply_now": [
+   "Robots & Pencils — UX Designer, AI Experiences (Calgary, remote-friendly)",
+   "Rakuten Kobo — Accessibility Specialist (Toronto)",
+   "Visionpool — UX Designer (remote, Regina)",
+   "Cova — UX/UI Designer (Regina)",
+   "Senior Product Designer, AI Experience (Toronto)",
+   "Wagepoint — Staff UX Designer (Calgary)"
+  ],
+  "caveats": "Rankings come from one seed scan, so treat them as directional until 30+ days of data build up. Job-board snippets can be stale; open the link before applying. This is not immigration or legal advice."
+ },
+ "jobs": [
+  {
+   "id": "regina-visionpool-business-services-ux-designer",
+   "title": "UX Designer",
+   "employer": "Visionpool Business Services",
+   "region": "regina",
+   "city": "Regina, SK (remote in Canada)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "experienced",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 88,
+   "ai_related": false,
+   "skills_tags": [
+    "enterprise software",
+    "financial",
+    "5+ yrs UX"
+   ],
+   "why": "Asks for 5+ years of UX, ideally financial or enterprise software — a direct match for the Annex Cloud reward/tier engine and the POS/procurement work. Remote within Canada.",
+   "eligibility_note": "",
+   "url": "https://www.careerbeacon.com/fr/emplois-9/2128939/900123716/ux-designer",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-cova-software-ux-ui-designer",
+   "title": "UX/UI Designer",
+   "employer": "Cova Software",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "mid",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 85,
+   "ai_related": false,
+   "skills_tags": [
+    "B2B SaaS",
+    "retail POS",
+    "Figma",
+    "HTML/CSS/JS",
+    "Agile"
+   ],
+   "why": "B2B retail software with web + mobile; asks 2+ yrs, Figma, basic HTML/CSS/JS. Your UKPOS work is almost the same domain.",
+   "eligibility_note": "",
+   "url": "https://builtin.com/job/uxui-designer/3576747",
+   "source": "Built In",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-mindwire-systems-client-in-regina-ui-designer-developer-62148",
+   "title": "UI Designer/Developer (#62148)",
+   "employer": "Mindwire Systems (client in Regina)",
+   "region": "regina",
+   "city": "Regina, SK (remote)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 82,
+   "ai_related": false,
+   "skills_tags": [
+    "UI design",
+    "front-end",
+    "contract"
+   ],
+   "why": "Design + front-end hybrid on contract for a Regina client — uses both your Figma and React/HTML/CSS skills.",
+   "eligibility_note": "",
+   "url": "https://bcjobs.ca/jobs/ui-designer-developer-canada-1545535",
+   "source": "BCjobs",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-systematix-client-in-regina-user-experience-consultant",
+   "title": "User Experience Consultant",
+   "employer": "Systematix (client in Regina)",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "hybrid",
+   "employment_type": "contract",
+   "seniority": "experienced",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Experienced UX contract, hybrid (max 2 WFH days). Staffing-agency contracts like this are the main way Regina's Crown/government clients buy UX.",
+   "eligibility_note": "",
+   "url": "https://www.careerbeacon.com/en/job-9/2052411/900127273/user-experience-consultant",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-gtt-llc-client-nuclear-it-program-usability-ux-specialist-2-yr-contract",
+   "title": "Usability / UX Specialist (2-yr contract)",
+   "employer": "GTT, LLC (client: Nuclear IT Program)",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "onsite",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "usability",
+    "user-centred design",
+    "UX lead"
+   ],
+   "why": "2-year onsite UX specialist contract; mandatory prior UX lead experience, which you have.",
+   "eligibility_note": "Nuclear-sector clients often require security screening; check citizenship/clearance terms before applying.",
+   "url": "https://careerbeacon.com/en/job-9/1943036/freshco/grocery-clerk",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-outwitly-inc-senior-user-experience-designer",
+   "title": "Senior User Experience Designer",
+   "employer": "Outwitly Inc.",
+   "region": "regina",
+   "city": "Saskatoon, SK",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "senior",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 85,
+   "ai_related": false,
+   "skills_tags": [
+    "service design",
+    "UX research",
+    "consultancy"
+   ],
+   "why": "Outwitly is a research-led UX/service design consultancy — HCI master's + 9 yrs fits their profile well.",
+   "eligibility_note": "",
+   "url": "https://www.careerbeacon.com/en/job-12/1972167/outwitly-inc/senior-user-experience-designer",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-bravo-tango-graphic-interactive-designer",
+   "title": "Graphic / Interactive Designer",
+   "employer": "Bravo Tango",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "experienced",
+   "role_family": "graphic_print",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "branding",
+    "web design",
+    "print"
+   ],
+   "why": "Websites, brand identities and promo material at a Regina agency — uses your creative-strategist and print background.",
+   "eligibility_note": "Full-time onsite; only workable during studies if they accept part-time hours.",
+   "url": "https://www.careerbeacon.com/en/job-12/2014925/bravo-tango/graphic-interactive-designer",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-caa-saskatchewan-ai-developer",
+   "title": "AI Developer",
+   "employer": "CAA Saskatchewan",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": "full-time permanent",
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 62,
+   "ai_related": true,
+   "skills_tags": [
+    "AI development"
+   ],
+   "why": "AI developer role at a member-service org with an in-house tech team. More engineering than design; a design-plus-AI pitch could still land an interview.",
+   "eligibility_note": "",
+   "url": "https://caask.ca/node/663",
+   "source": "CAA SK careers",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-hometeam-network-artificial-intelligence-engineer",
+   "title": "Artificial Intelligence Engineer",
+   "employer": "HomeTeam Network",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": "CAD 76,000–90,000",
+   "salary_min_cad": 76000,
+   "salary_max_cad": 90000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 52,
+   "ai_related": true,
+   "skills_tags": [],
+   "why": "Engineering-heavy; included as a market signal for Regina AI hiring.",
+   "eligibility_note": "Posting requires living in Saskatchewan.",
+   "url": "https://www.jobleads.com/ca/job/artificial-intelligence-engineer--regina--ea28273d1e8a0136e989c21ce0a7bb1e5",
+   "source": "JobLeads",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-s-i-systems-senior-microsoft-ai-developer-rq02101",
+   "title": "Senior Microsoft AI Developer (RQ02101)",
+   "employer": "S.i. Systems",
+   "region": "regina",
+   "city": "Regina, SK (remote)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 45,
+   "ai_related": true,
+   "skills_tags": [
+    "generative AI",
+    "Microsoft stack",
+    "plug-ins"
+   ],
+   "why": "Senior GenAI builder contract (until Apr 30). Market signal: Regina government clients are buying GenAI tooling.",
+   "eligibility_note": "",
+   "url": "https://expertini.work/result/work-senior-microsoft-ai-developer-rq02101-regina-si-systems-6d0cb5ce0d71-canada/",
+   "source": "Expertini",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-saskpower-specialist-artificial-intelligence",
+   "title": "Specialist, Artificial Intelligence",
+   "employer": "SaskPower",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 55,
+   "ai_related": true,
+   "skills_tags": [],
+   "why": "Crown corporation building an AI function. Worth tracking for AI-product/UX roles that follow.",
+   "eligibility_note": "",
+   "url": "https://www.jobs.ca/job/2e641f6f-93ae-4173-8632-42f37344f1f8",
+   "source": "Jobs.ca",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-cameco-ai-developer",
+   "title": "AI Developer",
+   "employer": "Cameco",
+   "region": "regina",
+   "city": "Saskatoon, SK",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": "$75k–$93k",
+   "salary_min_cad": 75000,
+   "salary_max_cad": 93000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 50,
+   "ai_related": true,
+   "skills_tags": [
+    "agentic applications"
+   ],
+   "why": "Agentic AI apps in an AI & Automation group; engineering-first.",
+   "eligibility_note": "",
+   "url": "https://wellfound.com/jobs/4789760-ai-developer",
+   "source": "Wellfound",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-farm-credit-canada-ux-ui-designer-senior-ux-ui-designer-agexpert",
+   "title": "UX/UI Designer & Senior UX/UI Designer (AgExpert)",
+   "employer": "Farm Credit Canada",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 90,
+   "ai_related": false,
+   "skills_tags": [
+    "accessibility",
+    "design systems",
+    "fintech/ag"
+   ],
+   "why": "Best Regina fit of the year — now expired. FCC hires UX in Regina regularly; set an alert on FCC careers.",
+   "eligibility_note": "",
+   "url": "https://m.agcareers.com/farm-credit-canada/ux-ui-designer-agexpert-job-1002275.cfm",
+   "source": "AgCareers",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-sgi-graphic-designer-12-month-temporary",
+   "title": "Graphic Designer (12-month temporary)",
+   "employer": "SGI",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": "onsite",
+   "employment_type": "temporary full-time",
+   "seniority": null,
+   "role_family": "graphic_print",
+   "salary_text": "$65k–82k",
+   "salary_min_cad": 65000,
+   "salary_max_cad": 82000,
+   "posted_date": "2026-08-05",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "likely_closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 65,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Posted Aug 5; likely closed. Shows SGI's creative services hires temps.",
+   "eligibility_note": "",
+   "url": "https://designproject.io/jobs/graphic-designer-at-sgi-q0zm5t",
+   "source": "DesignProject",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-sasktel-tech-assistant-user-interface-design",
+   "title": "Tech Assistant (User Interface Design)",
+   "employer": "SaskTel",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "filled",
+   "categories": [
+    "student_track",
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Filled. A UI-design assistant role like this is the student-friendly entry point; check SaskTel's Student Opportunities page.",
+   "eligibility_note": "",
+   "url": "https://jobs.sasktel.com/job/Regina%2C-SK-Tech-Assistant-%28User-Interface-Design%29-SK/593604517",
+   "source": "SaskTel careers",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-university-of-regina-graphic-and-motion-designer-casual-up-to-100-hrs",
+   "title": "Graphic and Motion Designer (casual, up to 100 hrs)",
+   "employer": "University of Regina",
+   "region": "regina",
+   "city": "Regina, SK (U of R)",
+   "work_mode": null,
+   "employment_type": "casual (CUPE 2419)",
+   "seniority": null,
+   "role_family": "graphic_print",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "student_track"
+   ],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [
+    "motion design",
+    "graphic design",
+    "on-campus"
+   ],
+   "why": "Past casual U of R project gig (Dec 2025–Jan 2026). Gigs like this recur on urcareers; good student-compatible work.",
+   "eligibility_note": "",
+   "url": "https://www.jobs.ca/job/f672776d-5ae6-4f16-876a-a8161443aae6",
+   "source": "Jobs.ca",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-gurulink-client-ai-product-designer",
+   "title": "AI Product Designer",
+   "employer": "GuruLink (client)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": "full-time permanent",
+   "seniority": "3–5 yrs",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier",
+    "urgent_apply"
+   ],
+   "match_score": 88,
+   "ai_related": true,
+   "skills_tags": [
+    "AI product",
+    "UX/UI"
+   ],
+   "why": "AI product design with a year-end delivery push, so hiring is likely fast. 3–5 years asked; you exceed it.",
+   "eligibility_note": "",
+   "url": "https://employmenthero.com/en-ca/jobs/position/careerbeacon-demo-ai-product-designer-j084b/",
+   "source": "Employment Hero / CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-workplace-learning-company-senior-product-designer-ai-experience",
+   "title": "Senior Product Designer, AI Experience",
+   "employer": "Confidential (workplace-learning company)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier"
+   ],
+   "match_score": 87,
+   "ai_related": true,
+   "skills_tags": [
+    "human-AI trust",
+    "generated outputs",
+    "Claude Code",
+    "Cursor"
+   ],
+   "why": "Owns the moments where users evaluate AI suggestions. That is your Bookkeeper AI human-in-the-loop project and your MINDS thesis scaffold. Expects Claude Code/Cursor prototyping.",
+   "eligibility_note": "",
+   "url": "https://ixdf.org/jobs/senior-product-designer-ai-experience-toronto",
+   "source": "IxDF jobs",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-rakuten-kobo-accessibility-specialist-6-month-contract",
+   "title": "Accessibility Specialist (6-month contract)",
+   "employer": "Rakuten Kobo",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": "contract",
+   "seniority": "mid",
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "student_track"
+   ],
+   "match_score": 86,
+   "ai_related": false,
+   "skills_tags": [
+    "WCAG",
+    "WAI-ARIA",
+    "Storybook",
+    "reading experiences"
+   ],
+   "why": "Accessible reading experiences at an e-reader company, and your thesis is search interfaces for readers with dyslexia. Few candidates will match this well.",
+   "eligibility_note": "",
+   "url": "https://builtintoronto.com/job/accessibility-specialist-6-month-contract/7457676",
+   "source": "Built In Toronto",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-tribalscale-ai-product-designer",
+   "title": "AI Product Designer",
+   "employer": "TribalScale",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "3 yrs",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier"
+   ],
+   "match_score": 84,
+   "ai_related": true,
+   "skills_tags": [
+    "agile XP",
+    "client work"
+   ],
+   "why": "Agency-style AI product design with PMs, QA and engineers — your QA background is a plus here.",
+   "eligibility_note": "",
+   "url": "https://wellfound.com/jobs/4621787-ai-product-designer",
+   "source": "Wellfound",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-axl-ai-venture-studio-product-designer",
+   "title": "Product Designer",
+   "employer": "AXL (AI venture studio)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier"
+   ],
+   "match_score": 82,
+   "ai_related": true,
+   "skills_tags": [
+    "0-to-1",
+    "AI startups",
+    "research"
+   ],
+   "why": "0-to-1 AI products across a venture studio: ambiguity, research and speed, the same kind of work as the Journey Engine.",
+   "eligibility_note": "",
+   "url": "https://www.careerbeacon.com/en/job-4/3606640/axl/product-design-at-axl",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-isg-search-inc-senior-ux-designer",
+   "title": "Senior UX Designer",
+   "employer": "ISG Search Inc",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior (7+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 82,
+   "ai_related": false,
+   "skills_tags": [
+    "enterprise platforms",
+    "digital services"
+   ],
+   "why": "7+ years on complex digital services and enterprise platforms — fits your 9-year record.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/q-ui-ux-designer-l-ontario-jobs.html",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-kablamo-product-designer",
+   "title": "Product Designer",
+   "employer": "Kablamo",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "3–5 yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "Figma",
+    "Claude",
+    "v0",
+    "Figma AI",
+    "agency"
+   ],
+   "why": "Agency product design that lists Claude, v0 and Figma AI as working tools.",
+   "eligibility_note": "",
+   "url": "https://wellfound.com/jobs/5077374-product-designer",
+   "source": "Wellfound",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-tali-ai-senior-product-designer",
+   "title": "Senior Product Designer",
+   "employer": "Tali AI",
+   "region": "toronto",
+   "city": "Toronto, ON (remote)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "health AI",
+    "clinical workflows"
+   ],
+   "why": "Remote design lead for a health-AI product, close to the GATE health-tech work you're doing.",
+   "eligibility_note": "",
+   "url": "https://www.careerbeacon.com/en/job-9/2234504/tali-ai/senior-product-designer",
+   "source": "CareerBeacon",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-frontline-work-execution-platform-senior-product-designer-ai",
+   "title": "Senior Product Designer, AI",
+   "employer": "Confidential (frontline work-execution platform)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "mobile-first",
+    "industrial users"
+   ],
+   "why": "AI-first redesign of a mobile frontline tool; complex workflow simplification is your strength.",
+   "eligibility_note": "",
+   "url": "https://ixdf.org/jobs/senior-product-designer-ai-toronto",
+   "source": "IxDF jobs",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-ai-stealth-startup-series-a-product-designer-first-designer",
+   "title": "Product Designer (first designer)",
+   "employer": "AI stealth startup (Series A)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "2+ yrs",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 78,
+   "ai_related": true,
+   "skills_tags": [
+    "design systems",
+    "data-heavy enterprise",
+    "founding designer"
+   ],
+   "why": "First designer on AI-powered enterprise tools; asks for simplifying data-heavy workflows.",
+   "eligibility_note": "",
+   "url": "https://ats.rippling.com/ai-stealth-startup/jobs/abbe4390-3291-43a3-8355-0197e3307e34",
+   "source": "Rippling ATS",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-developer-tools-lead-product-designer-ai-team",
+   "title": "Lead Product Designer – AI Team",
+   "employer": "Confidential (developer tools)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": "$111K–141K",
+   "salary_min_cad": 111000,
+   "salary_max_cad": 141000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 78,
+   "ai_related": true,
+   "skills_tags": [
+    "developer AI product"
+   ],
+   "why": "End-to-end UX for a new developer-facing AI product.",
+   "eligibility_note": "",
+   "url": "https://builtin.com/job/lead-product-designer/3666211",
+   "source": "Built In",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-aquent-large-client-accessibility-specialist-consultant",
+   "title": "Accessibility Specialist (consultant)",
+   "employer": "Aquent (large client)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "contract (T4)",
+   "seniority": null,
+   "role_family": "accessibility",
+   "salary_text": "C$44–48/hr",
+   "salary_min_cad": 91520,
+   "salary_max_cad": 99840,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "digital accessibility",
+    "a11y UX practice"
+   ],
+   "why": "Accessibility-forward UX practice role. Asks for both design and UX education, and you have both.",
+   "eligibility_note": "",
+   "url": "https://aquent.com/find-work/198308",
+   "source": "Aquent",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-dexian-product-designer",
+   "title": "Product Designer",
+   "employer": "Dexian",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite (5 days)",
+   "employment_type": "full-time permanent",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "Cursor",
+    "Claude Code",
+    "v0",
+    "Lovable"
+   ],
+   "why": "Lists Cursor/Claude Code/v0/Lovable as valued tools.",
+   "eligibility_note": "",
+   "url": "https://arc.dev/remote-jobs/j/dexian-product-designer-p35dxbyycl",
+   "source": "Arc.dev",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-s-i-systems-digital-banking-ux-accessibility-consultant-92577-1",
+   "title": "UX Accessibility Consultant (92577-1)",
+   "employer": "S.i. Systems (digital banking)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "hybrid",
+   "employment_type": "6-month contract",
+   "seniority": null,
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track"
+   ],
+   "match_score": 76,
+   "ai_related": false,
+   "skills_tags": [
+    "accessibility",
+    "banking",
+    "employee platforms"
+   ],
+   "why": "Bank accessibility contract. Toronto banks keep posting these because of AODA compliance.",
+   "eligibility_note": "",
+   "url": "https://www.jobillico.com/en/job-offer/si-systemsiJxzWu/ux-accessibility-consultant-to-ensure-our-employee-facing-platforms-and-applications-are-universally-accessible-for-employees-92577-1/16216381",
+   "source": "Jobillico",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-yuja-inc-digital-accessibility-specialist",
+   "title": "Digital Accessibility Specialist",
+   "employer": "YuJa Inc.",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 75,
+   "ai_related": false,
+   "skills_tags": [
+    "edtech",
+    "video platform"
+   ],
+   "why": "Edtech accessibility, close to your library-search research.",
+   "eligibility_note": "",
+   "url": "https://www.tealhq.com/job/digital-accessibility-specialist_7ea1a360a6a61f58794042881d8d4fe89aea8",
+   "source": "Teal",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-human-ai-collaboration-lab-senior-designer-ai-product-experience-12-m",
+   "title": "Senior Designer – AI Product Experience (12-month contract)",
+   "employer": "Confidential (human-AI collaboration lab)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite",
+   "employment_type": "12-month contract",
+   "seniority": null,
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 75,
+   "ai_related": true,
+   "skills_tags": [
+    "prototype-driven",
+    "human-AI task delegation"
+   ],
+   "why": "Prototype-driven human-AI collaboration design; HCI research background is valued here.",
+   "eligibility_note": "",
+   "url": "https://ixdf.org/jobs/senior-designer-ai-product-experience-toronto",
+   "source": "IxDF jobs",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-soroc-technology-product-designer-contract",
+   "title": "Product Designer (contract)",
+   "employer": "Soroc Technology",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "hybrid",
+   "employment_type": "contract",
+   "seniority": "5 yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 74,
+   "ai_related": true,
+   "skills_tags": [
+    "AI-powered design/research tools"
+   ],
+   "why": "",
+   "eligibility_note": "Posting states visa sponsorship not available.",
+   "url": "https://wellfound.com/jobs/4617677-product-designer",
+   "source": "Wellfound",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-cohere-senior-product-designer-3-month-contract",
+   "title": "Senior Product Designer (3-month contract)",
+   "employer": "Cohere",
+   "region": "toronto",
+   "city": "Toronto, ON / remote",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": "7–10 yrs",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada"
+   ],
+   "match_score": 72,
+   "ai_related": true,
+   "skills_tags": [
+    "enterprise AI",
+    "LLM products"
+   ],
+   "why": "Short contract at Canada's flagship LLM company; a good name to have on the CV.",
+   "eligibility_note": "",
+   "url": "https://jobs.lever.co/cohere/ba34b532-a5be-463a-b3ac-a884214918fa",
+   "source": "Lever",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-leap-tools-ui-ux-designer",
+   "title": "UI/UX Designer",
+   "employer": "Leap Tools",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$70K–$100K",
+   "salary_min_cad": 70000,
+   "salary_max_cad": 100000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "",
+   "eligibility_note": "",
+   "url": "https://www.glassdoor.ca/Job/toronto-ui-ux-designer-jobs-SRCH_IL.0,7_IC2281069_KO8,22.htm",
+   "source": "Glassdoor",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-photon-ui-ux-designer",
+   "title": "UI/UX Designer",
+   "employer": "Photon",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$108K–$153K (Glassdoor est.)",
+   "salary_min_cad": 108000,
+   "salary_max_cad": 153000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "client design systems"
+   ],
+   "why": "",
+   "eligibility_note": "",
+   "url": "https://www.glassdoor.ca/Job/toronto-junior-ux-designer-jobs-SRCH_IL.0,7_IC2281069_KO8,26.htm",
+   "source": "Glassdoor",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-fable-junior-ux-researcher",
+   "title": "Junior UX Researcher",
+   "employer": "Fable",
+   "region": "toronto",
+   "city": "Ontario (remote)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "accessibility",
+   "salary_text": "CAD 65,000–75,000",
+   "salary_min_cad": 65000,
+   "salary_max_cad": 75000,
+   "posted_date": "2026-09-02",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "accessibility research",
+    "disability inclusion"
+   ],
+   "why": "Accessibility research company. Junior level, but its focus on users with disabilities is a strong match for your thesis.",
+   "eligibility_note": "Applicants must be located in Ontario (GTA preferred).",
+   "url": "https://apply.workable.com/fable-1/jobs/view/7AF246B78C.md",
+   "source": "Workable",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-government-services-integration-cluster-ontario-ux-designer-junior-rq11618",
+   "title": "UX Designer – Junior (RQ11618)",
+   "employer": "Government Services Integration Cluster (Ontario)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "onsite (5 days)",
+   "employment_type": "contract (135 business days)",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "CA$55.13–59.06/hr",
+   "salary_min_cad": 114670,
+   "salary_max_cad": 122845,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 62,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Ontario Public Service contract with a high hourly rate. Signal: OPS buys UX through vendor-of-record requisitions (RQ numbers).",
+   "eligibility_note": "",
+   "url": "https://www.ziprecruiter.com/Jobs/Junior-Ux-Ui-Designer/-in-Toronto,ON",
+   "source": "ZipRecruiter",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-lyft-ux-research-intern-summer-2027",
+   "title": "UX Research Intern (Summer 2027)",
+   "employer": "Lyft",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "internship",
+   "seniority": null,
+   "role_family": "ux_research",
+   "salary_text": "$40–$48/hr",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "grad_2027_pipeline"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "UX research",
+    "Figma"
+   ],
+   "why": "Research internship in summer 2027, right before your final term.",
+   "eligibility_note": "Full-time internship: confirm summer is a scheduled break in your program, or whether co-op authorization applies.",
+   "url": "https://ca.indeed.com/Ux-Design-Internship-jobs",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-wealthsimple-design-intern-winter-2027-8-months",
+   "title": "Design Intern (Winter 2027, 8 months)",
+   "employer": "Wealthsimple",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "hybrid",
+   "employment_type": "internship",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$74k–$90k",
+   "salary_min_cad": 74000,
+   "salary_max_cad": 90000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "urgent_apply"
+   ],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Open to co-op students, non-co-op students and recent grads. A Winter 2027 start means it closes soon.",
+   "eligibility_note": "An 8-month full-time term would interrupt your thesis term. Only consider it if your program allows a work term.",
+   "url": "https://4dayweek.io/job/design-intern-winter-2027-at-wealthsimple-c1411374",
+   "source": "4dayweek.io",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-scotiabank-canadian-banking-ux-product-design-internship-co-op-winter-2027",
+   "title": "Canadian Banking – UX/Product Design Internship/Co-op (Winter 2027)",
+   "employer": "Scotiabank",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "internship/co-op",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "urgent_apply"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "No resume required for student programs. Careers site down Nov 28 (maintenance).",
+   "eligibility_note": "Co-op/internship eligibility rules apply.",
+   "url": "https://jobs.scotiabank.com/job/Toronto-Canadian-Banking-UXProduct-Design-InternshipCo-op-Winter-2027-ON/605559117/",
+   "source": "Scotiabank careers",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-manulife-product-designer-winter-co-op-2027-global-design-system",
+   "title": "Product Designer (Winter Co-op 2027, Global Design System)",
+   "employer": "Manulife",
+   "region": "toronto",
+   "city": "Toronto / Waterloo, ON",
+   "work_mode": "hybrid",
+   "employment_type": "co-op",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$41k–57k (pro-rated)",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-10-04",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "urgent_apply"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "design systems"
+   ],
+   "why": "Design-system co-op; design-token and component-library work is already on your CV.",
+   "eligibility_note": "",
+   "url": "https://designproject.io/jobs/winter-co-op-2027-product-designer-at-manulife-f60nry",
+   "source": "DesignProject",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-manulife-summer-intern-2027-product-design-ux",
+   "title": "Summer Intern 2027 – Product Design (UX)",
+   "employer": "Manulife",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "internship",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "grad_2027_pipeline"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Summer 2027 slot, timed well for a pre-graduation internship.",
+   "eligibility_note": "",
+   "url": "https://www.iagora.com/work/fr/offre/stage-canada-creation/6378589",
+   "source": "iAgora",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-government-of-ontario-digital-experience-design-co-op",
+   "title": "Experience Design Co-op",
+   "employer": "Government of Ontario (Digital)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "co-op",
+   "seniority": null,
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track"
+   ],
+   "match_score": 66,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Apply by email with portfolio; subject 'Hire me - Experience design co-op'.",
+   "eligibility_note": "",
+   "url": "https://www.ontario.ca/page/experience-design-co-op",
+   "source": "Ontario.ca",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-cgi-winter-2027-ai-developer-co-op-8-months",
+   "title": "Winter 2027: AI Developer Co-op (8 months)",
+   "employer": "CGI",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "co-op",
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "ai_frontier"
+   ],
+   "match_score": 55,
+   "ai_related": true,
+   "skills_tags": [],
+   "why": "AI feature-building co-op; engineering-weighted.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/Design-Internship-jobs-in-Toronto,-ON",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-robots-pencils-user-experience-designer-ai-experiences",
+   "title": "User Experience Designer, AI Experiences",
+   "employer": "Robots & Pencils",
+   "region": "alberta",
+   "city": "Calgary, AB (remote-friendly)",
+   "work_mode": "remote-friendly + client travel",
+   "employment_type": "full-time",
+   "seniority": "senior/lead",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "ai_frontier",
+    "remote_canada"
+   ],
+   "match_score": 90,
+   "ai_related": true,
+   "skills_tags": [
+    "conversational design",
+    "adaptive UI",
+    "multimodal",
+    "Claude Code",
+    "Cursor",
+    "prompts/datasets"
+   ],
+   "why": "The closest match to the market you're aiming for: conversational and adaptive UI, prototyping with Claude Code/Cursor, encoding expertise into prompts. Open to Canada residents with work authorization.",
+   "eligibility_note": "",
+   "url": "https://job-boards.greenhouse.io/robotsandpencils/jobs/4943078008",
+   "source": "Greenhouse",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-wagepoint-staff-ux-designer",
+   "title": "Staff UX Designer",
+   "employer": "Wagepoint",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": "permanent",
+   "seniority": "staff",
+   "role_family": "ux_product_design",
+   "salary_text": "$125,000–$145,000",
+   "salary_min_cad": 125000,
+   "salary_max_cad": 145000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 86,
+   "ai_related": false,
+   "skills_tags": [
+    "payroll SaaS",
+    "fintech",
+    "small business"
+   ],
+   "why": "Payroll SaaS: rules-heavy financial configuration, the same skills as the Reward/Tier engine work.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/Ux-Designer-jobs-in-Alberta",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-cgi-ux-ui-designer",
+   "title": "UX/UI Designer",
+   "employer": "CGI",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$70,000–$140,000",
+   "salary_min_cad": 70000,
+   "salary_max_cad": 140000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 84,
+   "ai_related": false,
+   "skills_tags": [
+    "web accessibility",
+    "responsive",
+    "design thinking",
+    "agile"
+   ],
+   "why": "Broad salary band; accessibility and research-to-prototype lifecycle listed.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/q-ui-ux-designer-l-alberta-jobs.html",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-emergitel-client-ux-designer-12-month-contract-2026-30",
+   "title": "UX Designer (12-month contract, 2026-30)",
+   "employer": "Emergitel (client)",
+   "region": "alberta",
+   "city": "Calgary, AB (remote in Canada)",
+   "work_mode": "remote",
+   "employment_type": "12-month contract",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "100% remote anywhere in Canada. You could take it from Regina.",
+   "eligibility_note": "",
+   "url": "https://emergitel.catsone.com/careers/7701-General/jobs/16799982",
+   "source": "Emergitel",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-vantix-systems-government-client-service-designer-23-positions",
+   "title": "Service Designer (23 positions)",
+   "employer": "Vantix Systems (Government client)",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "service innovation",
+    "program review",
+    "digital transformation"
+   ],
+   "why": "Bulk hire of 23 service designers for government digital transformation. A volume opening like this means less competition per seat.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/Ui-Ux-Designer-jobs-in-Alberta",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-ndax-canada-ui-ux-designer-fintech-crypto",
+   "title": "UI/UX Designer — FinTech & Crypto",
+   "employer": "NDAX Canada",
+   "region": "alberta",
+   "city": "Calgary, AB (remote)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "fintech",
+    "crypto"
+   ],
+   "why": "Remote fintech UI/UX from a Calgary company.",
+   "eligibility_note": "",
+   "url": "https://ca.talent.com/jobs/k-user-interface-designer-l-calgary-ab",
+   "source": "Talent.com",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-jobber-staff-product-designer-fintech",
+   "title": "Staff Product Designer, Fintech",
+   "employer": "Jobber",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "staff",
+   "role_family": "ux_product_design",
+   "salary_text": "CA$169K–229K",
+   "salary_min_cad": 169000,
+   "salary_max_cad": 229000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 75,
+   "ai_related": false,
+   "skills_tags": [
+    "fintech",
+    "SaaS",
+    "Figma"
+   ],
+   "why": "Stretch level, but Jobber is Edmonton's design anchor. Watch for intermediate/senior openings.",
+   "eligibility_note": "",
+   "url": "https://www.glassdoor.com/Job/alberta-ui-ux-designer-jobs-SRCH_IL.0,7_IS4074_KO8,22.htm",
+   "source": "Glassdoor",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-kanopi-contract-senior-ux-ui-designer-website-strategy-design",
+   "title": "Contract Senior UX/UI Designer: Website Strategy & Design",
+   "employer": "Kanopi",
+   "region": "alberta",
+   "city": "Calgary/Edmonton (remote)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-07-15",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada",
+    "student_track"
+   ],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [
+    "website strategy"
+   ],
+   "why": "Remote contract. Flexible hours may fit around study.",
+   "eligibility_note": "",
+   "url": "https://apply.workable.com/kanopi/jobs/view/D65D38F18B.md",
+   "source": "Workable",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-pack-com-senior-visual-ui-designer-0-to-1-stealth",
+   "title": "Senior Visual & UI Designer (0-to-1 / stealth)",
+   "employer": "Pack.com",
+   "region": "alberta",
+   "city": "Alberta (remote, Canada)",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "visual design",
+    "gaming culture"
+   ],
+   "why": "Visual/UI-heavy founding role.",
+   "eligibility_note": "",
+   "url": "https://ca.indeed.com/Ui-Ux-Designer-jobs-in-Alberta",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-dataannotation-ux-ui-designer-ai-trainer-experience-designer-ai-trainer",
+   "title": "UX/UI Designer – AI Trainer / Experience Designer – AI Trainer",
+   "employer": "DataAnnotation",
+   "region": "alberta",
+   "city": "Calgary, AB (remote)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ai_training_eval",
+   "salary_text": "$75.00–$174.87/hr",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "ai_frontier"
+   ],
+   "match_score": 70,
+   "ai_related": true,
+   "skills_tags": [
+    "AI evaluation",
+    "design critique",
+    "flexible hours"
+   ],
+   "why": "You judge and teach AI models design quality, with flexible hours and paid hourly. A new kind of design work.",
+   "eligibility_note": "Contract/self-employed work still counts toward any student work-hour limit; keep hours within your permit conditions.",
+   "url": "https://ca.indeed.com/q-ui-ux-designer-l-alberta-jobs.html",
+   "source": "Indeed",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-robert-half-client-senior-ai-creative-designer",
+   "title": "Senior AI Creative Designer",
+   "employer": "Robert Half (client)",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": "onsite",
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 68,
+   "ai_related": true,
+   "skills_tags": [
+    "AI-generated visuals",
+    "immersive"
+   ],
+   "why": "Creative + AI generation role; uses your VFX/compositing past.",
+   "eligibility_note": "",
+   "url": "https://www.roberthalf.com/ca/en/jobs/calgary-ab/ux-researcher",
+   "source": "Robert Half",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-amii-instructional-designer-ai-literacy-training",
+   "title": "Instructional Designer (AI literacy training)",
+   "employer": "Amii",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "instructional_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 68,
+   "ai_related": true,
+   "skills_tags": [
+    "AI literacy",
+    "curriculum"
+   ],
+   "why": "Design + teaching + AI. You've taught Nuke/Mocha courses and TA web dev. Amii is scaling national AI literacy.",
+   "eligibility_note": "",
+   "url": "https://www.ziprecruiter.com/Jobs/Amii/-in-Edmonton,AB",
+   "source": "ZipRecruiter",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-ibm-associate-ai-engineer-september-2026-cohort",
+   "title": "Associate AI Engineer (September 2026 cohort)",
+   "employer": "IBM",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "ai_frontier"
+   ],
+   "match_score": 50,
+   "ai_related": true,
+   "skills_tags": [],
+   "why": "New-grad cohort pattern: IBM Calgary hires associate cohorts for September. Expect a Sept 2028 equivalent and apply in fall 2027.",
+   "eligibility_note": "",
+   "url": "https://ca.linkedin.com/jobs/artificial-intelligence-engineer-jobs-calgary-ab",
+   "source": "LinkedIn",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-procom-client-ux-ui-designer-12-month-contract-webflow",
+   "title": "UX/UI Designer (12-month contract, Webflow)",
+   "employer": "Procom (client)",
+   "region": "alberta",
+   "city": "Calgary/Edmonton, AB",
+   "work_mode": "hybrid (3 days)",
+   "employment_type": "contract",
+   "seniority": null,
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-06-05",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "likely_closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "",
+   "eligibility_note": "",
+   "url": "https://myprocom-portal.procomservices.com/jobs/ux-ui-designer-calgary-f5359162",
+   "source": "Procom",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-government-of-alberta-executive-council-user-experience-designer",
+   "title": "User Experience Designer",
+   "employer": "Government of Alberta (Executive Council)",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": "onsite",
+   "employment_type": "permanent full-time",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$76,613–$100,492",
+   "salary_min_cad": 76613,
+   "salary_max_cad": 100492,
+   "posted_date": "2026-06-17",
+   "closing_date": "2026-07-02",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Closed. GoA UX/service design posts recur. Set an alert on jobpostings.alberta.ca.",
+   "eligibility_note": "",
+   "url": "https://jobpostings.alberta.ca/job/edmonton-user-experience-designer/603575217/",
+   "source": "Alberta job postings",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-government-of-alberta-technology-innovation-senior-service-designer-7-positions",
+   "title": "Senior Service Designer (7 positions)",
+   "employer": "Government of Alberta (Technology & Innovation)",
+   "region": "alberta",
+   "city": "Edmonton or Calgary, AB",
+   "work_mode": null,
+   "employment_type": "permanent full-time",
+   "seniority": null,
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-08-05",
+   "closing_date": "2026-08-19",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Closed. 7 permanent seats show the province is building service-design capacity.",
+   "eligibility_note": "",
+   "url": "https://jobpostings.alberta.ca/job/Edmonton-Senior-Service-Designer/604954717/",
+   "source": "Alberta job postings",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-teamvalue-inc-web-designer-32-h-wk",
+   "title": "Web Designer (32 h/wk)",
+   "employer": "Teamvalue Inc",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "web_design",
+   "salary_text": "$37.85/hr",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-10-20",
+   "closing_date": "2026-11-19",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [],
+   "match_score": 55,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "",
+   "eligibility_note": "",
+   "url": "https://alis.alberta.ca/occinfo/alberta-job-postings/web-designer/50542271/",
+   "source": "ALIS",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-shirah-user-interface-ui-designer",
+   "title": "User Interface (UI) Designer",
+   "employer": "SHIRAH",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": "onsite",
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "$40.00/hr",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-08-14",
+   "closing_date": "2026-08-15",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "",
+   "eligibility_note": "",
+   "url": "https://alis.alberta.ca/occinfo/alberta-job-postings/job/50078576/",
+   "source": "ALIS",
+   "verified": "search-snippet",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Seed scan"
+    }
+   ]
+  }
+ ]
+}

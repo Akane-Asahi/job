@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Job Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a planning office's daily briefing — calm, exact, ruled.
+   IDEA: a dispatcher's ledger; every job is a ruled line with when it first crossed the desk.
+   PICTURE: the big ruled job ledger, verdicts in the margin; trend bars as HTML rows.
+   COLOUR and TYPE: stone ground, black ink, brick accent; Schibsted Grotesk throughout.
+   LAYOUT: headline + region counters, then ledger, trends, report, opportunities. */
+:root{color-scheme:light dark;
+ --bg:light-dark(#e7e4df,#171513);--panel:light-dark(#ffffff,#211e1b);--ink:light-dark(#141210,#efebe4);
+ --muted:light-dark(#5d5850,#a8a196);--rule:light-dark(#cfcac1,#3a352f);--brick:light-dark(#c8371e,#ff7a5c);
+ --soft:light-dark(#f3f1ec,#1c1a17);--good:light-dark(#2f6b3f,#7fcf95);--warn:light-dark(#9a5b00,#f2b45a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Schibsted Grotesk",system-ui,sans-serif;overflow-x:clip}
+a{color:var(--brick)}
+.band{padding:clamp(24px,4vw,56px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+h1{font-size:clamp(28px,3.4vw,40px);line-height:1.08;font-weight:800;margin:0 0 14px;text-wrap:balance;max-width:34ch}
+h2{font-size:clamp(24px,3vw,32px);line-height:1.1;margin:0 0 6px;font-weight:800;text-wrap:balance}
+h3{font-size:18px;margin:0 0 6px}
+.lede{color:var(--muted);max-width:68ch;margin:0}
+.scroll{display:flex;gap:4px;overflow-x:auto;padding:10px max(5vw,16px);background:var(--ink);position:relative}
+.scroll a{flex:none;color:var(--bg);text-decoration:none;padding:8px 14px;border-radius:4px;font-weight:500}
+.scroll a:hover,.scroll a:focus-visible{background:var(--brick);color:#fff;outline:none}
+@media(min-width:900px){.scroll{position:sticky;top:0;z-index:5}}
+html{scroll-padding-top:72px}
+.tbl{overflow-x:auto}
+.counters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:3px solid var(--ink);margin-top:26px}
+.counter{padding:14px 14px 10px 0;border-bottom:1px solid var(--rule)}
+.counter b{display:block;font-size:clamp(28px,4vw,40px);line-height:1;font-weight:800}
+.counter span{color:var(--muted);font-size:14px}
+.counter small{display:block;color:var(--brick);font-size:13px;font-weight:500}
+@media(max-width:600px){.counters{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.panel{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:18px 0 12px}
+.seg{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--ink);border-radius:4px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--ink);font:inherit;font-weight:500;padding:10px 14px;min-height:44px;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.chip{border:1px solid var(--rule);background:var(--panel);color:var(--ink);font:inherit;font-size:14px;padding:8px 12px;min-height:40px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed=true]{border-color:var(--brick);background:var(--brick);color:#fff}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--brick);outline-offset:2px}
+input[type=search],select{font:inherit;font-size:16px;padding:9px 12px;min-height:44px;border:1px solid var(--rule);border-radius:4px;background:var(--panel);color:var(--ink)}
+input[type=search]{flex:1 1 220px}
+table{width:100%;border-collapse:collapse;background:var(--panel)}
+th{text-align:left;font-size:13px;font-weight:700;color:var(--muted);border-bottom:2px solid var(--ink);padding:10px 10px}
+td{border-bottom:1px solid var(--rule);padding:12px 10px;vertical-align:top}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.job{cursor:pointer}tr.job:hover td{background:var(--soft)}
+.t{font-weight:700}.e{color:var(--muted);font-size:14px}
+.score{display:inline-block;min-width:2.6em;text-align:center;font-weight:800;border-radius:4px;padding:2px 6px;background:var(--soft)}
+.score.hi{background:var(--brick);color:#fff}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--rule);border-radius:3px;padding:1px 6px;margin:2px 4px 0 0;color:var(--muted);white-space:nowrap}
+.tag.cat{border-color:var(--ink);color:var(--ink)}
+.st{font-size:13px;font-weight:500;white-space:nowrap}.st.active{color:var(--good)}.st.closed,.st.filled{color:var(--muted);text-decoration:line-through}.st.likely_closed,.st.unknown{color:var(--warn)}
+tr.detail td{background:var(--soft);font-size:15px}
+.nowrap{white-space:nowrap}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media(max-width:900px){.grid3{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.bar{display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr) 3.2em;gap:8px;align-items:center;font-size:14px;margin:6px 0}
+.bar .trk{height:14px;background:var(--soft);border-radius:2px;overflow:hidden;display:flex}
+.bar .trk i{display:block;height:100%}
+.bar .v{text-align:right;font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.fig{position:relative;min-height:220px}.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.note{font-size:14px;color:var(--muted)}
+.boom{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--rule);padding:8px 0;font-size:15px}
+.boom b{white-space:nowrap}.up{color:var(--good)}.down{color:var(--brick)}
+.headline{font-size:clamp(20px,2.4vw,26px);font-weight:700;line-height:1.25;border-left:6px solid var(--brick);padding-left:16px;margin:16px 0 24px;max-width:60ch}
+ol.roles{list-style:none;padding:0;margin:0;counter-reset:r}
+ol.roles li{counter-increment:r;padding:14px 0 14px 52px;border-bottom:1px solid var(--rule);position:relative}
+ol.roles li::before{content:counter(r);position:absolute;left:0;top:10px;font-size:34px;font-weight:800;color:var(--brick);line-height:1}
+.timeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:3px solid var(--ink)}
+.timeline>div{padding:14px 14px 14px 0;border-right:1px solid var(--rule)}.timeline>div:last-child{border-right:0}
+.timeline h3{color:var(--brick);white-space:nowrap}
+.timeline ul{padding-left:18px;margin:0;font-size:15px}.timeline li{margin-bottom:8px}
+@media(max-width:900px){.timeline{grid-template-columns:minmax(0,1fr)}.timeline>div{border-right:0;border-bottom:1px solid var(--rule)}}
+ul.plain{padding-left:18px;margin:6px 0}ul.plain li{margin-bottom:6px}
+.fit{font-weight:700;white-space:nowrap}.fit.high{color:var(--good)}.fit.medium,.fit.low-medium{color:var(--warn)}.fit.not-eligible,.fit.later,.fit.context{color:var(--muted)}
+footer{border-top:3px solid var(--ink);color:var(--muted);font-size:14px}
+code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius:3px}
+@media(max-width:600px){table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em;text-align:start}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;white-space:normal;color:var(--muted)}.stack td:empty{display:none}.stack tr.detail{padding-inline-start:0}.stack tr.detail td{padding-inline-start:0}.stack tr.detail td::before{content:none}}
+@media(prefers-reduced-motion:no-preference){.bar .trk i{transition:width .5s ease}}
+</style>
+<script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script>
+</head>
+<body>
+<header class="band"><div class="wrap">
+ <h1 id="headline">Job Radar: Regina · Toronto · Alberta</h1>
+ <p class="lede" id="sub">Loading the latest scan…</p>
+ <div class="counters" id="counters"></div>
+</div></header>
+<nav class="scroll" aria-label="Sections"><a href="#jobs">Jobs</a><a href="#trends">Trends</a><a href="#report">Intelligence report</a><a href="#opportunities">Opportunities</a><a href="#about">How it updates</a></nav>
+
+<main>
+<section class="band" id="jobs"><div class="wrap">
+ <h2>The ledger</h2>
+ <p class="lede">Every job that has crossed the radar, with the date first seen and the latest sighting. Tap a row for why it fits and any eligibility notes.</p>
+ <div class="controls">
+  <div class="seg" role="group" aria-label="Region" id="regionSeg"></div>
+  <input type="search" id="q" placeholder="Search title, employer, skill…" aria-label="Search jobs">
+  <select id="statusSel" aria-label="Status"><option value="open">Open only</option><option value="all">Include closed</option></select>
+ </div>
+ <div class="controls" role="group" aria-label="Category" id="catChips"></div>
+ <div class="tbl"><table class="stack" id="jobTable">
+  <thead><tr><th class="num">Fit</th><th>Role</th><th>Where</th><th>Terms</th><th>Pay</th><th>On radar</th><th>Status</th></tr></thead>
+  <tbody></tbody></table></div>
+ <p class="note" id="tableNote"></p>
+</div></section>
+
+<section class="band" id="trends" style="background:var(--panel)"><div class="wrap">
+ <h2>Trends</h2>
+ <p class="lede" id="trendLede">Computed live from every job and daily run in <code>data/jobs.json</code>.</p>
+ <div class="grid3" style="margin-top:20px">
+  <div><h3>What's booming</h3><div id="boom"></div><p class="note" id="boomNote"></p></div>
+  <div><h3>Role mix by region (open jobs)</h3><div id="mix"></div><div class="legend" id="mixLegend"></div></div>
+  <div><h3>Share that is AI work</h3><div id="aiShare"></div><h3 style="margin-top:18px">Most-asked skills</h3><div id="skills"></div></div>
+ </div>
+ <div class="grid2" style="margin-top:28px">
+  <div><h3>Open jobs on the radar, by day</h3><div class="fig" id="runFig"><svg id="runSvg" role="img" aria-label="Open jobs per region over time"></svg></div><div class="legend" id="runLegend"></div></div>
+  <div><h3>UX designer pay bands (CAD)</h3><div class="tbl"><table id="payTable"><thead><tr><th>Market</th><th class="num">Low</th><th class="num">Mid</th><th class="num">High</th></tr></thead><tbody></tbody></table></div><p class="note">Robert Half 2026 guide. Posted ranges seen on the radar: <span id="postedPay"></span></p></div>
+ </div>
+ <h3 style="margin-top:28px">Market signals</h3>
+ <div class="tbl"><table class="stack" id="sigTable"><thead><tr><th>Signal</th><th>Value</th><th>Where</th><th>Source</th></tr></thead><tbody></tbody></table></div>
+</div></section>
+
+<section class="band" id="report"><div class="wrap">
+ <h2>Intelligence report</h2>
+ <p class="lede" id="intelDate"></p>
+ <p class="headline" id="intelHead"></p>
+ <div class="grid2">
+  <div><h3>Which jobs to focus on</h3><ol class="roles" id="roles"></ol></div>
+  <div>
+   <h3>Where to relocate</h3>
+   <table class="stack" id="relTable"><thead><tr><th>City</th><th>Verdict</th><th>Why</th></tr></thead><tbody></tbody></table>
+   <h3 style="margin-top:22px">Apply to these first</h3><ul class="plain" id="applyNow"></ul>
+   <h3 style="margin-top:16px">Spend less time on</h3><ul class="plain" id="depri"></ul>
+  </div>
+ </div>
+ <h3 style="margin-top:30px">Plan to December 2027</h3>
+ <div class="timeline" id="timeline"></div>
+ <p class="note" id="caveats" style="margin-top:14px"></p>
+</div></section>
+
+<section class="band" id="opportunities" style="background:var(--panel)"><div class="wrap">
+ <h2>Opportunities to grab before you graduate</h2>
+ <p class="lede">Programs, internships, conferences and training, checked for whether they actually fit you.</p>
+ <table class="stack" id="oppTable" style="margin-top:16px"><thead><tr><th>Opportunity</th><th>Fit</th><th>When</th><th>What it is</th><th>Next step</th></tr></thead><tbody></tbody></table>
+</div></section>
+</main>
+
+<footer class="band" id="about"><div class="wrap">
+ <p><b>How this updates.</b> A scheduled task runs every morning at 06:40 Regina time. It scans the three regions, matches each posting to existing entries, and commits the result to <code>data/jobs.json</code>, the only file that changes daily. A new job gets <code>first_seen</code> = today. A job that shows up again keeps its <code>first_seen</code>, gets today as <code>last_seen</code>, and its sighting count goes up. This page reads that file each time it loads. The intelligence report is refreshed on Mondays.</p>
+ <p id="foot"></p>
+</div></footer>
+
+<script>
+{
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const REG={regina:'Regina',toronto:'Toronto',alberta:'Alberta'};
+const REGC={regina:'#c8371e',toronto:'#141210',alberta:'#8a8173'};
+const FAM={ai_product_design:'AI product design',ux_product_design:'UX / product design',accessibility:'Accessibility',ux_research:'UX research',service_design:'Service design',ux_engineering:'UX engineering',ai_engineering:'AI engineering',ai_training_eval:'AI training / eval',graphic_print:'Graphic / print',web_design:'Web design',instructional_design:'Instructional design'};
+const FAMC={ai_product_design:'#c8371e',ux_product_design:'#141210',accessibility:'#2f6b3f',ux_research:'#5b7fa6',service_design:'#9a5b00',ux_engineering:'#6b4c9a',ai_engineering:'#e08b6f',ai_training_eval:'#d4a373',graphic_print:'#8a8173',web_design:'#b7b0a4',instructional_design:'#4f8f8b'};
+const CAT={most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist'};
+const OPEN=new Set(['active','unknown','likely_closed']);
+const fmtD=d=>{if(!d)return'—';const[y,m,dd]=d.split('-');return new Date(+y,+m-1,+dd).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'})};
+const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
+const money=n=>n==null?'':'$'+Math.round(n/1000)+'k';
+let D=null,state={region:'all',cat:'all',q:'',status:'open',open:null,all:false};
+try{const h=location.hash.replace('#','');if(REG[h])state.region=h}catch(e){}
+
+function header(){
+ const m=D.meta,last=D.runs[D.runs.length-1]||{},open=D.jobs.filter(j=>OPEN.has(j.status));
+ document.getElementById('headline').textContent=`${open.length} open roles across Regina, Toronto and Alberta. ${open.filter(j=>j.categories.includes('most_matched')).length} are strong fits for you.`;
+ document.getElementById('sub').textContent=`Last scan ${fmtD(m.last_run)} · ${D.runs.length} day${D.runs.length>1?'s':''} of history · ${D.jobs.length} jobs tracked since ${fmtD(m.created)}.`;
+ const c=[['all','All regions',open.length,`${last.new??0} new today · ${last.seen_again??0} seen again`]].concat(Object.keys(REG).map(r=>[r,REG[r],open.filter(j=>j.region===r).length,`${open.filter(j=>j.region===r&&j.categories.includes('most_matched')).length} most matched`]));
+ document.getElementById('counters').innerHTML=c.map(([k,l,n,s])=>`<div class="counter"><b>${n}</b><span>${esc(l)} · open</span><small>${esc(s)}</small></div>`).join('');
+}
+function controls(){
+ const seg=document.getElementById('regionSeg');
+ seg.innerHTML=[['all','All']].concat(Object.entries(REG)).map(([k,l])=>`<button type="button" data-r="${k}" aria-pressed="${state.region===k}">${esc(l)}</button>`).join('');
+ seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.region=b.dataset.r;try{history.replaceState(null,'',state.region==='all'?'#jobs':'#'+state.region)}catch(_){}controls();table()};
+ const chips=document.getElementById('catChips');
+ const pool=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&(state.status==='all'||OPEN.has(j.status)));
+ chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>j.categories.includes(k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${state.cat===k}">${esc(l)} <span>${n}</span></button>`).join('');
+ chips.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.cat=b.dataset.c;controls();table()};
+}
+function table(){
+ const q=state.q.toLowerCase();
+ let rows=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&(state.cat==='all'||j.categories.includes(state.cat))&&(state.status==='all'||OPEN.has(j.status))&&(!q||[j.title,j.employer,j.city,(j.skills_tags||[]).join(' '),FAM[j.role_family]].join(' ').toLowerCase().includes(q)));
+ rows.sort((a,b)=>(OPEN.has(b.status)-OPEN.has(a.status))||(b.categories.includes('urgent_apply')-a.categories.includes('urgent_apply'))||(b.match_score-a.match_score));
+ const tb=document.querySelector('#jobTable tbody');
+ if(!rows.length){tb.innerHTML=`<tr><td colspan="7" class="empty">No jobs match these filters.</td></tr>`;document.getElementById('tableNote').textContent='';return}
+ const total=rows.length;if(!state.all)rows=rows.slice(0,25);
+ tb.innerHTML=rows.map(j=>{
+  const days=daysBetween(j.first_seen,j.last_seen);
+  const radar=j.first_seen===j.last_seen?`First seen ${fmtD(j.first_seen)}`:`First seen ${fmtD(j.first_seen)}<br>Last seen ${fmtD(j.last_seen)}<br><span class="e">${j.times_seen} sightings · ${days} days</span>`;
+  const pay=j.salary_text?esc(j.salary_text):'<span class="e">not listed</span>';
+  const cats=j.categories.map(c=>`<span class="tag cat">${esc(CAT[c]||c)}</span>`).join('');
+  const main=`<tr class="job" data-id="${esc(j.id)}" tabindex="0" aria-expanded="${state.open===j.id}"><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${esc(j.title)}</div><div class="e">${esc(j.employer)}</div><div>${cats}</div></td><td>${esc(j.city)}${j.city.includes(REG[j.region])?'':`<div class="e">${esc(REG[j.region])}</div>`}</td><td>${esc([j.employment_type,j.work_mode,j.seniority].filter(Boolean).join(' · ')||'—')}</td><td>${pay}</td><td class="nowrap">${radar}</td><td><span class="st ${esc(j.status)}">${esc(j.status.replace('_',' '))}</span>${j.closing_date?`<div class="e">closes ${fmtD(j.closing_date)}</div>`:''}</td></tr>`;
+  const det=state.open===j.id?`<tr class="detail"><td colspan="7"><b>${esc(FAM[j.role_family]||j.role_family)}.</b> ${esc(j.why||'')}${j.eligibility_note?`<br><b>Eligibility:</b> ${esc(j.eligibility_note)}`:''}<br>${(j.skills_tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}<br><a href="${esc(j.url)}" target="_blank" rel="noopener">Open posting on ${esc(j.source)} →</a> <span class="e">(${esc(j.verified)}${j.posted_date?`, posted ${fmtD(j.posted_date)}`:''})</span></td></tr>`:'';
+  return main+det}).join('');
+ document.getElementById('tableNote').innerHTML=`${rows.length} of ${total} shown. Fit is a 0–100 match against your CV; ≥78 is highlighted. `+(total>rows.length?`<button type="button" class="chip" id="more">Show all ${total}</button>`:'');const mb=document.getElementById('more');if(mb)mb.onclick=()=>{state.all=true;table()};
+}
+document.querySelector('#jobTable tbody').addEventListener('click',e=>{const r=e.target.closest('tr.job');if(!r||e.target.closest('a'))return;state.open=state.open===r.dataset.id?null:r.dataset.id;table()});
+document.querySelector('#jobTable tbody').addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.job')){e.preventDefault();state.open=state.open===e.target.dataset.id?null:e.target.dataset.id;table()}});
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;table()});
+document.getElementById('statusSel').addEventListener('change',e=>{state.status=e.target.value;controls();table()});
+
+function trends(){
+ const open=D.jobs.filter(j=>OPEN.has(j.status));
+ // booming: compare first_seen in last 14 days vs prior 14, needs history
+ const last=D.meta.last_run,histDays=D.runs.length;
+ const fams=[...new Set(D.jobs.map(j=>j.role_family))];
+ let boomRows;
+ if(histDays>=14){
+  const w=(j,a,b)=>{const d=daysBetween(j.first_seen,last);return d>=a&&d<b};
+  boomRows=fams.map(f=>{const now=D.jobs.filter(j=>j.role_family===f&&w(j,0,14)).length,prev=D.jobs.filter(j=>j.role_family===f&&w(j,14,28)).length;return{f,now,prev,chg:prev?Math.round((now-prev)/prev*100):(now?100:0)}}).filter(r=>r.now+r.prev>0).sort((a,b)=>b.chg-a.chg||b.now-a.now);
+  document.getElementById('boom').innerHTML=boomRows.slice(0,7).map(r=>`<div class="boom"><span>${esc(FAM[r.f]||r.f)}</span><b class="${r.chg>0?'up':r.chg<0?'down':''}">${r.chg>0?'+':''}${r.chg}% <span class="e">(${r.now} vs ${r.prev})</span></b></div>`).join('');
+  document.getElementById('boomNote').textContent='New postings in the last 14 days vs the 14 days before.';
+ }else{
+  boomRows=fams.map(f=>{const all=open.filter(j=>j.role_family===f),hi=all.filter(j=>j.match_score>=78);return{f,n:all.length,hi:hi.length,ai:all.filter(j=>j.ai_related).length}}).sort((a,b)=>b.hi-a.hi||b.n-a.n);
+  document.getElementById('boom').innerHTML=boomRows.slice(0,7).map(r=>`<div class="boom"><span>${esc(FAM[r.f]||r.f)}</span><b>${r.hi} high-fit <span class="e">of ${r.n}</span></b></div>`).join('');
+  document.getElementById('boomNote').textContent=`Building history: ${histDays}/14 days. Until then this ranks role types by high-fit open jobs; after 14 days it switches to growth rates. External signals below show the wider market.`;
+ }
+ // mix by region
+ const famOrder=Object.keys(FAM).filter(f=>open.some(j=>j.role_family===f));
+ document.getElementById('mix').innerHTML=Object.keys(REG).map(r=>{const rs=open.filter(j=>j.region===r),n=rs.length||1;return`<div class="bar"><span>${esc(REG[r])}</span><span class="trk">${famOrder.map(f=>{const c=rs.filter(j=>j.role_family===f).length;return c?`<i title="${esc(FAM[f])}: ${c}" style="width:${c/n*100}%;background:${FAMC[f]}"></i>`:''}).join('')}</span><span class="v">${rs.length}</span></div>`}).join('');
+ document.getElementById('mixLegend').innerHTML=famOrder.map(f=>`<span><i style="background:${FAMC[f]}"></i>${esc(FAM[f])}</span>`).join('');
+ document.getElementById('aiShare').innerHTML=Object.keys(REG).map(r=>{const rs=open.filter(j=>j.region===r),a=rs.filter(j=>j.ai_related).length,p=rs.length?Math.round(a/rs.length*100):0;return`<div class="bar"><span>${esc(REG[r])}</span><span class="trk"><i style="width:${p}%;background:var(--brick)"></i></span><span class="v">${p}%</span></div>`}).join('');
+ const sk={};open.forEach(j=>(j.skills_tags||[]).forEach(t=>{const k=t.toLowerCase();sk[k]=(sk[k]||0)+1}));
+ const top=Object.entries(sk).sort((a,b)=>b[1]-a[1]).slice(0,8),mx=top[0]?.[1]||1;
+ document.getElementById('skills').innerHTML=top.map(([t,n])=>`<div class="bar"><span>${esc(t)}</span><span class="trk"><i style="width:${n/mx*100}%;background:var(--ink)"></i></span><span class="v">${n}</span></div>`).join('');
+ // pay
+ const pay=(D.market_signals||[]).filter(s=>s.mid);
+ document.querySelector('#payTable tbody').innerHTML=pay.map(s=>`<tr><td>${esc(s.market||REG[s.region])}</td><td class="num">${money(s.low)}</td><td class="num"><b>${money(s.mid)}</b></td><td class="num">${money(s.high)}</td></tr>`).join('');
+ const pp=Object.keys(REG).map(r=>{const v=open.filter(j=>j.region===r&&j.salary_min_cad&&j.salary_max_cad).map(j=>(j.salary_min_cad+j.salary_max_cad)/2).sort((a,b)=>a-b);return v.length?`${REG[r]} median ${money(v[Math.floor(v.length/2)])} (n=${v.length})`:`${REG[r]} n/a`});
+ document.getElementById('postedPay').textContent=pp.join(' · ')+'.';
+ document.querySelector('#sigTable tbody').innerHTML=(D.market_signals||[]).filter(s=>!s.mid).map(s=>`<tr><td>${esc(s.metric)} <span class="${s.direction==='up'?'up':s.direction==='down'?'down':''}">${s.direction==='up'?'▲':s.direction==='down'?'▼':'■'}</span></td><td>${esc(s.value)}</td><td>${esc(REG[s.region]||'Canada')}</td><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.source)}</a> <span class="e">${fmtD(s.date)}</span></td></tr>`).join('');
+ document.getElementById('runLegend').innerHTML=Object.keys(REG).map(r=>`<span><i style="background:${REGC[r]}"></i>${esc(REG[r])}</span>`).join('');
+}
+const s=document.getElementById('runSvg');
+function drawRuns(){
+ if(!D)return;const W=s.clientWidth,H=s.clientHeight,R=D.runs,p={l:34,r:12,t:12,b:26};
+ const mx=Math.max(5,...R.flatMap(x=>Object.values(x.active_by_region||{})));
+ const x=i=>R.length<2?p.l+(W-p.l-p.r)/2:p.l+i*(W-p.l-p.r)/(R.length-1),y=v=>H-p.b-(v/mx)*(H-p.t-p.b);
+ let g=`<line x1="${p.l}" x2="${W-p.r}" y1="${H-p.b}" y2="${H-p.b}" stroke="currentColor" opacity=".35"/>`;
+ [0,Math.round(mx/2),mx].forEach(v=>{g+=`<text x="${p.l-6}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="currentColor" opacity=".6">${v}</text>`});
+ Object.keys(REG).forEach(r=>{const pts=R.map((z,i)=>[x(i),y(z.active_by_region?.[r]||0)]);if(pts.length>1)g+=`<polyline fill="none" stroke="${REGC[r]}" stroke-width="2.5" points="${pts.map(q=>q.join(',')).join(' ')}"/>`;pts.forEach(q=>{g+=`<circle cx="${q[0]}" cy="${q[1]}" r="4" fill="${REGC[r]}"/>`})});
+ const lab=[0,R.length-1].filter((v,i,a)=>a.indexOf(v)===i);
+ lab.forEach(i=>{g+=`<text x="${x(i)}" y="${H-6}" text-anchor="${R.length<2?'middle':i?'end':'start'}" font-size="12" fill="currentColor" opacity=".6">${esc(fmtD(R[i].date))}</text>`});
+ if(R.length<2)g+=`<text x="${p.l+8}" y="${H-p.b-10}" text-anchor="start" font-size="13" fill="currentColor" opacity=".7">Line appears after the second daily run</text>`;
+ s.style.color=getComputedStyle(document.body).color;s.innerHTML=g;
+}
+const ro=new ResizeObserver(drawRuns);ro.observe(s);
+
+function report(){
+ const I=D.intel;if(!I)return;
+ document.getElementById('intelDate').textContent=`Last refreshed ${fmtD(I.updated)}. Built from the radar data, the market signals and your CV.`;
+ document.getElementById('intelHead').textContent=I.headline;
+ document.getElementById('roles').innerHTML=I.focus_roles.map(r=>`<li><h3>${esc(r.role)}</h3><div>${esc(r.why)}</div><div>${(r.titles||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></li>`).join('');
+ document.querySelector('#relTable tbody').innerHTML=I.relocation.map(r=>`<tr><td><b>${esc(r.city)}</b></td><td>${esc(r.verdict)}</td><td>${esc(r.why)}</td></tr>`).join('');
+ document.getElementById('applyNow').innerHTML=I.apply_now.map(a=>`<li>${esc(a)}</li>`).join('');
+ document.getElementById('depri').innerHTML=I.deprioritize.map(a=>`<li>${esc(a)}</li>`).join('');
+ document.getElementById('timeline').innerHTML=I.prep_plan.map(w=>`<div><h3>${esc(w.window)}</h3><ul>${w.items.map(i=>`<li>${esc(i)}</li>`).join('')}</ul></div>`).join('');
+ document.getElementById('caveats').textContent=I.caveats;
+ document.querySelector('#oppTable tbody').innerHTML=(D.opportunities||[]).map(o=>`<tr><td><b>${esc(o.name)}</b><div class="e">${esc(o.org)} · ${esc(o.where)}</div></td><td><span class="fit ${esc(String(o.fit).replace(/\s+/g,'-'))}">${esc(o.fit)}</span></td><td>${esc(o.deadline)}</td><td>${esc(o.what)}</td><td>${esc(o.action)} <a href="${esc(o.url)}" target="_blank" rel="noopener">Source →</a></td></tr>`).join('');
+ document.getElementById('foot').innerHTML=`Data: <a href="data/jobs.json">data/jobs.json</a> · schema v${esc(D.meta.schema_version)} · ${esc(D.meta.schedule)} · ${D.meta.archives?.length?'archives: '+D.meta.archives.map(a=>esc(a)).join(', '):'no archives yet'}`;
+}
+
+fetch('data/jobs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{D=d;header();controls();table();trends();drawRuns();report()}).catch(err=>{document.getElementById('sub').textContent='Could not load data/jobs.json ('+err.message+'). Open this page through GitHub Pages or a local web server, not as a file.'});
+}
+</script>
+</body>
+</html>
