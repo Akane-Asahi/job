@@ -100,7 +100,7 @@ code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius
  <p class="lede" id="sub">Loading the latest scan…</p>
  <div class="counters" id="counters"></div>
 </div></header>
-<nav class="scroll" aria-label="Sections"><a href="#jobs">Jobs</a><a href="#trends">Trends</a><a href="#report">Intelligence report</a><a href="#opportunities">Opportunities</a><a href="#about">How it updates</a></nav>
+<nav class="scroll" aria-label="Sections"><a href="#jobs">Jobs</a><a href="#side">Work while studying</a><a href="#trends">Trends</a><a href="#report">Intelligence report</a><a href="#opportunities">Opportunities</a><a href="#about">How it updates</a></nav>
 
 <main>
 <section class="band" id="jobs"><div class="wrap">
@@ -118,7 +118,17 @@ code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius
  <p class="note" id="tableNote"></p>
 </div></section>
 
-<section class="band" id="trends" style="background:var(--panel)"><div class="wrap">
+<section class="band" id="side" style="background:var(--panel)"><div class="wrap">
+ <h2>Work while studying</h2>
+ <p class="lede">Freelance, part-time, casual and flexible-contract work for cash flow during your MSc, from home or in a Regina office. Check any limit on your weekly work hours before you take something on.</p>
+ <div class="tbl"><table class="stack" id="sideTable" style="margin-top:16px">
+  <thead><tr><th class="num">Fit</th><th>Role</th><th>Hours / terms</th><th>Pay</th><th>Where</th><th>Link</th></tr></thead>
+  <tbody></tbody></table></div>
+ <h3 style="margin-top:24px">Gig sources to keep open</h3>
+ <ul class="plain" id="sideOpps"></ul>
+</div></section>
+
+<section class="band" id="trends"><div class="wrap">
  <h2>Trends</h2>
  <p class="lede" id="trendLede">Computed live from every job and daily run in <code>data/jobs.json</code>.</p>
  <div class="grid3" style="margin-top:20px">
@@ -171,7 +181,7 @@ const REG={regina:'Regina',toronto:'Toronto',alberta:'Alberta'};
 const REGC={regina:'#c8371e',toronto:'#141210',alberta:'#8a8173'};
 const FAM={ai_product_design:'AI product design',ux_product_design:'UX / product design',accessibility:'Accessibility',ux_research:'UX research',service_design:'Service design',ux_engineering:'UX engineering',ai_engineering:'AI engineering',ai_training_eval:'AI training / eval',graphic_print:'Graphic / print',web_design:'Web design',instructional_design:'Instructional design'};
 const FAMC={ai_product_design:'#c8371e',ux_product_design:'#141210',accessibility:'#2f6b3f',ux_research:'#5b7fa6',service_design:'#9a5b00',ux_engineering:'#6b4c9a',ai_engineering:'#e08b6f',ai_training_eval:'#d4a373',graphic_print:'#8a8173',web_design:'#b7b0a4',instructional_design:'#4f8f8b'};
-const CAT={most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist'};
+const CAT={most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist',side_income:'Side income'};
 const OPEN=new Set(['active','unknown','likely_closed']);
 const fmtD=d=>{if(!d)return'—';const[y,m,dd]=d.split('-');return new Date(+y,+m-1,+dd).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'})};
 const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
@@ -217,6 +227,13 @@ document.querySelector('#jobTable tbody').addEventListener('keydown',e=>{if((e.k
 document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;table()});
 document.getElementById('statusSel').addEventListener('change',e=>{state.status=e.target.value;controls();table()});
 
+function side(){
+ const rows=D.jobs.filter(j=>j.categories.includes('side_income')&&OPEN.has(j.status)).sort((a,b)=>b.match_score-a.match_score);
+ const tb=document.querySelector('#sideTable tbody');
+ tb.innerHTML=rows.length?rows.map(j=>`<tr><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${esc(j.title)}</div><div class="e">${esc(j.employer)}</div>${j.eligibility_note?`<div class="e">${esc(j.eligibility_note)}</div>`:''}</td><td>${esc(j.employment_type||'—')}</td><td>${j.salary_text?esc(j.salary_text):'<span class="e">not listed</span>'}</td><td>${esc(j.city)}</td><td><a href="${esc(j.url)}" target="_blank" rel="noopener">Open →</a><div class="e">first seen ${fmtD(j.first_seen)}</div></td></tr>`).join(''):`<tr><td colspan="6" class="empty">No open side-income roles right now.</td></tr>`;
+ const ids=['ai-training-gigs-canada','uregina-casual-pool','colabs-utp','mitacs-accelerate'];
+ document.getElementById('sideOpps').innerHTML=(D.opportunities||[]).filter(o=>ids.includes(o.id)).map(o=>`<li><b>${esc(o.name)}</b>: ${esc(o.action)} <a href="${esc(o.url)}" target="_blank" rel="noopener">Source →</a></li>`).join('');
+}
 function trends(){
  const open=D.jobs.filter(j=>OPEN.has(j.status));
  // booming: compare first_seen in last 14 days vs prior 14, needs history
@@ -278,7 +295,7 @@ function report(){
  document.getElementById('foot').innerHTML=`Data: <a href="data/jobs.json">data/jobs.json</a> · schema v${esc(D.meta.schema_version)} · ${esc(D.meta.schedule)} · ${D.meta.archives?.length?'archives: '+D.meta.archives.map(a=>esc(a)).join(', '):'no archives yet'}`;
 }
 
-fetch('data/jobs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{D=d;header();controls();table();trends();drawRuns();report()}).catch(err=>{document.getElementById('sub').textContent='Could not load data/jobs.json ('+err.message+'). Open this page through GitHub Pages or a local web server, not as a file.'});
+fetch('data/jobs.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(d=>{D=d;header();controls();table();side();trends();drawRuns();report()}).catch(err=>{document.getElementById('sub').textContent='Could not load data/jobs.json ('+err.message+'). Open this page through GitHub Pages or a local web server, not as a file.'});
 }
 </script>
 </body>

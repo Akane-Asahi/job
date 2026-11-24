@@ -3,12 +3,12 @@
   "schema_version": 1,
   "name": "Job Radar — Regina · Toronto · Alberta",
   "created": "2026-11-23",
-  "last_run": "2026-11-23",
+  "last_run": "2026-11-24",
   "timezone": "America/Regina",
   "schedule": "Daily 06:40 America/Regina",
   "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
   "regions": {
-   "regina": "Regina (plus Saskatoon / remote roles held by SK employers)",
+   "regina": "Regina (plus Saskatoon / remote roles held by SK employers); remote freelance/part-time work doable from Regina is filed here too",
    "toronto": "Toronto / GTA (plus Ontario-remote)",
    "alberta": "Calgary + Edmonton (plus Alberta-remote)"
   },
@@ -19,7 +19,8 @@
    "ai_frontier": "role designs, evaluates or builds AI products. This is the booming segment to grow into",
    "remote_canada": "can be done from Regina (remote within Canada)",
    "grad_2027_pipeline": "recurring program or cohort type to target for a Dec 2027 / Jan 2028 start",
-   "watchlist": "strong-fit employer or closed or blocked post; watch for the next opening"
+   "watchlist": "strong-fit employer or closed or blocked post; watch for the next opening",
+   "side_income": "cash-flow work doable while studying: freelance, part-time, casual, gig or flexible contract, from home or a Regina office"
   },
   "scoring": "0–100. +role-family fit (AI product / UX / accessibility / service design highest), +domain overlap (enterprise SaaS, fintech, rules engines, POS, edtech/reading, health), +seniority fit (3–9 yrs), +AI-native tooling asks, +accessibility, +remote-Canada; −engineering-only, −hard eligibility blockers, −junior/print-only.",
   "salary_note": "salary_min_cad/max_cad are annual CAD; hourly rates are annualized × 2080 h. salary_text keeps the original wording.",
@@ -94,6 +95,34 @@
     ]
    },
    "notes": "First daily pass (same day as seed): 19 added (12 open, 7 closed/stale for watchlist), 24 seed jobs re-confirmed via search; top new: AltaML Product Designer (AI, Edmonton/Calgary), AI Agent Experience Designer (Toronto), 7shifts Product Designer (Saskatoon)."
+  },
+  {
+   "date": "2026-11-24",
+   "run_type": "daily",
+   "new": 10,
+   "seen_again": 0,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 23,
+    "toronto": 35,
+    "alberta": 17
+   },
+   "new_by_region": {
+    "regina": 8,
+    "toronto": 2,
+    "alberta": 0
+   },
+   "ai_related_share_active": 0.413,
+   "coverage": {
+    "worked": [
+     "Side-income add-on scan: WebSearch (8 queries) + fetched Lever (ImageX, Apply Digital), IxDF part-time/contract listings, Workable, jobs.ca, UR Careers"
+    ],
+    "blocked_or_thin": [
+     "seedtable, wearedevelopers, Insight Global and one IxDF page returned errors",
+     "Upwork/Twine gig listings mostly stale or closed"
+    ]
+   },
+   "notes": "Side-income add-on scan (on request): freelance, part-time and contract work doable while studying; 10 added, incl. ImageX freelance UX at $75–85/h and 3 part-time remote UX contracts."
   }
  ],
  "market_signals": [
@@ -408,6 +437,32 @@
    "what": "Province-wide AI basics program aiming at 10,000 people and businesses. The course itself is basic for you; the value is AiSK membership and its Saskatchewan AI network, where you could offer to teach the UX/accessibility side.",
    "action": "Join AiSK, check whether a later intake is open, and ask about volunteering as a speaker on accessible AI design.",
    "url": "https://www.saskculture.ca/jobs-opportunities/opportunity/717"
+  },
+  {
+   "id": "ai-training-gigs-canada",
+   "name": "AI training / evaluation gig platforms (open to Canada)",
+   "org": "Mercor, Outlier, Prolific, Handshake AI, micro1, TELUS Digital, Turing, Welo Data and others",
+   "where": "Online, from home",
+   "fit": "high",
+   "type": "freelance cash flow",
+   "deadline": "Rolling",
+   "cost": "Free",
+   "what": "Paid per hour to rate, write or design tasks that train AI models. Listed Canadian roles range from about $15/hr for generalist evaluation up to $40/hr for English linguistic expert work, with higher expert/domain rates; most pay in USD. Income is self-employment (CRA form T2125); GST/HST registration is required above $30,000 over four quarters.",
+   "action": "Sign up with 2–3 platforms, choosing UX/design or English-expert tracks over generic rating. Keep the hours inside any limit that applies to you, and log income for tax.",
+   "url": "https://origindatapartners.com/guides/ai-training-jobs-canada"
+  },
+  {
+   "id": "uregina-casual-pool",
+   "name": "University of Regina casual / student research assistant roles",
+   "org": "University of Regina (UR Careers)",
+   "where": "Regina, on campus",
+   "fit": "high",
+   "type": "on-campus part-time",
+   "deadline": "Casual pool closes and is re-posted every 3 months",
+   "cost": "Free",
+   "what": "Faculties hire students for casual UI/UX, graphic/motion and research-assistant work, about 10 h/week, paid under the CUPE 2419 agreement. A UI/UX student RA role was posted in 2025.",
+   "action": "Set a UR Careers alert for 'design', 'UX', 'web' and 'research assistant', and ask your supervisor and the Media, Art & Performance faculty about upcoming RA work.",
+   "url": "https://www.uregina.ca/human-resources/career-opportunities/index.html"
   }
  ],
  "intel": {
@@ -1192,6 +1247,7 @@
    "times_seen": 1,
    "status": "closed",
    "categories": [
+    "side_income",
     "student_track"
    ],
    "match_score": 74,
@@ -2807,6 +2863,7 @@
    "status": "active",
    "categories": [
     "remote_canada",
+    "side_income",
     "student_track"
    ],
    "match_score": 74,
@@ -2894,6 +2951,7 @@
    "status": "active",
    "categories": [
     "ai_frontier",
+    "side_income",
     "student_track"
    ],
    "match_score": 70,
@@ -4025,6 +4083,470 @@
    "history": [
     {
      "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-imagex-senior-ux-ui-designer-freelance-20-h-wk",
+   "title": "Senior UX/UI Designer (Freelance, ~20 h/wk)",
+   "employer": "ImageX",
+   "region": "regina",
+   "city": "Remote (Canada) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "freelance, ~20 h/week",
+   "seniority": "senior",
+   "role_family": "ux_product_design",
+   "salary_text": "Target Hourly Rate Range: $75.00-$85.00/hour CAD",
+   "salary_min_cad": 156000,
+   "salary_max_cad": 176800,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 86,
+   "ai_related": false,
+   "skills_tags": [
+    "freelance",
+    "workshops",
+    "IA",
+    "design systems",
+    "WCAG 2.2",
+    "Figma"
+   ],
+   "why": "Part-time freelance at senior rates: workshops, IA, prototypes, design systems and WCAG 2.2. Matches his 9 years plus accessibility focus, and 20 flexible hours fit around classes.",
+   "eligibility_note": "Freelance/self-employed. Annual figure is the full-time equivalent; at ~20 h/week expect about half.",
+   "url": "https://jobs.lever.co/imagexmedia/c02dabd5-8de2-444e-ab79-95b8aa4af152",
+   "source": "Lever (ImageX)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-imagex-ux-design-consultant-freelance-20-h-wk",
+   "title": "UX Design Consultant (Freelance, ~20 h/wk)",
+   "employer": "ImageX",
+   "region": "regina",
+   "city": "Remote (Canada) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "freelance, ~20 h/week",
+   "seniority": "senior",
+   "role_family": "ux_research",
+   "salary_text": "Hourly Rate Range: $75.00-$85.00/hour CAD",
+   "salary_min_cad": 156000,
+   "salary_max_cad": 176800,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 84,
+   "ai_related": false,
+   "skills_tags": [
+    "freelance",
+    "user research",
+    "personas",
+    "IA",
+    "content audits",
+    "Optimal Workshop"
+   ],
+   "why": "Research-led freelance UX (personas, flows, IA, content audits) — uses his HCI research training; flexible hours around study.",
+   "eligibility_note": "Freelance/self-employed; annual figure is full-time equivalent.",
+   "url": "https://jobs.lever.co/imagexmedia/b79534ac-2db4-46c1-bd3e-d512224145a3",
+   "source": "Lever (ImageX)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-telehealth-company-via-ixdf-ui-ux-designer-telehealth-platform-part-ti",
+   "title": "UI/UX Designer – Telehealth Platform (Part-Time, 10-15 h/wk)",
+   "employer": "Confidential telehealth company (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada, EST hours) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "part-time contractor, 10-15 h/week",
+   "seniority": "3+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": "Competitive hourly rate based on experience",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [
+    "part-time",
+    "health",
+    "provider dashboard",
+    "design system",
+    "WCAG 2.1 AA",
+    "Figma"
+   ],
+   "why": "10-15 h/week remote: patient flows, provider dashboard and WCAG 2.1 AA — a clean fit for his dashboard/enterprise and accessibility skills while studying.",
+   "eligibility_note": "Must work Eastern-time hours (1 hour ahead of Regina in winter).",
+   "url": "https://ixdf.org/jobs/ui-ux-designer-telehealth-platform-part-time-remote-remote",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-telehealth-startup-via-ixdf-ui-ux-designer-part-time-contractor-10-20-",
+   "title": "UI/UX Designer (Part-Time Contractor, 10-20 h/wk)",
+   "employer": "Confidential telehealth startup (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "part-time contractor, 10-20 h/week",
+   "seniority": "3+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 76,
+   "ai_related": false,
+   "skills_tags": [
+    "part-time",
+    "onboarding",
+    "UX audits",
+    "design system",
+    "Figma"
+   ],
+   "why": "Part-time remote contract on onboarding, provider tools and UX audits — his QA-to-UX audit background fits.",
+   "eligibility_note": "Pay not shown. May be the same company as the telehealth part-time listing.",
+   "url": "https://ixdf.org/jobs/ui-ux-designer-part-time-contractor-remote-mebzw2",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-nonprofit-software-company-via-ixdf-senior-ux-and-product-design-consu",
+   "title": "Senior UX and Product Design Consultant (Part-time, ~15 h/wk)",
+   "employer": "Confidential nonprofit software company (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "independent contractor, ~2 days/week, 6 months+",
+   "seniority": "8+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 82,
+   "ai_related": false,
+   "skills_tags": [
+    "part-time",
+    "B2B SaaS",
+    "UX reviews",
+    "IA",
+    "mentoring"
+   ],
+   "why": "UX reviews and IA for B2B SaaS about 2 days a week for 6 months — his enterprise SaaS depth (9 yrs) meets the 8+ yr bar, and the schedule is flexible.",
+   "eligibility_note": "Posted ~2 months ago; pay not shown.",
+   "url": "https://ixdf.org/jobs/senior-ux-and-product-design-consultant-part-time-remote-7dxbup",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-brand-building-platform-via-ixdf-agentic-ux-designer-contract",
+   "title": "Agentic UX Designer – Contract",
+   "employer": "Confidential brand-building platform (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada, ET/PT hours) — workable from Regina",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": "experienced",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched",
+    "remote_canada",
+    "side_income"
+   ],
+   "match_score": 84,
+   "ai_related": true,
+   "skills_tags": [
+    "agentic UX",
+    "AI workflows",
+    "IA",
+    "rapid prototyping",
+    "usability testing"
+   ],
+   "why": "Maps legacy tools into agentic AI flows with usability testing — the exact AI-workflow design his Journey Engine and MINDS work show. Contract, remote from Canada.",
+   "eligibility_note": "Hours per week not shown; ask whether it can be part-time while studying.",
+   "url": "https://ixdf.org/jobs/agentic-ux-designer-contract-remote",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-product-studio-toronto-barcelona-via-ixdf-ux-ui-designer-open-roster-",
+   "title": "UX/UI Designer (open roster, freelance)",
+   "employer": "Confidential product studio, Toronto/Barcelona (via IxDF)",
+   "region": "toronto",
+   "city": "Remote (Canada, EST preferred)",
+   "work_mode": "remote",
+   "employment_type": "freelance, hourly, open roster",
+   "seniority": "3+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 76,
+   "ai_related": false,
+   "skills_tags": [
+    "freelance",
+    "discovery",
+    "wireframes",
+    "handoff",
+    "Figma"
+   ],
+   "why": "A roster spot means project work comes when you have time — good for cash flow between terms; his Figma and handoff experience fit.",
+   "eligibility_note": "Apply only through their linked questionnaire. Pay not shown.",
+   "url": "https://ixdf.org/jobs/ux-ui-designer-remote-open-roster-contract-opportunity-remote",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-big-viking-games-junior-2d-artist-animator-8-month-contract",
+   "title": "Junior 2D Artist/Animator (8-month contract)",
+   "employer": "Big Viking Games",
+   "region": "toronto",
+   "city": "Remote (Ontario only)",
+   "work_mode": "remote",
+   "employment_type": "contract, 8 months, self-employed",
+   "seniority": "3+ yrs 2D game art",
+   "role_family": "graphic_print",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-02-25",
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "side_income",
+    "watchlist"
+   ],
+   "match_score": 50,
+   "ai_related": true,
+   "skills_tags": [
+    "2D animation",
+    "Adobe Animate",
+    "Illustrator",
+    "MidJourney"
+   ],
+   "why": "Uses his VFX/motion background, but it's game art rather than UX.",
+   "eligibility_note": "Contractors must live in Ontario, so not workable from Regina. Posted Feb 2026, likely stale.",
+   "url": "https://apply.workable.com/big-viking-games-3/jobs/view/5A8863E4DF",
+   "source": "Workable",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-apply-digital-accessibility-product-consultant",
+   "title": "Accessibility Product Consultant",
+   "employer": "Apply Digital",
+   "region": "regina",
+   "city": "Remote (Canada/US, Pacific hours)",
+   "work_mode": "remote",
+   "employment_type": "full-time permanent",
+   "seniority": "3+ yrs PM/QA, 1-2 yrs accessibility",
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [
+    "WCAG 2.1",
+    "audits",
+    "assistive technology",
+    "axe",
+    "test cases"
+   ],
+   "why": "Accessibility audits and test cases bridge his Software QA years and his accessibility research. Remote from Canada.",
+   "eligibility_note": "Full-time on Pacific hours, so a Jan 2028 target rather than a study-time job.",
+   "url": "https://jobs.lever.co/applydigital/da3983e1-1f69-450e-837f-10ee70e5570c",
+   "source": "Lever (Apply Digital)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-university-of-regina-faculty-of-media-art-and-performance-student-research-assistan",
+   "title": "Student Research Assistant – UI/UX Designer (casual, up to 120 h)",
+   "employer": "University of Regina (Faculty of Media, Art, and Performance)",
+   "region": "regina",
+   "city": "Regina, SK (on campus)",
+   "work_mode": null,
+   "employment_type": "casual, ~10 h/week, 12 weeks",
+   "seniority": null,
+   "role_family": "ux_product_design",
+   "salary_text": "As per CUPE 2419 Collective Agreement",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2025-05-28",
+   "closing_date": "2025-06-04",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "side_income",
+    "student_track",
+    "watchlist"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "on-campus",
+    "website + app UI",
+    "usability testing",
+    "Figma"
+   ],
+   "why": "On-campus casual UX work is the easiest student-time fit; this one closed, but U of R faculties post similar roles each term — watch UR Careers.",
+   "eligibility_note": "Closed 2025-06-04.",
+   "url": "https://www.jobs.ca/job/c0a94548-8b71-43e0-bbe0-898795055223",
+   "source": "jobs.ca (UR Careers)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
     }

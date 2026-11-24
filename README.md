@@ -22,6 +22,7 @@ To view it locally: `python3 -m http.server` in this folder, then open http://lo
 | `ai_frontier` | designs, evaluates or builds AI products |
 | `remote_canada` | can be done from Regina |
 | `grad_2027_pipeline` | recurring program or cohort to target for a Dec 2027 / Jan 2028 start |
+| `side_income` | cash-flow work while studying: freelance, part-time, casual, gig or flexible contract, from home or a Regina office |
 | `watchlist` | strong-fit employer, or a closed/blocked post; watch for the next one |
 
 ## Daily run (what the scheduled task does)
