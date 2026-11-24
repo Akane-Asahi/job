@@ -28,6 +28,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data", "jobs.json")
 REGIONS = ("regina", "toronto", "alberta")
 OPEN = {"active", "unknown", "likely_closed"}
+# links that are job-board SEARCH pages, not a posting; these are rejected
+SEARCH_URL = re.compile(r"indeed\.com/(q-|[A-Za-z-]+-jobs)|glassdoor\.[a-z.]+/Job/.*SRCH|ziprecruiter\.com/Jobs/|linkedin\.com/jobs/[a-z-]+-jobs|talent\.com/jobs/k-|roberthalf\.com/ca/en/(jobs/|job-details/)|jobbank\.gc\.ca/marketreport", re.I)
 MAX_BYTES, MAX_JOBS, ARCHIVE_AFTER_DAYS = 1_500_000, 2500, 120
 
 def norm(s):
@@ -66,6 +68,8 @@ def main():
     touched = set()
     for c in cands:
         missing = [k for k in ("title", "employer", "region", "url") if not c.get(k)]
+        if c.get("url") and SEARCH_URL.search(c["url"]):
+            print("skip (search page, not a posting):", c.get("title"), c["url"], file=sys.stderr); continue
         if missing or c["region"] not in REGIONS:
             print("skip (bad record):", c.get("title"), missing, file=sys.stderr); continue
         hit = by_url.get(c["url"]) or by_key.get(key(c))

@@ -105,7 +105,7 @@ code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius
 <main>
 <section class="band" id="jobs"><div class="wrap">
  <h2>The ledger</h2>
- <p class="lede">Every job that has crossed the radar, with the date first seen and the latest sighting. Tap a row for why it fits and any eligibility notes.</p>
+ <p class="lede">Every job that has crossed the radar, with the date first seen and the latest sighting. Tap a row for why it fits and any eligibility notes. Pick several categories to combine them.</p>
  <div class="controls">
   <div class="seg" role="group" aria-label="Region" id="regionSeg"></div>
   <input type="search" id="q" placeholder="Search title, employer, skill…" aria-label="Search jobs">
@@ -186,7 +186,8 @@ const OPEN=new Set(['active','unknown','likely_closed']);
 const fmtD=d=>{if(!d)return'—';const[y,m,dd]=d.split('-');return new Date(+y,+m-1,+dd).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'})};
 const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
 const money=n=>n==null?'':'$'+Math.round(n/1000)+'k';
-let D=null,state={region:'all',cat:'all',q:'',status:'open',open:null,all:false};
+let D=null,state={region:'all',cats:new Set(),mode:'all',q:'',status:'open',open:null,all:false};
+const catOk=j=>!state.cats.size||(state.mode==='all'?[...state.cats].every(c=>j.categories.includes(c)):[...state.cats].some(c=>j.categories.includes(c)));
 try{const h=location.hash.replace('#','');if(REG[h])state.region=h}catch(e){}
 
 function header(){
@@ -202,12 +203,14 @@ function controls(){
  seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.region=b.dataset.r;try{history.replaceState(null,'',state.region==='all'?'#jobs':'#'+state.region)}catch(_){}controls();table()};
  const chips=document.getElementById('catChips');
  const pool=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&(state.status==='all'||OPEN.has(j.status)));
- chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>j.categories.includes(k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${state.cat===k}">${esc(l)} <span>${n}</span></button>`).join('');
- chips.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.cat=b.dataset.c;controls();table()};
+ chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>j.categories.includes(k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${k==='all'?!state.cats.size:state.cats.has(k)}">${esc(l)} <span>${n}</span></button>`).join('')
+  +(state.cats.size>1?`<span class="seg" role="group" aria-label="Combine categories"><button type="button" data-m="all" aria-pressed="${state.mode==='all'}">Match all</button><button type="button" data-m="any" aria-pressed="${state.mode==='any'}">Match any</button></span>`:'')
+  +(state.cats.size?`<span class="note">${state.cats.size} selected · tap a chip again to remove it</span>`:'');
+ chips.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.m){state.mode=b.dataset.m}else if(b.dataset.c==='all'){state.cats.clear()}else{const c=b.dataset.c;state.cats.has(c)?state.cats.delete(c):state.cats.add(c)}state.all=false;controls();table()};
 }
 function table(){
  const q=state.q.toLowerCase();
- let rows=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&(state.cat==='all'||j.categories.includes(state.cat))&&(state.status==='all'||OPEN.has(j.status))&&(!q||[j.title,j.employer,j.city,(j.skills_tags||[]).join(' '),FAM[j.role_family]].join(' ').toLowerCase().includes(q)));
+ let rows=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&catOk(j)&&(state.status==='all'||OPEN.has(j.status))&&(!q||[j.title,j.employer,j.city,(j.skills_tags||[]).join(' '),FAM[j.role_family]].join(' ').toLowerCase().includes(q)));
  rows.sort((a,b)=>(OPEN.has(b.status)-OPEN.has(a.status))||(b.categories.includes('urgent_apply')-a.categories.includes('urgent_apply'))||(b.match_score-a.match_score));
  const tb=document.querySelector('#jobTable tbody');
  if(!rows.length){tb.innerHTML=`<tr><td colspan="7" class="empty">No jobs match these filters.</td></tr>`;document.getElementById('tableNote').textContent='';return}

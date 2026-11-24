@@ -103,9 +103,9 @@
    "seen_again": 0,
    "closed_today": 0,
    "active_by_region": {
-    "regina": 23,
-    "toronto": 35,
-    "alberta": 17
+    "regina": 21,
+    "toronto": 31,
+    "alberta": 14
    },
    "new_by_region": {
     "regina": 8,
@@ -122,7 +122,7 @@
      "Upwork/Twine gig listings mostly stale or closed"
     ]
    },
-   "notes": "Side-income add-on scan (on request): freelance, part-time and contract work doable while studying; 10 added, incl. ImageX freelance UX at $75–85/h and 3 part-time remote UX contracts."
+   "notes": "Side-income add-on scan (on request): freelance, part-time and contract work doable while studying; 10 added, incl. ImageX freelance UX at $75–85/h and 3 part-time remote UX contracts. Link check of all open jobs: 10 closed (incl. Scotiabank and Wealthsimple interns, Kobo, Visionpool), 13 search-page links replaced with direct postings, 6 unreachable marked unknown."
   }
  ],
  "market_signals": [
@@ -577,11 +577,10 @@
   "apply_now": [
    "Robots & Pencils — UX Designer, AI Experiences (Calgary, remote-friendly)",
    "AltaML — Product Designer, enterprise AI (Edmonton/Calgary, hybrid)",
-   "Rakuten Kobo — Accessibility Specialist, 6-month contract (Toronto)",
    "AI Agent Experience Designer (Toronto, remote in region)",
-   "Visionpool — UX Designer (remote, Regina)",
    "zu — Design Strategist (Saskatoon agency, remote): ask about part-time/contract",
-   "Wagepoint — Staff UX Designer (Calgary)"
+   "Wagepoint — Staff UX Designer (Calgary)",
+   "ImageX — freelance Senior UX/UI Designer, ~20 h/week, $75–85/h (remote Canada)"
   ],
   "caveats": "Rankings come from the seed scan plus one daily pass, so treat them as directional until 30+ days of data build up. Job-board snippets can be stale; open the link before applying. This is not immigration or legal advice."
  },
@@ -604,10 +603,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
-    "most_matched",
-    "remote_canada"
+    "remote_canada",
+    "watchlist"
    ],
    "match_score": 88,
    "ai_related": false,
@@ -617,7 +616,7 @@
     "5+ yrs UX"
    ],
    "why": "Asks for 5+ years of UX, ideally financial or enterprise software — a direct match for the Annex Cloud reward/tier engine and the POS/procurement work. Remote within Canada.",
-   "eligibility_note": "",
+   "eligibility_note": "CareerBeacon: position no longer available.",
    "url": "https://www.careerbeacon.com/fr/emplois-9/2128939/900123716/ux-designer",
    "source": "CareerBeacon",
    "verified": "search-snippet",
@@ -631,6 +630,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: CareerBeacon: position no longer available"
     }
    ]
   },
@@ -650,7 +654,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -675,6 +679,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -696,10 +705,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
-    "most_matched",
-    "remote_canada"
+    "remote_canada",
+    "watchlist"
    ],
    "match_score": 82,
    "ai_related": false,
@@ -709,7 +718,7 @@
     "contract"
    ],
    "why": "Design + front-end hybrid on contract for a Regina client — uses both your Figma and React/HTML/CSS skills.",
-   "eligibility_note": "",
+   "eligibility_note": "Application closing date was 2024-12-28.",
    "url": "https://bcjobs.ca/jobs/ui-designer-developer-canada-1545535",
    "source": "BCjobs",
    "verified": "search-snippet",
@@ -723,6 +732,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Application closing date was 2024-12-28"
     }
    ]
   },
@@ -742,7 +756,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -752,10 +766,10 @@
    "ai_related": false,
    "skills_tags": [],
    "why": "Experienced UX contract, hybrid (max 2 WFH days). Staffing-agency contracts like this are the main way Regina's Crown/government clients buy UX.",
-   "eligibility_note": "",
+   "eligibility_note": " Contract runs Jul 2025–Mar 2027, so the post may be stale.",
    "url": "https://www.careerbeacon.com/en/job-9/2052411/900127273/user-experience-consultant",
    "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -766,6 +780,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -779,13 +798,13 @@
    "employment_type": "contract",
    "seniority": null,
    "role_family": "ux_research",
-   "salary_text": null,
-   "salary_min_cad": null,
-   "salary_max_cad": null,
+   "salary_text": "CAD 60–80K",
+   "salary_min_cad": 60000,
+   "salary_max_cad": 80000,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -800,14 +819,19 @@
    ],
    "why": "2-year onsite UX specialist contract; mandatory prior UX lead experience, which you have.",
    "eligibility_note": "Nuclear-sector clients often require security screening; check citizenship/clearance terms before applying.",
-   "url": "https://careerbeacon.com/en/job-9/1943036/freshco/grocery-clerk",
-   "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "url": "https://jobleads.com/ca/job/usability-user-experience-specialist--regina--e770da6dc167ffcc581686e85586a5e40",
+   "source": "JobLeads",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -827,7 +851,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -844,7 +868,7 @@
    "eligibility_note": "",
    "url": "https://www.careerbeacon.com/en/job-12/1972167/outwitly-inc/senior-user-experience-designer",
    "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -855,6 +879,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -874,7 +903,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -891,7 +920,7 @@
    "eligibility_note": "Full-time onsite; only workable during studies if they accept part-time hours.",
    "url": "https://www.careerbeacon.com/en/job-12/2014925/bravo-tango/graphic-interactive-designer",
    "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -902,6 +931,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -921,7 +955,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -937,12 +971,17 @@
    "eligibility_note": "",
    "url": "https://caask.ca/node/663",
    "source": "CAA SK careers",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -962,7 +1001,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -976,12 +1015,17 @@
    "eligibility_note": "Posting requires living in Saskatchewan.",
    "url": "https://www.jobleads.com/ca/job/artificial-intelligence-engineer--regina--ea28273d1e8a0136e989c21ce0a7bb1e5",
    "source": "JobLeads",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1001,7 +1045,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1019,12 +1063,17 @@
    "eligibility_note": "",
    "url": "https://expertini.work/result/work-senior-microsoft-ai-developer-rq02101-regina-si-systems-6d0cb5ce0d71-canada/",
    "source": "Expertini",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1046,7 +1095,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
     "ai_frontier",
     "watchlist"
@@ -1055,7 +1104,7 @@
    "ai_related": true,
    "skills_tags": [],
    "why": "Crown corporation building an AI function. Worth tracking for AI-product/UX roles that follow.",
-   "eligibility_note": "",
+   "eligibility_note": "Closing date May 12, 2026 (posting was SaskEnergy).",
    "url": "https://www.jobs.ca/job/2e641f6f-93ae-4173-8632-42f37344f1f8",
    "source": "Jobs.ca",
    "verified": "search-snippet",
@@ -1064,6 +1113,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Closing date May 12, 2026 (posting was SaskEnergy)"
     }
    ]
   },
@@ -1085,7 +1139,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "ai_frontier",
     "watchlist"
@@ -1096,7 +1150,7 @@
     "agentic applications"
    ],
    "why": "Agentic AI apps in an AI & Automation group; engineering-first.",
-   "eligibility_note": "",
+   "eligibility_note": "Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://wellfound.com/jobs/4789760-ai-developer",
    "source": "Wellfound",
    "verified": "search-snippet",
@@ -1105,6 +1159,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -1166,9 +1225,9 @@
    "posted_date": "2026-08-05",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
-   "status": "likely_closed",
+   "status": "active",
    "categories": [
     "watchlist"
    ],
@@ -1179,12 +1238,17 @@
    "eligibility_note": "",
    "url": "https://designproject.io/jobs/graphic-designer-at-sgi-q0zm5t",
    "source": "DesignProject",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1286,7 +1350,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1304,7 +1368,7 @@
    "eligibility_note": "",
    "url": "https://employmenthero.com/en-ca/jobs/position/careerbeacon-demo-ai-product-designer-j084b/",
    "source": "Employment Hero / CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1315,6 +1379,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1336,7 +1405,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "ai_frontier",
     "most_matched"
@@ -1350,7 +1419,7 @@
     "Cursor"
    ],
    "why": "Owns the moments where users evaluate AI suggestions. That is your Bookkeeper AI human-in-the-loop project and your MINDS thesis scaffold. Expects Claude Code/Cursor prototyping.",
-   "eligibility_note": "",
+   "eligibility_note": "Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://ixdf.org/jobs/senior-product-designer-ai-experience-toronto",
    "source": "IxDF jobs",
    "verified": "search-snippet",
@@ -1364,6 +1433,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -1385,10 +1459,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
-    "most_matched",
-    "student_track"
+    "student_track",
+    "watchlist"
    ],
    "match_score": 86,
    "ai_related": false,
@@ -1399,7 +1473,7 @@
     "reading experiences"
    ],
    "why": "Accessible reading experiences at an e-reader company, and your thesis is search interfaces for readers with dyslexia. Few candidates will match this well.",
-   "eligibility_note": "",
+   "eligibility_note": "Built In: removed Dec 10, 2025.",
    "url": "https://builtintoronto.com/job/accessibility-specialist-6-month-contract/7457676",
    "source": "Built In Toronto",
    "verified": "search-snippet",
@@ -1413,6 +1487,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Built In: removed Dec 10, 2025"
     }
    ]
   },
@@ -1432,7 +1511,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1449,7 +1528,7 @@
    "eligibility_note": "",
    "url": "https://wellfound.com/jobs/4621787-ai-product-designer",
    "source": "Wellfound",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1460,6 +1539,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1479,7 +1563,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1497,7 +1581,7 @@
    "eligibility_note": "",
    "url": "https://www.careerbeacon.com/en/job-4/3606640/axl/product-design-at-axl",
    "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1508,6 +1592,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1517,17 +1606,17 @@
    "employer": "ISG Search Inc",
    "region": "toronto",
    "city": "Toronto, ON",
-   "work_mode": null,
+   "work_mode": "hybrid (3 days downtown)",
    "employment_type": null,
    "seniority": "senior (7+ yrs)",
    "role_family": "ux_product_design",
-   "salary_text": null,
-   "salary_min_cad": null,
-   "salary_max_cad": null,
+   "salary_text": "CAD 80–100K",
+   "salary_min_cad": 80000,
+   "salary_max_cad": 100000,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1541,14 +1630,19 @@
    ],
    "why": "7+ years on complex digital services and enterprise platforms — fits your 9-year record.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/q-ui-ux-designer-l-ontario-jobs.html",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://www.jobleads.com/ca/job/senior-ux-designer--greater-toronto-area--ee8150273275ef9852967d3592aa22dcc",
+   "source": "JobLeads",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -1568,7 +1662,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1587,7 +1681,7 @@
    "eligibility_note": "",
    "url": "https://wellfound.com/jobs/5077374-product-designer",
    "source": "Wellfound",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1598,6 +1692,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1617,7 +1716,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1635,7 +1734,7 @@
    "eligibility_note": "",
    "url": "https://www.careerbeacon.com/en/job-9/2234504/tali-ai/senior-product-designer",
    "source": "CareerBeacon",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1646,6 +1745,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1665,7 +1769,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1682,7 +1786,7 @@
    "eligibility_note": "",
    "url": "https://ixdf.org/jobs/senior-product-designer-ai-toronto",
    "source": "IxDF jobs",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1693,6 +1797,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1712,7 +1821,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1730,7 +1839,7 @@
    "eligibility_note": "",
    "url": "https://ats.rippling.com/ai-stealth-startup/jobs/abbe4390-3291-43a3-8355-0197e3307e34",
    "source": "Rippling ATS",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1741,6 +1850,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1762,10 +1876,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
     "ai_frontier",
-    "most_matched"
+    "watchlist"
    ],
    "match_score": 78,
    "ai_related": true,
@@ -1773,7 +1887,7 @@
     "developer AI product"
    ],
    "why": "End-to-end UX for a new developer-facing AI product.",
-   "eligibility_note": "",
+   "eligibility_note": "Built In: removed Feb 19, 2025.",
    "url": "https://builtin.com/job/lead-product-designer/3666211",
    "source": "Built In",
    "verified": "search-snippet",
@@ -1782,6 +1896,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Built In: removed Feb 19, 2025"
     }
    ]
   },
@@ -1795,13 +1914,13 @@
    "employment_type": "contract (T4)",
    "seniority": null,
    "role_family": "accessibility",
-   "salary_text": "C$44–48/hr",
+   "salary_text": "C$44-48/hr",
    "salary_min_cad": 91520,
    "salary_max_cad": 99840,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1817,12 +1936,17 @@
    "eligibility_note": "",
    "url": "https://aquent.com/find-work/198308",
    "source": "Aquent",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1842,7 +1966,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1860,7 +1984,7 @@
    "eligibility_note": "",
    "url": "https://arc.dev/remote-jobs/j/dexian-product-designer-p35dxbyycl",
    "source": "Arc.dev",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1871,6 +1995,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1890,7 +2019,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1907,7 +2036,7 @@
    "eligibility_note": "",
    "url": "https://www.jobillico.com/en/job-offer/si-systemsiJxzWu/ux-accessibility-consultant-to-ensure-our-employee-facing-platforms-and-applications-are-universally-accessible-for-employees-92577-1/16216381",
    "source": "Jobillico",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -1918,6 +2047,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1937,7 +2071,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [],
@@ -1951,12 +2085,17 @@
    "eligibility_note": "",
    "url": "https://www.tealhq.com/job/digital-accessibility-specialist_7ea1a360a6a61f58794042881d8d4fe89aea8",
    "source": "Teal",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -1976,7 +2115,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -1992,7 +2131,7 @@
    "eligibility_note": "",
    "url": "https://ixdf.org/jobs/senior-designer-ai-product-experience-toronto",
    "source": "IxDF jobs",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -2003,6 +2142,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2024,7 +2168,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [],
    "match_score": 74,
    "ai_related": true,
@@ -2032,7 +2176,7 @@
     "AI-powered design/research tools"
    ],
    "why": "",
-   "eligibility_note": "Posting states visa sponsorship not available.",
+   "eligibility_note": "Posting states visa sponsorship not available. Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://wellfound.com/jobs/4617677-product-designer",
    "source": "Wellfound",
    "verified": "search-snippet",
@@ -2046,6 +2190,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -2065,7 +2214,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2082,7 +2231,7 @@
    "eligibility_note": "",
    "url": "https://jobs.lever.co/cohere/ba34b532-a5be-463a-b3ac-a884214918fa",
    "source": "Lever",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -2093,6 +2242,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2121,8 +2275,8 @@
    "skills_tags": [],
    "why": "",
    "eligibility_note": "",
-   "url": "https://www.glassdoor.ca/Job/toronto-ui-ux-designer-jobs-SRCH_IL.0,7_IC2281069_KO8,22.htm",
-   "source": "Glassdoor",
+   "url": "https://builtintoronto.com/job/ui-ux-designer/11205315",
+   "source": "Built In Toronto",
    "verified": "search-snippet",
    "history": [
     {
@@ -2138,7 +2292,7 @@
    "employer": "Photon",
    "region": "toronto",
    "city": "Toronto, ON",
-   "work_mode": null,
+   "work_mode": "onsite",
    "employment_type": null,
    "seniority": null,
    "role_family": "ux_product_design",
@@ -2148,7 +2302,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [],
@@ -2159,14 +2313,19 @@
    ],
    "why": "",
    "eligibility_note": "",
-   "url": "https://www.glassdoor.ca/Job/toronto-junior-ux-designer-jobs-SRCH_IL.0,7_IC2281069_KO8,26.htm",
-   "source": "Glassdoor",
-   "verified": "search-snippet",
+   "url": "https://builtintoronto.com/job/ui-ux-designer-toronto-canada/9914441",
+   "source": "Built In Toronto",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2188,7 +2347,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "remote_canada"
    ],
@@ -2199,7 +2358,7 @@
     "disability inclusion"
    ],
    "why": "Accessibility research company. Junior level, but its focus on users with disabilities is a strong match for your thesis.",
-   "eligibility_note": "Applicants must be located in Ontario (GTA preferred).",
+   "eligibility_note": "Applicants must be located in Ontario (GTA preferred). Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://apply.workable.com/fable-1/jobs/view/7AF246B78C.md",
    "source": "Workable",
    "verified": "search-snippet",
@@ -2213,6 +2372,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -2226,13 +2390,13 @@
    "employment_type": "contract (135 business days)",
    "seniority": null,
    "role_family": "ux_product_design",
-   "salary_text": "CA$55.13–59.06/hr",
-   "salary_min_cad": 114670,
+   "salary_text": "Incorporated $55.13–59.06/hr; T4 $44.10–47.25/hr",
+   "salary_min_cad": 91728,
    "salary_max_cad": 122845,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [],
@@ -2241,14 +2405,19 @@
    "skills_tags": [],
    "why": "Ontario Public Service contract with a high hourly rate. Signal: OPS buys UX through vendor-of-record requisitions (RQ numbers).",
    "eligibility_note": "",
-   "url": "https://www.ziprecruiter.com/Jobs/Junior-Ux-Ui-Designer/-in-Toronto,ON",
-   "source": "ZipRecruiter",
-   "verified": "search-snippet",
+   "url": "https://careers-page.com/source-code/job/W393R8X9",
+   "source": "Source Code (careers-page.com)",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2258,17 +2427,17 @@
    "employer": "Lyft",
    "region": "toronto",
    "city": "Toronto, ON",
-   "work_mode": null,
+   "work_mode": "hybrid (3 days)",
    "employment_type": "internship",
    "seniority": null,
    "role_family": "ux_research",
-   "salary_text": "$40–$48/hr",
-   "salary_min_cad": null,
-   "salary_max_cad": null,
-   "posted_date": null,
+   "salary_text": "CAD $40–48/hr",
+   "salary_min_cad": 83200,
+   "salary_max_cad": 99840,
+   "posted_date": "2026-09-11",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2284,14 +2453,19 @@
    ],
    "why": "Research internship in summer 2027, right before your final term.",
    "eligibility_note": "Full-time internship: confirm summer is a scheduled break in your program, or whether co-op authorization applies.",
-   "url": "https://ca.indeed.com/Ux-Design-Internship-jobs",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://designproject.io/jobs/ux-research-intern-2027-at-lyft-dqx4v9",
+   "source": "designproject.io",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2313,16 +2487,16 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
     "student_track",
-    "urgent_apply"
+    "watchlist"
    ],
    "match_score": 74,
    "ai_related": false,
    "skills_tags": [],
    "why": "Open to co-op students, non-co-op students and recent grads. A Winter 2027 start means it closes soon.",
-   "eligibility_note": "An 8-month full-time term would interrupt your thesis term. Only consider it if your program allows a work term.",
+   "eligibility_note": "4dayweek.io: 'This job is no longer listed' (reported by Telot). An 8-month full-time term would interrupt your thesis term. Only consider it if your program allows a work term.",
    "url": "https://4dayweek.io/job/design-intern-winter-2027-at-wealthsimple-c1411374",
    "source": "4dayweek.io",
    "verified": "search-snippet",
@@ -2331,6 +2505,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: 4dayweek.io: 'This job is no longer listed' (reported by Telot)"
     }
    ]
   },
@@ -2352,16 +2531,16 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
     "student_track",
-    "urgent_apply"
+    "watchlist"
    ],
    "match_score": 70,
    "ai_related": false,
    "skills_tags": [],
    "why": "No resume required for student programs. Careers site down Nov 28 (maintenance).",
-   "eligibility_note": "Co-op/internship eligibility rules apply.",
+   "eligibility_note": "Employer page: 'not accepting any further applicants' (reported by Telot). Co-op/internship eligibility rules apply.",
    "url": "https://jobs.scotiabank.com/job/Toronto-Canadian-Banking-UXProduct-Design-InternshipCo-op-Winter-2027-ON/605559117/",
    "source": "Scotiabank careers",
    "verified": "search-snippet",
@@ -2370,6 +2549,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Employer page: 'not accepting any further applicants' (reported by Telot)"
     }
    ]
   },
@@ -2389,7 +2573,7 @@
    "posted_date": "2026-10-04",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2405,12 +2589,17 @@
    "eligibility_note": "",
    "url": "https://designproject.io/jobs/winter-co-op-2027-product-designer-at-manulife-f60nry",
    "source": "DesignProject",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2432,7 +2621,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "grad_2027_pipeline",
     "student_track"
@@ -2441,7 +2630,7 @@
    "ai_related": false,
    "skills_tags": [],
    "why": "Summer 2027 slot, timed well for a pre-graduation internship.",
-   "eligibility_note": "",
+   "eligibility_note": "Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://www.iagora.com/work/fr/offre/stage-canada-creation/6378589",
    "source": "iAgora",
    "verified": "search-snippet",
@@ -2450,6 +2639,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -2469,7 +2663,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2482,7 +2676,7 @@
    "eligibility_note": "",
    "url": "https://www.ontario.ca/page/experience-design-co-op",
    "source": "Ontario.ca",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -2493,6 +2687,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2509,10 +2708,10 @@
    "salary_text": null,
    "salary_min_cad": null,
    "salary_max_cad": null,
-   "posted_date": null,
+   "posted_date": "2026-11-04",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2524,14 +2723,19 @@
    "skills_tags": [],
    "why": "AI feature-building co-op; engineering-weighted.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/Design-Internship-jobs-in-Toronto,-ON",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://www.iagora.com/work/en/offer/internship-canada-it/6547974",
+   "source": "iAgora",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2551,7 +2755,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2584,6 +2788,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2593,7 +2802,7 @@
    "employer": "Wagepoint",
    "region": "alberta",
    "city": "Calgary, AB",
-   "work_mode": null,
+   "work_mode": "remote",
    "employment_type": "permanent",
    "seniority": "staff",
    "role_family": "ux_product_design",
@@ -2603,7 +2812,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2618,14 +2827,19 @@
    ],
    "why": "Payroll SaaS: rules-heavy financial configuration, the same skills as the Reward/Tier engine work.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/Ux-Designer-jobs-in-Alberta",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://www.builtinseattle.com/job/staff-ux-designer/11218242",
+   "source": "Built In",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2635,17 +2849,17 @@
    "employer": "CGI",
    "region": "alberta",
    "city": "Edmonton, AB",
-   "work_mode": null,
+   "work_mode": "hybrid",
    "employment_type": "full-time",
    "seniority": null,
    "role_family": "ux_product_design",
-   "salary_text": "$70,000–$140,000",
+   "salary_text": "$70–140K",
    "salary_min_cad": 70000,
    "salary_max_cad": 140000,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2661,14 +2875,19 @@
    ],
    "why": "Broad salary band; accessibility and research-to-prototype lifecycle listed.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/q-ui-ux-designer-l-alberta-jobs.html",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://wellfound.com/jobs/4732255-ux-ui-designer",
+   "source": "Wellfound",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2688,7 +2907,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2702,7 +2921,7 @@
    "eligibility_note": "",
    "url": "https://emergitel.catsone.com/careers/7701-General/jobs/16799982",
    "source": "Emergitel",
-   "verified": "search-snippet",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
@@ -2713,6 +2932,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: posting page loads, no closed notice"
     }
    ]
   },
@@ -2722,17 +2946,17 @@
    "employer": "Vantix Systems (Government client)",
    "region": "alberta",
    "city": "Edmonton, AB",
-   "work_mode": null,
+   "work_mode": "onsite",
    "employment_type": null,
    "seniority": null,
    "role_family": "service_design",
-   "salary_text": null,
-   "salary_min_cad": null,
-   "salary_max_cad": null,
+   "salary_text": "CAD 70–100K",
+   "salary_min_cad": 70000,
+   "salary_max_cad": 100000,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2747,14 +2971,19 @@
    ],
    "why": "Bulk hire of 23 service designers for government digital transformation. A volume opening like this means less competition per seat.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/Ui-Ux-Designer-jobs-in-Alberta",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://www.jobleads.com/ca/job/service-designer-23--edmonton--eaaa1581e06f7d276da523502a2de075d",
+   "source": "JobLeads",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2771,10 +3000,10 @@
    "salary_text": null,
    "salary_min_cad": null,
    "salary_max_cad": null,
-   "posted_date": null,
+   "posted_date": "2026-09-10",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2789,14 +3018,19 @@
    ],
    "why": "Remote fintech UI/UX from a Calgary company.",
    "eligibility_note": "",
-   "url": "https://ca.talent.com/jobs/k-user-interface-designer-l-calgary-ab",
-   "source": "Talent.com",
-   "verified": "search-snippet",
+   "url": "https://apply.workable.com/ndax/jobs/view/0291273BF7",
+   "source": "Workable (NDAX)",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2806,17 +3040,17 @@
    "employer": "Jobber",
    "region": "alberta",
    "city": "Edmonton, AB",
-   "work_mode": null,
+   "work_mode": "remote (Canada)",
    "employment_type": null,
    "seniority": "staff",
    "role_family": "ux_product_design",
-   "salary_text": "CA$169K–229K",
-   "salary_min_cad": 169000,
-   "salary_max_cad": 229000,
+   "salary_text": "Base $145.9K–197.4K",
+   "salary_min_cad": 145900,
+   "salary_max_cad": 197400,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2831,14 +3065,19 @@
    ],
    "why": "Stretch level, but Jobber is Edmonton's design anchor. Watch for intermediate/senior openings.",
    "eligibility_note": "",
-   "url": "https://www.glassdoor.com/Job/alberta-ui-ux-designer-jobs-SRCH_IL.0,7_IS4074_KO8,22.htm",
-   "source": "Glassdoor",
-   "verified": "search-snippet",
+   "url": "https://job-boards.greenhouse.io/jobber/jobs/7897761002",
+   "source": "Greenhouse (Jobber)",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2860,7 +3099,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "remote_canada",
     "side_income",
@@ -2872,7 +3111,7 @@
     "website strategy"
    ],
    "why": "Remote contract. Flexible hours may fit around study.",
-   "eligibility_note": "",
+   "eligibility_note": "Link check failed on 2026-11-24 (site blocks automated checks); open it yourself before applying.",
    "url": "https://apply.workable.com/kanopi/jobs/view/D65D38F18B.md",
    "source": "Workable",
    "verified": "search-snippet",
@@ -2886,6 +3125,11 @@
      "date": "2026-11-23",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "link_check_failed",
+     "note": "site returned an error to the checker"
     }
    ]
   },
@@ -2895,7 +3139,7 @@
    "employer": "Pack.com",
    "region": "alberta",
    "city": "Alberta (remote, Canada)",
-   "work_mode": null,
+   "work_mode": "remote",
    "employment_type": "full-time",
    "seniority": null,
    "role_family": "ux_product_design",
@@ -2905,7 +3149,7 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "times_seen": 1,
    "status": "active",
    "categories": [
@@ -2919,14 +3163,19 @@
    ],
    "why": "Visual/UI-heavy founding role.",
    "eligibility_note": "",
-   "url": "https://ca.indeed.com/Ui-Ux-Designer-jobs-in-Alberta",
-   "source": "Indeed",
-   "verified": "search-snippet",
+   "url": "https://jobs.workable.com/jobs/454b1e8f-6cd4-413f-82ce-26a2fab1b15f",
+   "source": "Workable (Pack.com)",
+   "verified": "page-fetched",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: replaced search-page link with direct posting"
     }
    ]
   },
@@ -2940,7 +3189,7 @@
    "employment_type": "contract",
    "seniority": null,
    "role_family": "ai_training_eval",
-   "salary_text": "$75.00–$174.87/hr",
+   "salary_text": "$40+/hr USD",
    "salary_min_cad": null,
    "salary_max_cad": null,
    "posted_date": null,
@@ -2948,7 +3197,7 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "unknown",
    "categories": [
     "ai_frontier",
     "side_income",
@@ -2962,15 +3211,20 @@
     "flexible hours"
    ],
    "why": "You judge and teach AI models design quality, with flexible hours and paid hourly. A new kind of design work.",
-   "eligibility_note": "Contract/self-employed work still counts toward any student work-hour limit; keep hours within your permit conditions.",
-   "url": "https://ca.indeed.com/q-ui-ux-designer-l-alberta-jobs.html",
-   "source": "Indeed",
+   "eligibility_note": "Listing is US-based (Portland, OR) and ~10 months old; confirm it accepts people in Canada.",
+   "url": "https://jobs.digitalhire.com/job-listing/opening/5NPBgaJ2CSo2iOjOY5vWWI",
+   "source": "DigitalHire",
    "verified": "search-snippet",
    "history": [
     {
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "link check: direct posting found, likely stale"
     }
    ]
   },
@@ -2992,9 +3246,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
-    "ai_frontier"
+    "ai_frontier",
+    "watchlist"
    ],
    "match_score": 68,
    "ai_related": true,
@@ -3003,7 +3258,7 @@
     "immersive"
    ],
    "why": "Creative + AI generation role; uses your VFX/compositing past.",
-   "eligibility_note": "",
+   "eligibility_note": "Robert Half: posting pulled.",
    "url": "https://www.roberthalf.com/ca/en/jobs/calgary-ab/ux-researcher",
    "source": "Robert Half",
    "verified": "search-snippet",
@@ -3012,6 +3267,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Robert Half: posting pulled"
     }
    ]
   },
@@ -3033,9 +3293,10 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "unknown",
+   "status": "closed",
    "categories": [
-    "ai_frontier"
+    "ai_frontier",
+    "watchlist"
    ],
    "match_score": 68,
    "ai_related": true,
@@ -3044,7 +3305,7 @@
     "curriculum"
    ],
    "why": "Design + teaching + AI. You've taught Nuke/Mocha courses and TA web dev. Amii is scaling national AI literacy.",
-   "eligibility_note": "",
+   "eligibility_note": "Closing date Nov 3, 2026.",
    "url": "https://www.ziprecruiter.com/Jobs/Amii/-in-Edmonton,AB",
    "source": "ZipRecruiter",
    "verified": "search-snippet",
@@ -3053,6 +3314,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: Closing date Nov 3, 2026"
     }
    ]
   },
@@ -3074,16 +3340,17 @@
    "first_seen": "2026-11-23",
    "last_seen": "2026-11-23",
    "times_seen": 1,
-   "status": "active",
+   "status": "closed",
    "categories": [
     "ai_frontier",
-    "grad_2027_pipeline"
+    "grad_2027_pipeline",
+    "watchlist"
    ],
    "match_score": 50,
    "ai_related": true,
    "skills_tags": [],
    "why": "New-grad cohort pattern: IBM Calgary hires associate cohorts for September. Expect a Sept 2028 equivalent and apply in fall 2027.",
-   "eligibility_note": "",
+   "eligibility_note": "No live posting found; September 2026 cohort has passed.",
    "url": "https://ca.linkedin.com/jobs/artificial-intelligence-engineer-jobs-calgary-ab",
    "source": "LinkedIn",
    "verified": "search-snippet",
@@ -3092,6 +3359,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-24",
+     "event": "closed",
+     "note": "link check: No live posting found; September 2026 cohort has passed"
     }
    ]
   },
@@ -3121,7 +3393,7 @@
    "ai_related": false,
    "skills_tags": [],
    "why": "",
-   "eligibility_note": "",
+   "eligibility_note": "Posted 6/5/2026 for a June start; probably filled.",
    "url": "https://myprocom-portal.procomservices.com/jobs/ux-ui-designer-calgary-f5359162",
    "source": "Procom",
    "verified": "search-snippet",
