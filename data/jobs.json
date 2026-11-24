@@ -62,6 +62,38 @@
     ]
    },
    "notes": "Seed scan. Many postings come from search snippets, so posting dates are often unknown; first_seen is the radar date."
+  },
+  {
+   "date": "2026-11-23",
+   "run_type": "daily",
+   "new": 19,
+   "seen_again": 0,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 16,
+    "toronto": 33,
+    "alberta": 17
+   },
+   "new_by_region": {
+    "regina": 6,
+    "toronto": 7,
+    "alberta": 6
+   },
+   "ai_related_share_active": 0.439,
+   "coverage": {
+    "worked": [
+     "WebSearch (12 queries across 3 regions)",
+     "Page fetches: Greenhouse (7shifts), CareerBeacon, IxDF, designproject.io, jobpostings.alberta.ca, jobs.toronto.ca, jobs.regina.ca, Insight Global, Elections Ontario, startup.jobs, tryapplynow"
+    ],
+    "blocked_or_thin": [
+     "Apply Digital Lever and Insight Global conversational-designer pages returned errors",
+     "Critical Mass Greenhouse IDs redirect to index",
+     "Indeed/Glassdoor/LinkedIn not fetched",
+     "Many aggregator posts are stale (SGI, Vendasta, Jobber, Elections Ontario closed)",
+     "Most existing jobs re-confirmed by search listing only"
+    ]
+   },
+   "notes": "First daily pass (same day as seed): 19 added (12 open, 7 closed/stale for watchlist), 24 seed jobs re-confirmed via search; top new: AltaML Product Designer (AI, Edmonton/Calgary), AI Agent Experience Designer (Toronto), 7shifts Product Designer (Saskatoon)."
   }
  ],
  "market_signals": [
@@ -230,6 +262,16 @@
    "high": 118131,
    "source": "Robert Half",
    "url": "https://www.roberthalf.com/ca/en/job-details/ux-researcher/edmonton-ab"
+  },
+  {
+   "id": "comptia-canada-2026",
+   "date": "2026-11-23",
+   "region": "canada",
+   "metric": "Canada net tech employment",
+   "value": "1,512,901 workers in 2025 (+1.9% YoY); forecast +1.8% to 1.54M in 2026; Ontario largest, ~9% concentration",
+   "direction": "up",
+   "source": "CompTIA State of the Tech Workforce Canada 2026",
+   "url": "https://www.comptia.org/en/resources/research/state-of-the-tech-workforce-canada-2026/"
   }
  ],
  "opportunities": [
@@ -353,21 +395,36 @@
    "what": "Alberta's Accelerated Tech Pathway (Express Entry candidates with an Alberta tech job offer, ~600 nominations in 2026). Saskatchewan has a Tech Talent Pathway and a Student category tied to graduating from and working in Saskatchewan. Where you work after graduating can decide which of these you can use.",
    "action": "Before choosing a city, check which pathway each job offer unlocks (see the sask-pr checklist).",
    "url": "https://www.cicnews.com/2026/04/alberta-invites-tech-workers-rural-immigrants-and-health-care-candidates-in-latest-draws-0474242.html"
+  },
+  {
+   "id": "aisk-10k-literacy",
+   "name": "AiSK 10K AI SK Literacy Training",
+   "org": "Artificial Intelligence Saskatchewan (AiSK)",
+   "where": "Online + optional in-person, Saskatchewan",
+   "fit": "medium",
+   "type": "low-cost training + network",
+   "deadline": "Started Fall 2026; listed sign-up window Jul 1 – Sep 1, 2026 has passed, so check aisk.ca",
+   "cost": "Free to AiSK members; sliding scale otherwise",
+   "what": "Province-wide AI basics program aiming at 10,000 people and businesses. The course itself is basic for you; the value is AiSK membership and its Saskatchewan AI network, where you could offer to teach the UX/accessibility side.",
+   "action": "Join AiSK, check whether a later intake is open, and ask about volunteering as a speaker on accessible AI design.",
+   "url": "https://www.saskculture.ca/jobs-opportunities/opportunity/717"
   }
  ],
  "intel": {
   "updated": "2026-11-23",
-  "headline": "Aim for AI-product UX with an accessibility edge. Target Calgary for the move, Toronto for the AI-design volume, and use Regina as your base until graduation.",
+  "headline": "Aim for AI-product UX with an accessibility edge. AI-agent and conversational design is the fastest-growing title family on the radar; target Calgary/Edmonton for the move, Toronto for volume, and stay Regina-based until graduation.",
   "focus_roles": [
    {
     "rank": 1,
     "role": "AI Product Designer / UX for AI experiences",
-    "why": "About half of the high-fit Toronto and Calgary posts in this scan are AI-product roles, and several explicitly ask for Claude Code, Cursor or v0. AI-skilled workers across the US and Canada grew 45% year over year (CBRE). Your Bookkeeper AI human-in-the-loop prototype and the MINDS LLM scaffold are exactly the evidence they ask for.",
+    "why": "About half of the high-fit Toronto and Calgary posts in this scan are AI-product roles, and several explicitly ask for Claude Code, Cursor or v0. AI-skilled workers across the US and Canada grew 45% year over year (CBRE). Your Bookkeeper AI human-in-the-loop prototype and the MINDS LLM scaffold are exactly the evidence they ask for. The first daily pass added AI-agent and conversation-design roles in Toronto ($85k–$130k) and AltaML's enterprise-AI product designer in Alberta ($80k–$110k).",
     "titles": [
      "AI Product Designer",
      "UX Designer, AI Experiences",
      "Conversational/Agentic UX Designer",
-     "Product Designer (AI-native)"
+     "Product Designer (AI-native)",
+     "AI Agent Experience Designer",
+     "Conversation Designer (AI & virtual agents)"
     ]
    },
    {
@@ -383,7 +440,7 @@
    {
     "rank": 3,
     "role": "Service designer, government digital",
-    "why": "Edmonton has 23 Vantix service-designer seats plus 7 permanent GoA senior service designer seats. Ontario and Saskatchewan buy UX through staffing contracts. Stable, and research-heavy, which suits an HCI master's.",
+    "why": "Edmonton has 23 Vantix service-designer seats plus 7 permanent GoA senior service designer seats. Ontario and Saskatchewan buy UX through staffing contracts. Stable, and research-heavy, which suits an HCI master's. Ontario agencies (AGCO, Elections Ontario, City of Toronto) and Alberta keep posting service-design roles, but many close within 2 weeks, so set alerts on the employer boards.",
     "titles": [
      "Service Designer",
      "UX Consultant (public sector)"
@@ -401,7 +458,8 @@
   "deprioritize": [
    "Pure graphic/print roles (Job Bank: print demand declining)",
    "Generalist junior UI roles in Toronto (surplus risk, crowded)",
-   "AI engineer roles that are engineering-only (low design leverage)"
+   "AI engineer roles that are engineering-only (low design leverage)",
+   "Old aggregator re-posts (tryapplynow, CareerBeacon 'posted yesterday' copies): several turned out to be closed months ago, so check the employer page first"
   ],
   "relocation": [
    {
@@ -422,7 +480,7 @@
    {
     "city": "Regina",
     "verdict": "Stay until graduation, maybe a little longer",
-    "why": "Few posts but solid ones (FCC, Cova, Visionpool remote, staffing-agency contracts at $95k mid). Staying is likely worth it if a Saskatchewan-tied pathway matters to you: some routes need Saskatchewan work after graduating. Check this before moving."
+    "why": "Few posts but solid ones (FCC, SGI, Cova, Visionpool remote, 7shifts and zu in Saskatoon, staffing-agency contracts at $95k mid). Staying is likely worth it if a Saskatchewan-tied pathway matters to you: some routes need Saskatchewan work after graduating. Check this before moving."
    }
   ],
   "prep_plan": [
@@ -463,13 +521,14 @@
   ],
   "apply_now": [
    "Robots & Pencils — UX Designer, AI Experiences (Calgary, remote-friendly)",
-   "Rakuten Kobo — Accessibility Specialist (Toronto)",
+   "AltaML — Product Designer, enterprise AI (Edmonton/Calgary, hybrid)",
+   "Rakuten Kobo — Accessibility Specialist, 6-month contract (Toronto)",
+   "AI Agent Experience Designer (Toronto, remote in region)",
    "Visionpool — UX Designer (remote, Regina)",
-   "Cova — UX/UI Designer (Regina)",
-   "Senior Product Designer, AI Experience (Toronto)",
+   "zu — Design Strategist (Saskatoon agency, remote): ask about part-time/contract",
    "Wagepoint — Staff UX Designer (Calgary)"
   ],
-  "caveats": "Rankings come from one seed scan, so treat them as directional until 30+ days of data build up. Job-board snippets can be stale; open the link before applying. This is not immigration or legal advice."
+  "caveats": "Rankings come from the seed scan plus one daily pass, so treat them as directional until 30+ days of data build up. Job-board snippets can be stale; open the link before applying. This is not immigration or legal advice."
  },
  "jobs": [
   {
@@ -512,6 +571,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -599,6 +663,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -637,6 +706,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -721,6 +795,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -763,6 +842,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1150,8 +1234,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
     "ai_frontier",
+    "most_matched",
     "urgent_apply"
    ],
    "match_score": 88,
@@ -1170,6 +1254,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1193,8 +1282,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 87,
    "ai_related": true,
@@ -1214,6 +1303,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1258,6 +1352,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1281,8 +1380,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 84,
    "ai_related": true,
@@ -1300,6 +1399,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1323,8 +1427,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 82,
    "ai_related": true,
@@ -1343,6 +1447,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1428,6 +1537,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1451,8 +1565,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
     "ai_frontier",
+    "most_matched",
     "remote_canada"
    ],
    "match_score": 80,
@@ -1471,6 +1585,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1494,7 +1613,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 80,
    "ai_related": true,
@@ -1512,6 +1632,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1535,7 +1660,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 78,
    "ai_related": true,
@@ -1554,6 +1680,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1577,7 +1708,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "ai_frontier"
+    "ai_frontier",
+    "most_matched"
    ],
    "match_score": 78,
    "ai_related": true,
@@ -1678,6 +1810,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1720,6 +1857,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1800,6 +1942,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1838,6 +1985,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1880,6 +2032,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1995,6 +2152,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2054,8 +2216,9 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "student_track",
-    "grad_2027_pipeline"
+    "grad_2027_pipeline",
+    "most_matched",
+    "student_track"
    ],
    "match_score": 78,
    "ai_related": false,
@@ -2215,8 +2378,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "student_track",
-    "grad_2027_pipeline"
+    "grad_2027_pipeline",
+    "student_track"
    ],
    "match_score": 72,
    "ai_related": false,
@@ -2269,6 +2432,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2292,8 +2460,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "student_track",
-    "ai_frontier"
+    "ai_frontier",
+    "student_track"
    ],
    "match_score": 55,
    "ai_related": true,
@@ -2331,8 +2499,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "most_matched",
     "ai_frontier",
+    "most_matched",
     "remote_canada"
    ],
    "match_score": 90,
@@ -2355,6 +2523,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2479,6 +2652,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2544,6 +2722,7 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
+    "most_matched",
     "remote_canada"
    ],
    "match_score": 78,
@@ -2645,6 +2824,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    },
+    {
+     "date": "2026-11-23",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2709,8 +2893,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "student_track",
-    "ai_frontier"
+    "ai_frontier",
+    "student_track"
    ],
    "match_score": 70,
    "ai_related": true,
@@ -2834,8 +3018,8 @@
    "times_seen": 1,
    "status": "active",
    "categories": [
-    "grad_2027_pipeline",
-    "ai_frontier"
+    "ai_frontier",
+    "grad_2027_pipeline"
    ],
    "match_score": 50,
    "ai_related": true,
@@ -3036,6 +3220,813 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Seed scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-7shifts-product-designer",
+   "title": "Product Designer",
+   "employer": "7shifts",
+   "region": "regina",
+   "city": "Saskatoon, SK (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "intermediate",
+   "role_family": "ux_product_design",
+   "salary_text": "base compensation range 80,000-115,000",
+   "salary_min_cad": 80000,
+   "salary_max_cad": 115000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "most_matched",
+    "watchlist"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "SaaS",
+    "customer research",
+    "Figma",
+    "AI in design workflow"
+   ],
+   "why": "SaaS product design with customer research, prototyping and AI tools in the workflow — fits his enterprise SaaS and POS background (restaurant scheduling/payroll is close to POS).",
+   "eligibility_note": "Hybrid full-time in Saskatoon; not workable while studying in Regina. Strong Jan 2028 target; posting says it can support immigration via GTS or PNP.",
+   "url": "https://job-boards.greenhouse.io/7shifts/jobs/5981914004",
+   "source": "Greenhouse (7shifts)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-zu-design-strategist",
+   "title": "Design Strategist",
+   "employer": "zu",
+   "region": "regina",
+   "city": "Saskatoon, SK (remote)",
+   "work_mode": "remote",
+   "employment_type": null,
+   "seniority": "experienced (3-5 yrs)",
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [
+    "user research",
+    "workshops",
+    "journey maps",
+    "Figma",
+    "design systems"
+   ],
+   "why": "Hands-on UX/UI plus strategy workshops and journey maps — matches his research + Figma + design-system mix. Listed as remote with a Saskatoon agency.",
+   "eligibility_note": "Employment type not shown; confirm whether part-time/contract is possible while studying.",
+   "url": "https://www.careerbeacon.com/en/job-23/2494984/zu/design-strategist/saskatoon-sk",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-zu-experience-strategist",
+   "title": "Experience Strategist",
+   "employer": "zu",
+   "region": "regina",
+   "city": "Saskatoon, SK (remote)",
+   "work_mode": "remote",
+   "employment_type": null,
+   "seniority": "experienced (3-5 yrs)",
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "user research",
+    "facilitation",
+    "IA",
+    "content strategy",
+    "journey mapping"
+   ],
+   "why": "Research, facilitation, IA and journey mapping — draws on his HCI research training and enterprise UX. Remote with a Saskatoon agency.",
+   "eligibility_note": "Employment type not shown.",
+   "url": "https://www.careerbeacon.com/en/job-23/2495040/zu/experience-strategist/saskatoon-sk",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-targeted-talent-global-enterprise-client-lead-product-designer-ux-ui",
+   "title": "Lead Product Designer (UX/UI)",
+   "employer": "Targeted Talent (global enterprise client)",
+   "region": "regina",
+   "city": "Regina, SK (remote to start, later Toronto)",
+   "work_mode": "remote",
+   "employment_type": "permanent",
+   "seniority": "lead (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "Competitive salary; bonus; relocation package",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "research",
+    "mentoring",
+    "design strategy"
+   ],
+   "why": "Lead-level product design with research as a must-have; his 9 years and enterprise work fit, though it expects people management.",
+   "eligibility_note": "Full-time, later relocation to Toronto; posting date not shown, may be stale.",
+   "url": "https://www.careerbeacon.com/en/job-9/1057884/targeted-talent/lead-ux-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-sgi-senior-user-experience-designer",
+   "title": "Senior User Experience Designer",
+   "employer": "SGI",
+   "region": "regina",
+   "city": "Regina, SK (hybrid after probation)",
+   "work_mode": "hybrid",
+   "employment_type": "permanent full-time",
+   "seniority": "senior (3-5 yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$75,691.00 - $95,521.00",
+   "salary_min_cad": 75691,
+   "salary_max_cad": 95521,
+   "posted_date": "2026-03-09",
+   "closing_date": "2026-03-19",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 88,
+   "ai_related": false,
+   "skills_tags": [
+    "end-to-end UX",
+    "usability testing",
+    "IA",
+    "mentoring"
+   ],
+   "why": "Tracked employer's senior UX role in Regina — end-to-end UX, research and usability testing, a near-exact fit. Closed in March; watch SGI for the next one.",
+   "eligibility_note": "Closed 2026-03-19. Full-time onsite until probation.",
+   "url": "https://www.tryapplynow.com/jobs/sgi-senior-user-experience-designer-b1265c81-a1fb-4da2-9a75-51d19b093a02",
+   "source": "tryapplynow",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-city-of-regina-accessibility-communications-research-assistant",
+   "title": "Accessibility Communications Research Assistant",
+   "employer": "City of Regina",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "student_track",
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Accessibility research assistant at the City — relevant to his dyslexia/accessibility thesis; watch for similar student-friendly roles.",
+   "eligibility_note": "Page says no longer advertised.",
+   "url": "https://jobs.regina.ca/job/Regina-Accessibility-Communications-Research-Assistant-SK-S4P-3C8/1291041447/",
+   "source": "City of Regina careers",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-altaml-product-designer",
+   "title": "Product Designer",
+   "employer": "AltaML",
+   "region": "alberta",
+   "city": "Edmonton / Calgary, AB (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "mid-level (2-5 yrs)",
+   "role_family": "ai_product_design",
+   "salary_text": "$80,000 - $110,000 CAD per year",
+   "salary_min_cad": 80000,
+   "salary_max_cad": 110000,
+   "posted_date": "2026-08-27",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "grad_2027_pipeline",
+    "most_matched"
+   ],
+   "match_score": 86,
+   "ai_related": true,
+   "skills_tags": [
+    "enterprise AI",
+    "Figma prototyping",
+    "usability testing",
+    "design system",
+    "WCAG",
+    "public sector"
+   ],
+   "why": "Owns usability for enterprise AI products with WCAG work for public-sector clients — combines his enterprise SaaS, design-system and accessibility/AI thesis strengths.",
+   "eligibility_note": "Hybrid full-time in Alberta; a Jan 2028 target rather than a study-time role. Visa sponsorship not specified.",
+   "url": "https://designproject.io/jobs/product-designer-at-altaml-mxdw9w",
+   "source": "designproject.io (Lever)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-lodgelink-black-diamond-group-ui-ux-designer",
+   "title": "UI/UX Designer",
+   "employer": "LodgeLink (Black Diamond Group)",
+   "region": "alberta",
+   "city": "Calgary, AB (hybrid, 20% WFH)",
+   "work_mode": "hybrid",
+   "employment_type": null,
+   "seniority": "intermediate (asks 5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [],
+   "match_score": 76,
+   "ai_related": false,
+   "skills_tags": [
+    "enterprise/back-office UI",
+    "design systems",
+    "usability testing",
+    "Figma",
+    "Material UI"
+   ],
+   "why": "Enterprise and back-office UI with design systems and usability testing — mirrors his procurement/POS and rules-engine admin work.",
+   "eligibility_note": "Mostly in-office in Calgary; posting date not shown.",
+   "url": "https://www.careerbeacon.com/en/job-12/1206794/lodgelink/ux-ui-designer/calgary-ab",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-atvenu-manager-ui-ux-design",
+   "title": "Manager, UI/UX Design",
+   "employer": "atVenu",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "manager (8+ yrs, 2+ managing)",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 68,
+   "ai_related": false,
+   "skills_tags": [
+    "design system",
+    "research",
+    "Figma",
+    "GitHub"
+   ],
+   "why": "Player/coach UX lead with design-system ownership; his 9 years fit, but it needs 2+ years managing designers.",
+   "eligibility_note": "Must reside in the Calgary area; full-time.",
+   "url": "https://www.careerbeacon.com/en/job-9/3526366/atvenu/manager-ui-ux-design",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-confidential-via-ixdf-staff-product-designer-design-systems",
+   "title": "Staff Product Designer (design systems)",
+   "employer": "Confidential (via IxDF)",
+   "region": "alberta",
+   "city": "Edmonton, AB (or Toronto/Vancouver/KW; hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": null,
+   "seniority": "staff (5-10 yrs design systems)",
+   "role_family": "ux_product_design",
+   "salary_text": "169,200 - 228,900 CAD annually",
+   "salary_min_cad": 169200,
+   "salary_max_cad": 228900,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": true,
+   "skills_tags": [
+    "design systems",
+    "accessibility standards",
+    "AI-assisted workflow",
+    "front-end literacy"
+   ],
+   "why": "Design-system leadership with accessibility standards and front-end literacy — uses his design-system and React/HTML/CSS skills, though staff level is a stretch.",
+   "eligibility_note": "Full-time hybrid; staff-level bar.",
+   "url": "https://ixdf.org/jobs/staff-product-designer-edmonton",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-jobber-senior-product-designer-customer-experience",
+   "title": "Senior Product Designer, Customer Experience",
+   "employer": "Jobber",
+   "region": "alberta",
+   "city": "Edmonton, AB (hybrid hubs)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "senior (5+ yrs SaaS)",
+   "role_family": "ux_product_design",
+   "salary_text": "CAD $125,800 – CAD $170,100 per year",
+   "salary_min_cad": 125800,
+   "salary_max_cad": 170100,
+   "posted_date": "2026-05-04",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 78,
+   "ai_related": true,
+   "skills_tags": [
+    "SaaS",
+    "activation flows",
+    "AI personalization"
+   ],
+   "why": "Tracked employer; SaaS onboarding/activation with AI personalization. Closed — watch Jobber for the next opening.",
+   "eligibility_note": "No longer accepting applications.",
+   "url": "https://startup.jobs/senior-product-designer-customer-experience-getjobber-com-8101987",
+   "source": "startup.jobs",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-government-of-alberta-service-designer",
+   "title": "Service Designer",
+   "employer": "Government of Alberta",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-06-01",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "GoA service design roles recur (UX Designer, Senior Service Designer earlier) — a pipeline to watch for Jan 2028.",
+   "eligibility_note": "Application period closed.",
+   "url": "https://jobpostings.alberta.ca/job/Edmonton-Service-Designer/603030317/",
+   "source": "jobpostings.alberta.ca",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-via-ixdf-ai-agent-experience-designer",
+   "title": "AI Agent Experience Designer",
+   "employer": "Confidential (via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON (remote within region)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "3+ yrs conversational",
+   "role_family": "ai_product_design",
+   "salary_text": "85,000 - 120,000 CAD annually",
+   "salary_min_cad": 85000,
+   "salary_max_cad": 120000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 82,
+   "ai_related": true,
+   "skills_tags": [
+    "conversational AI",
+    "journey mapping",
+    "guardrails",
+    "HCI",
+    "facilitation"
+   ],
+   "why": "Designs AI-agent flows and usability guardrails with an HCI lens — direct line to his AI-assisted search thesis and rules-engine logic design.",
+   "eligibility_note": "Hiring in Toronto only; full-time. Conversational-design years are a gap.",
+   "url": "https://ixdf.org/jobs/ai-agent-experience-designer-toronto",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-gft-unconfirmed-via-ixdf-senior-conversation-designer-ai-virtual-agents",
+   "title": "Senior Conversation Designer, AI & Virtual Agents",
+   "employer": "GFT (unconfirmed, via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON (remote within region)",
+   "work_mode": "remote",
+   "employment_type": null,
+   "seniority": "senior (4+ yrs)",
+   "role_family": "ai_product_design",
+   "salary_text": "Proposed salary: 100k to 130k (also shown as 100,000 - 130,000 USD)",
+   "salary_min_cad": 100000,
+   "salary_max_cad": 130000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "conversation flows",
+    "intents",
+    "escalation design",
+    "usability testing",
+    "Genesys"
+   ],
+   "why": "Conversation flows, escalation/handoff and usability testing for virtual agents — maps to his logic-heavy rules-engine UX and AI thesis, though he lacks dedicated conversation-design years.",
+   "eligibility_note": "Posted ~2 months ago; currency on page is inconsistent. French a nice-to-have.",
+   "url": "https://ixdf.org/jobs/senior-conversation-designer-ai-virtual-agents-toronto-on-ca-m5j-2p1-toronto",
+   "source": "IxDF job board (via Himalayas)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-alcohol-and-gaming-commission-of-ontario-agco-senior-service-designer",
+   "title": "Senior Service Designer",
+   "employer": "Alcohol and Gaming Commission of Ontario (AGCO)",
+   "region": "toronto",
+   "city": "Toronto, ON (on-site)",
+   "work_mode": "onsite",
+   "employment_type": "full-time permanent",
+   "seniority": "3+ yrs",
+   "role_family": "service_design",
+   "salary_text": "$103,518 to $129,393 CAD per year",
+   "salary_min_cad": 103518,
+   "salary_max_cad": 129393,
+   "posted_date": "2026-05-06",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "grad_2027_pipeline",
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "service design",
+    "user research",
+    "journey maps",
+    "blueprints",
+    "Figma",
+    "Miro"
+   ],
+   "why": "Public-sector service design with research, journey maps and blueprints — fits his research training and regulated-domain (financial rules) experience.",
+   "eligibility_note": "On-site full-time in Toronto; criminal background check. Posted May 2026, may be closed.",
+   "url": "https://designproject.io/jobs/senior-service-designer-at-alcohol-and-gaming-commission-of-ontario-1h5stf",
+   "source": "designproject.io",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-insight-global-ux-researcher-big-5-bank-contract",
+   "title": "UX Researcher (Big 5 bank, contract)",
+   "employer": "Insight Global",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "contract",
+   "seniority": "2-5 yrs",
+   "role_family": "ux_research",
+   "salary_text": "$43 - $54 (hourly estimate)",
+   "salary_min_cad": 89440,
+   "salary_max_cad": 112320,
+   "posted_date": "2026-03-31",
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "likely_closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [
+    "usability research",
+    "screeners",
+    "discussion guides",
+    "financial"
+   ],
+   "why": "Usability research for a bank's asset-management products — uses his QA-to-UX research skills and financial domain.",
+   "eligibility_note": "Must be legally authorized to work in Canada; page shows an Aug 24, 2026 date that may be the close.",
+   "url": "https://insightglobal.com/jobs/find_a_job/ontario/toronto/ux-researcher/job-513392/",
+   "source": "Insight Global",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-via-ixdf-principal-design-researcher",
+   "title": "Principal Design Researcher",
+   "employer": "Confidential (via IxDF)",
+   "region": "toronto",
+   "city": "Toronto / Montreal (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": null,
+   "seniority": "principal (6+ yrs UX research)",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "qual + quant",
+    "site visits",
+    "Amplitude"
+   ],
+   "why": "End-to-end research leadership; his HCI MSc helps but he has fewer dedicated research years than asked.",
+   "eligibility_note": "Full-time hybrid; principal level.",
+   "url": "https://ixdf.org/jobs/principal-design-researcher-toronto",
+   "source": "IxDF job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-elections-ontario-process-service-design-advisor",
+   "title": "Process & Service Design Advisor",
+   "employer": "Elections Ontario",
+   "region": "toronto",
+   "city": "Toronto, ON (in-office)",
+   "work_mode": "onsite",
+   "employment_type": "permanent full-time",
+   "seniority": "5+ yrs",
+   "role_family": "service_design",
+   "salary_text": "$84,478 – $124,487",
+   "salary_min_cad": 84478,
+   "salary_max_cad": 124487,
+   "posted_date": "2026-02-09",
+   "closing_date": "2026-02-23",
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 68,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Public-sector service design lead; closed, but shows Ontario agencies hiring service designers.",
+   "eligibility_note": "Closed 2026-02-23; legally entitled to work in Canada.",
+   "url": "https://www.elections.on.ca/content/dam/NGW/sitecontent/2026/jobs/Process%20and%20Service%20Design%20Advisor.pdf",
+   "source": "Elections Ontario",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-city-of-toronto-service-design-researcher",
+   "title": "Service Design Researcher",
+   "employer": "City of Toronto",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-23",
+   "last_seen": "2026-11-23",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Municipal service-design research role — closed; watch City of Toronto for repeats.",
+   "eligibility_note": "Posting has ended.",
+   "url": "https://jobs.toronto.ca/jobsatcity/job/Toronto-SERVICE-DESIGN-RESEARCHER-ON-M5V-3C6/604262517/",
+   "source": "City of Toronto careers",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-23",
+     "event": "first_seen",
+     "note": "Daily scan"
     }
    ]
   }
