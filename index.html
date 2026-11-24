@@ -58,6 +58,7 @@ tr.job{cursor:pointer}tr.job:hover td{background:var(--soft)}
 .score.hi{background:var(--brick);color:#fff}
 .tag{display:inline-block;font-size:12px;border:1px solid var(--rule);border-radius:3px;padding:1px 6px;margin:2px 4px 0 0;color:var(--muted);white-space:nowrap}
 .tag.cat{border-color:var(--ink);color:var(--ink)}
+.tag.new{border-color:var(--brick);color:var(--brick);font-weight:700;margin-right:6px}
 .st{font-size:13px;font-weight:500;white-space:nowrap}.st.active{color:var(--good)}.st.closed,.st.filled{color:var(--muted);text-decoration:line-through}.st.likely_closed,.st.unknown{color:var(--warn)}
 tr.detail td{background:var(--soft);font-size:15px}
 .nowrap{white-space:nowrap}
@@ -184,14 +185,17 @@ const FAM={ai_product_design:'AI product design',ux_product_design:'UX / product
 const DEV=new Set(['ux_engineering','frontend_dev','software_dev','qa_testing','ai_engineering']);
 const TRACK={all:'All work',design:'Design',dev:'Development'};
 const FAMC={ai_product_design:'#c8371e',ux_product_design:'#141210',accessibility:'#2f6b3f',ux_research:'#5b7fa6',service_design:'#9a5b00',ux_engineering:'#6b4c9a',ai_engineering:'#e08b6f',ai_training_eval:'#d4a373',graphic_print:'#8a8173',web_design:'#b7b0a4',instructional_design:'#4f8f8b',frontend_dev:'#3d6fb6',software_dev:'#2b4a7a',qa_testing:'#7a9a3a'};
-const CAT={most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist',side_income:'Side income'};
+const CAT={new:'✨New',most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist',side_income:'Side income'};
 const OPEN=new Set(['active','unknown','likely_closed']);
 const fmtD=d=>{if(!d)return'—';const[y,m,dd]=d.split('-');return new Date(+y,+m-1,+dd).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'})};
 const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
 const money=n=>n==null?'':'$'+Math.round(n/1000)+'k';
 let D=null,state={track:'all',region:'all',cats:new Set(),mode:'all',q:'',status:'open',open:null,all:false};
 const trackOk=j=>state.track==='all'||(state.track==='dev')===DEV.has(j.role_family);
-const catOk=j=>!state.cats.size||(state.mode==='all'?[...state.cats].every(c=>j.categories.includes(c)):[...state.cats].some(c=>j.categories.includes(c)));
+const isNew=j=>j.first_seen===D.meta.last_run;
+const hasCat=(j,c)=>c==='new'?isNew(j):j.categories.includes(c);
+const NEWB=j=>isNew(j)?'<span class="tag new" title="First found in the latest scan">✨New</span>':'';
+const catOk=j=>!state.cats.size||(state.mode==='all'?[...state.cats].every(c=>hasCat(j,c)):[...state.cats].some(c=>hasCat(j,c)));
 try{const h=location.hash.replace('#','');if(REG[h])state.region=h}catch(e){}
 
 function header(){
@@ -210,7 +214,7 @@ function controls(){
  seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.region=b.dataset.r;try{history.replaceState(null,'',state.region==='all'?'#jobs':'#'+state.region)}catch(_){}controls();table()};
  const chips=document.getElementById('catChips');
  const pool=D.jobs.filter(j=>trackOk(j)&&(state.region==='all'||j.region===state.region)&&(state.status==='all'||OPEN.has(j.status)));
- chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>j.categories.includes(k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${k==='all'?!state.cats.size:state.cats.has(k)}">${esc(l)} <span>${n}</span></button>`).join('')
+ chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>hasCat(j,k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${k==='all'?!state.cats.size:state.cats.has(k)}">${esc(l)} <span>${n}</span></button>`).join('')
   +(state.cats.size>1?`<span class="seg" role="group" aria-label="Combine categories"><button type="button" data-m="all" aria-pressed="${state.mode==='all'}">Match all</button><button type="button" data-m="any" aria-pressed="${state.mode==='any'}">Match any</button></span>`:'')
   +(state.cats.size?`<span class="note">${state.cats.size} selected · tap a chip again to remove it</span>`:'');
  chips.onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.m){state.mode=b.dataset.m}else if(b.dataset.c==='all'){state.cats.clear()}else{const c=b.dataset.c;state.cats.has(c)?state.cats.delete(c):state.cats.add(c)}state.all=false;controls();table()};
@@ -227,7 +231,7 @@ function table(){
   const radar=j.first_seen===j.last_seen?`First seen ${fmtD(j.first_seen)}`:`First seen ${fmtD(j.first_seen)}<br>Last seen ${fmtD(j.last_seen)}<br><span class="e">${j.times_seen} sightings · ${days} days</span>`;
   const pay=j.salary_text?esc(j.salary_text):'<span class="e">not listed</span>';
   const cats=j.categories.map(c=>`<span class="tag cat">${esc(CAT[c]||c)}</span>`).join('');
-  const main=`<tr class="job" data-id="${esc(j.id)}" tabindex="0" aria-expanded="${state.open===j.id}"><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${esc(j.title)}</div><div class="e">${esc(j.employer)}</div><div>${cats}</div></td><td>${esc(j.city)}${j.city.includes(REG[j.region])?'':`<div class="e">${esc(REG[j.region])}</div>`}</td><td>${esc([j.employment_type,j.work_mode,j.seniority].filter(Boolean).join(' · ')||'—')}</td><td>${pay}</td><td class="nowrap">${radar}</td><td><span class="st ${esc(j.status)}">${esc(j.status.replace('_',' '))}</span>${j.closing_date?`<div class="e">closes ${fmtD(j.closing_date)}</div>`:''}</td></tr>`;
+  const main=`<tr class="job" data-id="${esc(j.id)}" tabindex="0" aria-expanded="${state.open===j.id}"><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${NEWB(j)}${esc(j.title)}</div><div class="e">${esc(j.employer)}</div><div>${cats}</div></td><td>${esc(j.city)}${j.city.includes(REG[j.region])?'':`<div class="e">${esc(REG[j.region])}</div>`}</td><td>${esc([j.employment_type,j.work_mode,j.seniority].filter(Boolean).join(' · ')||'—')}</td><td>${pay}</td><td class="nowrap">${radar}</td><td><span class="st ${esc(j.status)}">${esc(j.status.replace('_',' '))}</span>${j.closing_date?`<div class="e">closes ${fmtD(j.closing_date)}</div>`:''}</td></tr>`;
   const det=state.open===j.id?`<tr class="detail"><td colspan="7"><b>${esc(FAM[j.role_family]||j.role_family)}.</b> ${esc(j.why||'')}${j.eligibility_note?`<br><b>Eligibility:</b> ${esc(j.eligibility_note)}`:''}<br>${(j.skills_tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')}<br><a href="${esc(j.url)}" target="_blank" rel="noopener">Open posting on ${esc(j.source)} →</a> <span class="e">(${esc(j.verified)}${j.posted_date?`, posted ${fmtD(j.posted_date)}`:''})</span></td></tr>`:'';
   return main+det}).join('');
  document.getElementById('tableNote').innerHTML=`${rows.length} of ${total} shown. Fit is a 0–100 match against your CV; ≥78 is highlighted. `+(total>rows.length?`<button type="button" class="chip" id="more">Show all ${total}</button>`:'');const mb=document.getElementById('more');if(mb)mb.onclick=()=>{state.all=true;table()};
@@ -240,7 +244,7 @@ document.getElementById('statusSel').addEventListener('change',e=>{state.status=
 function side(){
  const rows=D.jobs.filter(j=>j.categories.includes('side_income')&&OPEN.has(j.status)).sort((a,b)=>b.match_score-a.match_score);
  const tb=document.querySelector('#sideTable tbody');
- tb.innerHTML=rows.length?rows.map(j=>`<tr><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${esc(j.title)}</div><div class="e">${esc(j.employer)}</div>${j.eligibility_note?`<div class="e">${esc(j.eligibility_note)}</div>`:''}</td><td>${esc(j.employment_type||'—')}</td><td>${j.salary_text?esc(j.salary_text):'<span class="e">not listed</span>'}</td><td>${esc(j.city)}</td><td><a href="${esc(j.url)}" target="_blank" rel="noopener">Open →</a><div class="e">first seen ${fmtD(j.first_seen)}</div></td></tr>`).join(''):`<tr><td colspan="6" class="empty">No open side-income roles right now.</td></tr>`;
+ tb.innerHTML=rows.length?rows.map(j=>`<tr><td class="num"><span class="score ${j.match_score>=78?'hi':''}">${j.match_score}</span></td><td><div class="t">${NEWB(j)}${esc(j.title)}</div><div class="e">${esc(j.employer)}</div>${j.eligibility_note?`<div class="e">${esc(j.eligibility_note)}</div>`:''}</td><td>${esc(j.employment_type||'—')}</td><td>${j.salary_text?esc(j.salary_text):'<span class="e">not listed</span>'}</td><td>${esc(j.city)}</td><td><a href="${esc(j.url)}" target="_blank" rel="noopener">Open →</a><div class="e">first seen ${fmtD(j.first_seen)}</div></td></tr>`).join(''):`<tr><td colspan="6" class="empty">No open side-income roles right now.</td></tr>`;
  const ids=['ai-training-gigs-canada','uregina-casual-pool','colabs-utp','mitacs-accelerate'];
  document.getElementById('sideOpps').innerHTML=(D.opportunities||[]).filter(o=>ids.includes(o.id)).map(o=>`<li><b>${esc(o.name)}</b>: ${esc(o.action)} <a href="${esc(o.url)}" target="_blank" rel="noopener">Source →</a></li>`).join('');
 }
