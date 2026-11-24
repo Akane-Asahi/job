@@ -105,8 +105,9 @@ code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius
 <main>
 <section class="band" id="jobs"><div class="wrap">
  <h2>The ledger</h2>
- <p class="lede">Every job that has crossed the radar, with the date first seen and the latest sighting. Tap a row for why it fits and any eligibility notes. Pick several categories to combine them.</p>
+ <p class="lede">Every design and software-development job that has crossed the radar, with the date first seen and the latest sighting. Tap a row for why it fits and any eligibility notes. Pick several categories to combine them.</p>
  <div class="controls">
+  <div class="seg" role="group" aria-label="Type of work" id="trackSeg"></div>
   <div class="seg" role="group" aria-label="Region" id="regionSeg"></div>
   <input type="search" id="q" placeholder="Search title, employer, skill…" aria-label="Search jobs">
   <select id="statusSel" aria-label="Status"><option value="open">Open only</option><option value="all">Include closed</option></select>
@@ -179,14 +180,17 @@ code{overflow-wrap:anywhere;background:var(--soft);padding:1px 5px;border-radius
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const REG={regina:'Regina',toronto:'Toronto',alberta:'Alberta'};
 const REGC={regina:'#c8371e',toronto:'#141210',alberta:'#8a8173'};
-const FAM={ai_product_design:'AI product design',ux_product_design:'UX / product design',accessibility:'Accessibility',ux_research:'UX research',service_design:'Service design',ux_engineering:'UX engineering',ai_engineering:'AI engineering',ai_training_eval:'AI training / eval',graphic_print:'Graphic / print',web_design:'Web design',instructional_design:'Instructional design'};
-const FAMC={ai_product_design:'#c8371e',ux_product_design:'#141210',accessibility:'#2f6b3f',ux_research:'#5b7fa6',service_design:'#9a5b00',ux_engineering:'#6b4c9a',ai_engineering:'#e08b6f',ai_training_eval:'#d4a373',graphic_print:'#8a8173',web_design:'#b7b0a4',instructional_design:'#4f8f8b'};
+const FAM={ai_product_design:'AI product design',ux_product_design:'UX / product design',accessibility:'Accessibility',ux_research:'UX research',service_design:'Service design',ux_engineering:'UX engineering',ai_engineering:'AI engineering',ai_training_eval:'AI training / eval',graphic_print:'Graphic / print',web_design:'Web design',instructional_design:'Instructional design',frontend_dev:'Front-end development',software_dev:'Software development',qa_testing:'QA / testing'};
+const DEV=new Set(['ux_engineering','frontend_dev','software_dev','qa_testing','ai_engineering']);
+const TRACK={all:'All work',design:'Design',dev:'Development'};
+const FAMC={ai_product_design:'#c8371e',ux_product_design:'#141210',accessibility:'#2f6b3f',ux_research:'#5b7fa6',service_design:'#9a5b00',ux_engineering:'#6b4c9a',ai_engineering:'#e08b6f',ai_training_eval:'#d4a373',graphic_print:'#8a8173',web_design:'#b7b0a4',instructional_design:'#4f8f8b',frontend_dev:'#3d6fb6',software_dev:'#2b4a7a',qa_testing:'#7a9a3a'};
 const CAT={most_matched:'Most matched',urgent_apply:'Urgent apply',student_track:'Doable while studying',ai_frontier:'AI frontier',remote_canada:'Remote in Canada',grad_2027_pipeline:'Dec 2027 pipeline',watchlist:'Watchlist',side_income:'Side income'};
 const OPEN=new Set(['active','unknown','likely_closed']);
 const fmtD=d=>{if(!d)return'—';const[y,m,dd]=d.split('-');return new Date(+y,+m-1,+dd).toLocaleDateString('en-CA',{month:'short',day:'numeric',year:'numeric'})};
 const daysBetween=(a,b)=>Math.round((new Date(b)-new Date(a))/864e5);
 const money=n=>n==null?'':'$'+Math.round(n/1000)+'k';
-let D=null,state={region:'all',cats:new Set(),mode:'all',q:'',status:'open',open:null,all:false};
+let D=null,state={track:'all',region:'all',cats:new Set(),mode:'all',q:'',status:'open',open:null,all:false};
+const trackOk=j=>state.track==='all'||(state.track==='dev')===DEV.has(j.role_family);
 const catOk=j=>!state.cats.size||(state.mode==='all'?[...state.cats].every(c=>j.categories.includes(c)):[...state.cats].some(c=>j.categories.includes(c)));
 try{const h=location.hash.replace('#','');if(REG[h])state.region=h}catch(e){}
 
@@ -198,11 +202,14 @@ function header(){
  document.getElementById('counters').innerHTML=c.map(([k,l,n,s])=>`<div class="counter"><b>${n}</b><span>${esc(l)} · open</span><small>${esc(s)}</small></div>`).join('');
 }
 function controls(){
+ const tr=document.getElementById('trackSeg');
+ tr.innerHTML=Object.entries(TRACK).map(([k,l])=>`<button type="button" data-t="${k}" aria-pressed="${state.track===k}">${esc(l)} <span>${D.jobs.filter(j=>(k==='all'||(k==='dev')===DEV.has(j.role_family))&&(state.status==='all'||OPEN.has(j.status))).length}</span></button>`).join('');
+ tr.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.track=b.dataset.t;state.all=false;controls();table()};
  const seg=document.getElementById('regionSeg');
  seg.innerHTML=[['all','All']].concat(Object.entries(REG)).map(([k,l])=>`<button type="button" data-r="${k}" aria-pressed="${state.region===k}">${esc(l)}</button>`).join('');
  seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;state.region=b.dataset.r;try{history.replaceState(null,'',state.region==='all'?'#jobs':'#'+state.region)}catch(_){}controls();table()};
  const chips=document.getElementById('catChips');
- const pool=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&(state.status==='all'||OPEN.has(j.status)));
+ const pool=D.jobs.filter(j=>trackOk(j)&&(state.region==='all'||j.region===state.region)&&(state.status==='all'||OPEN.has(j.status)));
  chips.innerHTML=[['all','All categories',pool.length]].concat(Object.entries(CAT).map(([k,l])=>[k,l,pool.filter(j=>j.categories.includes(k)).length])).map(([k,l,n])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${k==='all'?!state.cats.size:state.cats.has(k)}">${esc(l)} <span>${n}</span></button>`).join('')
   +(state.cats.size>1?`<span class="seg" role="group" aria-label="Combine categories"><button type="button" data-m="all" aria-pressed="${state.mode==='all'}">Match all</button><button type="button" data-m="any" aria-pressed="${state.mode==='any'}">Match any</button></span>`:'')
   +(state.cats.size?`<span class="note">${state.cats.size} selected · tap a chip again to remove it</span>`:'');
@@ -210,7 +217,7 @@ function controls(){
 }
 function table(){
  const q=state.q.toLowerCase();
- let rows=D.jobs.filter(j=>(state.region==='all'||j.region===state.region)&&catOk(j)&&(state.status==='all'||OPEN.has(j.status))&&(!q||[j.title,j.employer,j.city,(j.skills_tags||[]).join(' '),FAM[j.role_family]].join(' ').toLowerCase().includes(q)));
+ let rows=D.jobs.filter(j=>trackOk(j)&&(state.region==='all'||j.region===state.region)&&catOk(j)&&(state.status==='all'||OPEN.has(j.status))&&(!q||[j.title,j.employer,j.city,(j.skills_tags||[]).join(' '),FAM[j.role_family]].join(' ').toLowerCase().includes(q)));
  rows.sort((a,b)=>(OPEN.has(b.status)-OPEN.has(a.status))||(b.categories.includes('urgent_apply')-a.categories.includes('urgent_apply'))||(b.match_score-a.match_score));
  const tb=document.querySelector('#jobTable tbody');
  if(!rows.length){tb.innerHTML=`<tr><td colspan="7" class="empty">No jobs match these filters.</td></tr>`;document.getElementById('tableNote').textContent='';return}

@@ -22,7 +22,7 @@
    "watchlist": "strong-fit employer or closed or blocked post; watch for the next opening",
    "side_income": "cash-flow work doable while studying: freelance, part-time, casual, gig or flexible contract, from home or a Regina office"
   },
-  "scoring": "0–100. +role-family fit (AI product / UX / accessibility / service design highest), +domain overlap (enterprise SaaS, fintech, rules engines, POS, edtech/reading, health), +seniority fit (3–9 yrs), +AI-native tooling asks, +accessibility, +remote-Canada; −engineering-only, −hard eligibility blockers, −junior/print-only.",
+  "scoring": "0–100. +role-family fit (AI product / UX / accessibility / service design highest), +domain overlap (enterprise SaaS, fintech, rules engines, POS, edtech/reading, health), +seniority fit (3–9 yrs), +AI-native tooling asks, +accessibility, +remote-Canada; −engineering-only, −hard eligibility blockers, −junior/print-only. Development roles: +front-end/React/HTML/CSS, +design-system or accessibility (WCAG) asks, +QA/testing (his first career), +UX-engineer/design-technologist hybrids; −back-end-only stacks (Java/.NET), −7+ yrs pure engineering.",
   "salary_note": "salary_min_cad/max_cad are annual CAD; hourly rates are annualized × 2080 h. salary_text keeps the original wording.",
   "status_values": [
    "active",
@@ -33,7 +33,14 @@
   ],
   "dedupe_rule": "Same job = same normalized employer + normalized title + region (or same URL). On a repeat sighting: keep first_seen, set last_seen to today, times_seen += 1, append a history event only when something changed.",
   "size_policy": "When this file passes ~1.5 MB or 2,500 jobs, move jobs with status closed/filled/likely_closed and last_seen older than 120 days to data/archive/jobs-<year>.json, and add the path to meta.archives. runs[] keeps daily summaries forever (it is small).",
-  "archives": []
+  "archives": [],
+  "role_families_dev": [
+   "ux_engineering",
+   "frontend_dev",
+   "software_dev",
+   "qa_testing",
+   "ai_engineering"
+  ]
  },
  "runs": [
   {
@@ -99,30 +106,32 @@
   {
    "date": "2026-11-24",
    "run_type": "daily",
-   "new": 10,
+   "new": 30,
    "seen_again": 0,
    "closed_today": 0,
    "active_by_region": {
-    "regina": 21,
-    "toronto": 31,
-    "alberta": 14
+    "regina": 25,
+    "toronto": 36,
+    "alberta": 19
    },
    "new_by_region": {
-    "regina": 8,
-    "toronto": 2,
-    "alberta": 0
+    "regina": 15,
+    "toronto": 8,
+    "alberta": 7
    },
-   "ai_related_share_active": 0.413,
+   "ai_related_share_active": 0.325,
    "coverage": {
     "worked": [
-     "Side-income add-on scan: WebSearch (8 queries) + fetched Lever (ImageX, Apply Digital), IxDF part-time/contract listings, Workable, jobs.ca, UR Careers"
+     "Side-income scan: 8 searches + Lever/IxDF/Workable/jobs.ca fetches",
+     "Link check: ~60 posting pages fetched",
+     "Dev scan: 9 searches + 30 page fetches (CareerBeacon, Greenhouse, Wellfound, Job Bank, jobpostings.alberta.ca)"
     ],
     "blocked_or_thin": [
-     "seedtable, wearedevelopers, Insight Global and one IxDF page returned errors",
-     "Upwork/Twine gig listings mostly stale or closed"
+     "Wellfound, Workable, Randstad, Smile.io Lever, career.io and some IxDF pages failed to load",
+     "Many aggregator posts stale"
     ]
    },
-   "notes": "Side-income add-on scan (on request): freelance, part-time and contract work doable while studying; 10 added, incl. ImageX freelance UX at $75–85/h and 3 part-time remote UX contracts. Link check of all open jobs: 10 closed (incl. Scotiabank and Wealthsimple interns, Kobo, Visionpool), 13 search-page links replaced with direct postings, 6 unreachable marked unknown."
+   "notes": "Add-on scans on request: (1) side-income/freelance work while studying, 10 added incl. ImageX freelance UX at $75–85/h; (2) link check of all open jobs: 10 closed (incl. Scotiabank and Wealthsimple interns, Kobo, Visionpool), 13 search-page links replaced with direct postings, 6 unreachable marked unknown; (3) software development roles (front-end, full-stack, QA, UX engineering), 20 added, 13 open."
   }
  ],
  "market_signals": [
@@ -4815,6 +4824,844 @@
    "eligibility_note": "Closed 2025-06-04.",
    "url": "https://www.jobs.ca/job/c0a94548-8b71-43e0-bbe0-898795055223",
    "source": "jobs.ca (UR Careers)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-targeted-talent-unnamed-client-senior-front-end-developer-typescript",
+   "title": "Senior Front-End Developer (TypeScript)",
+   "employer": "Targeted Talent (unnamed client)",
+   "region": "regina",
+   "city": "Regina, SK (remote to start, later Calgary or Winnipeg)",
+   "work_mode": "remote",
+   "employment_type": "full-time permanent",
+   "seniority": "5+ yrs front-end",
+   "role_family": "frontend_dev",
+   "salary_text": "65 000 $ - 95 000 $ / année",
+   "salary_min_cad": 65000,
+   "salary_max_cad": 95000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 66,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "AWS"
+   ],
+   "why": "Uses his React/HTML/CSS skills; his design-system work helps, though he has fewer years as a dedicated front-end developer than asked.",
+   "eligibility_note": "Listing says it expires soon. Relocation to Calgary or Winnipeg later. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/fr/emplois-9/3185875/targeted-talent/senior-front-end-developer-typescript",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-not-named-via-iitjobs-web-application-development-support-analyst",
+   "title": "Web Application Development Support Analyst",
+   "employer": "Not named (via iitjobs)",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "5+ yrs front-end",
+   "role_family": "frontend_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "Jest",
+    "WCAG",
+    ".NET"
+   ],
+   "why": "React/TypeScript front-end work that requires WCAG knowledge — joins his coding skills with his accessibility research.",
+   "eligibility_note": "Employer, pay and work mode not shown; needs a Bachelor's degree.",
+   "url": "https://www.iitjobs.com/job/web-application-development-support-analyst-regina-sk-canada-349023",
+   "source": "iitjobs",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-plato-senior-intermediate-qa-analysts-finance-payroll",
+   "title": "Senior & Intermediate QA Analysts – Finance & Payroll",
+   "employer": "PLATO",
+   "region": "regina",
+   "city": "Regina, SK (on-site at client)",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs QA (senior)",
+   "role_family": "qa_testing",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "QA",
+    "Azure DevOps",
+    "Jira",
+    "test automation",
+    "finance systems"
+   ],
+   "why": "Software QA was where his career started, and finance/payroll testing matches his loyalty and financial rules-engine domain.",
+   "eligibility_note": "On-site full-time. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job/2176842/plato/senior-intermediate-qa-analysts-finance-payroll/regina-sk",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-gtt-llc-unnamed-client-performance-automated-test-specialist-12-month-contract",
+   "title": "Performance & Automated Test Specialist (12-month contract)",
+   "employer": "GTT, LLC (unnamed client)",
+   "region": "regina",
+   "city": "Regina, SK (on-site preferred, some remote)",
+   "work_mode": "hybrid",
+   "employment_type": "contract, 12 months",
+   "seniority": "experienced with LoadRunner/UFT",
+   "role_family": "qa_testing",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 58,
+   "ai_related": false,
+   "skills_tags": [
+    "LoadRunner",
+    "UFT",
+    "JMeter",
+    "Postman",
+    ".NET"
+   ],
+   "why": "Draws on his QA background, but it is a specialist performance-testing toolset.",
+   "eligibility_note": "Full-time hours on a contract; occasional after-hours work.",
+   "url": "https://www.careerbeacon.com/en/job-9/2053569/gtt-llc/performance-automated-test-specialist",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-sasktel-programmer-analyst",
+   "title": "Programmer Analyst",
+   "employer": "SaskTel",
+   "region": "regina",
+   "city": "Regina, SK (in office)",
+   "work_mode": "onsite",
+   "employment_type": "permanent full-time",
+   "seniority": "2 yrs or degree/diploma",
+   "role_family": "software_dev",
+   "salary_text": "$31.28 - $46.07 Plus a 7% Market Adjustment",
+   "salary_min_cad": 65062,
+   "salary_max_cad": 95826,
+   "posted_date": null,
+   "closing_date": "2026-09-22",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 62,
+   "ai_related": false,
+   "skills_tags": [
+    "programming"
+   ],
+   "why": "Tracked Regina employer; programmer-analyst roles recur and suit a Jan 2028 start.",
+   "eligibility_note": "Closed 2026-09-22; visa sponsorship not available.",
+   "url": "https://wellfound.com/jobs/4695245-programmer-analyst",
+   "source": "Wellfound",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-city-of-regina-programmer-analyst-ii",
+   "title": "Programmer Analyst II",
+   "employer": "City of Regina",
+   "region": "regina",
+   "city": "Regina, SK (in office)",
+   "work_mode": "onsite",
+   "employment_type": "permanent full-time",
+   "seniority": "2-3 yrs",
+   "role_family": "software_dev",
+   "salary_text": "$68,676.00 - $86,121.00",
+   "salary_min_cad": 68676,
+   "salary_max_cad": 86121,
+   "posted_date": "2026-10-07",
+   "closing_date": "2026-10-22",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [
+    "Python",
+    "JavaScript",
+    "PostGIS",
+    "Leaflet",
+    "ArcGIS"
+   ],
+   "why": "Web GIS development at the City; closed, but shows the City hires JavaScript/Python developers.",
+   "eligibility_note": "Closed 2026-10-22; criminal record check.",
+   "url": "https://wellfound.com/jobs/4843562-programmer-analyst-ii",
+   "source": "Wellfound",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-farm-credit-canada-senior-full-stack-developer-customer-management-solutions",
+   "title": "Senior Full Stack Developer (Customer Management Solutions)",
+   "employer": "Farm Credit Canada",
+   "region": "regina",
+   "city": "Regina, SK",
+   "work_mode": null,
+   "employment_type": "permanent full-time",
+   "seniority": "6+ yrs",
+   "role_family": "software_dev",
+   "salary_text": "$94,620 to $128,020 YEAR annually",
+   "salary_min_cad": 94620,
+   "salary_max_cad": 128020,
+   "posted_date": "2026-08-27",
+   "closing_date": "2026-09-09",
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 55,
+   "ai_related": false,
+   "skills_tags": [
+    "Java",
+    "Spring Boot",
+    "Angular",
+    "TypeScript"
+   ],
+   "why": "Tracked employer (FCC); closed and Java-heavy, kept for watching.",
+   "eligibility_note": "Closed 2026-09-09.",
+   "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50168425",
+   "source": "Job Bank",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-creative-niche-client-user-experience-engineer-design-technologist",
+   "title": "User Experience Engineer / Design Technologist",
+   "employer": "Creative Niche (client)",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid, 3 days on-site)",
+   "work_mode": "hybrid",
+   "employment_type": "12-month contract (also listed as full-time)",
+   "seniority": "senior (7+ yrs)",
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 82,
+   "ai_related": false,
+   "skills_tags": [
+    "Figma tokens",
+    "HTML",
+    "SCSS",
+    "JavaScript",
+    "React",
+    "Angular"
+   ],
+   "why": "Bridges Figma design tokens and front-end code — exactly his design-systems plus React/HTML/CSS mix.",
+   "eligibility_note": "Hybrid in Toronto. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-12/2107791/creative-niche/user-experience-engineer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-lightspeed-senior-full-stack-software-developer-react-js-focus",
+   "title": "Senior Full Stack Software Developer (React.js focus)",
+   "employer": "Lightspeed",
+   "region": "toronto",
+   "city": "Toronto, ON (flexible/hybrid; hiring across Canada)",
+   "work_mode": "hybrid",
+   "employment_type": null,
+   "seniority": "5+ yrs",
+   "role_family": "software_dev",
+   "salary_text": "$140-150k CAD (total compensation, Ontario hire)",
+   "salary_min_cad": 140000,
+   "salary_max_cad": 150000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 62,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "design systems",
+    "AWS"
+   ],
+   "why": "POS company (Lightspeed) — his POS/procurement UX work is domain-relevant, and the role mentions design systems at scale; the engineering bar is high.",
+   "eligibility_note": "Accepts candidates across Canada; confirm whether fully remote from Saskatchewan works.",
+   "url": "https://job-boards.greenhouse.io/lightspeedhq/jobs/7651098",
+   "source": "Greenhouse (Lightspeed)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-kablamo-front-end-engineer",
+   "title": "Front End Engineer",
+   "employer": "Kablamo",
+   "region": "toronto",
+   "city": "Toronto, ON (flexible, downtown office)",
+   "work_mode": "hybrid",
+   "employment_type": "permanent full-time",
+   "seniority": "mid-level (3-5 yrs)",
+   "role_family": "frontend_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "TypeScript",
+    "React Native",
+    "GraphQL",
+    "Jest"
+   ],
+   "why": "Mid-level React/TypeScript role at a consultancy where he's also tracking a product-designer opening.",
+   "eligibility_note": "Start Nov 2026–Feb 2027. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://employmenthero.com/en-ca/jobs/position/kablamo-pty-ltd-front-end-engineer-u3sh1/",
+   "source": "Employment Hero",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-limelight-software-senior-qa-automation-engineer",
+   "title": "Senior QA Automation Engineer",
+   "employer": "Limelight Software",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "3+ yrs QA automation",
+   "role_family": "qa_testing",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 62,
+   "ai_related": false,
+   "skills_tags": [
+    "Playwright",
+    "Cypress",
+    "TypeScript",
+    "Postman",
+    "CI/CD"
+   ],
+   "why": "Builds on his software-QA start; he'd need to show recent Playwright/automation work.",
+   "eligibility_note": "Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/3265471/limelight-software/senior-qa-automation-engineer-in-toronto",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-kablamo-senior-qa-engineer",
+   "title": "Senior QA Engineer",
+   "employer": "Kablamo",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "5+ yrs QA incl. automation",
+   "role_family": "qa_testing",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 58,
+   "ai_related": false,
+   "skills_tags": [
+    "Playwright",
+    "TypeScript",
+    "API testing",
+    "Jira/Xray"
+   ],
+   "why": "QA background fits; asks for significant recent automation.",
+   "eligibility_note": "Start Nov 2026–Feb 2027. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job/2245975/kablamo-pty-ltd/senior-qa-engineer/toronto",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-homebase-ux-engineer-hybrid",
+   "title": "UX Engineer (Hybrid)",
+   "employer": "Homebase",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": null,
+   "seniority": "2-5 yrs",
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-07-16",
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [
+    "Storybook",
+    "React Testing Library",
+    "Figma",
+    "Chromatic"
+   ],
+   "why": "Exactly the design-engineer profile that suits him (Storybook + Figma); closed, so watch Homebase for repeats.",
+   "eligibility_note": "No longer accepting applications.",
+   "url": "https://jobs.notablecap.com/companies/homebase/jobs/86486274-ux-engineer-hybrid",
+   "source": "Notable Capital job board",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-showpass-front-end-developer",
+   "title": "Front End Developer",
+   "employer": "Showpass",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "4+ yrs React/Next.js + TypeScript",
+   "role_family": "frontend_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 66,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "Next.js",
+    "TypeScript"
+   ],
+   "why": "Calgary ticketing SaaS; React/TypeScript front-end where his UI sense is a plus.",
+   "eligibility_note": "Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/2309101/showpass/front-end-developer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-showpass-senior-front-end-developer",
+   "title": "Senior Front End Developer",
+   "employer": "Showpass",
+   "region": "alberta",
+   "city": "Calgary, AB (in office)",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "7+ yrs front-end, 5+ React",
+   "role_family": "frontend_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 56,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "design systems",
+    "E2E tests"
+   ],
+   "why": "Includes design-system ownership, but needs 7+ years of front-end engineering.",
+   "eligibility_note": "In-office. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/3234265/showpass/senior-front-end-developer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-showpass-senior-qa-engineer",
+   "title": "Senior QA Engineer",
+   "employer": "Showpass",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "7+ yrs QA/automation",
+   "role_family": "qa_testing",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 56,
+   "ai_related": false,
+   "skills_tags": [
+    "Playwright",
+    "Cypress",
+    "GitHub Actions"
+   ],
+   "why": "QA leadership with Playwright; his QA start helps but automation depth is the gap.",
+   "eligibility_note": "Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/2268301/showpass/senior-qa-engineer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-breakthrough-academy-software-developer-front-end-react",
+   "title": "Software Developer – Front End (React)",
+   "employer": "Breakthrough Academy",
+   "region": "alberta",
+   "city": "Calgary, AB (hybrid, 3 days in office)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs front-end, 3+ React/TS",
+   "role_family": "frontend_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "React",
+    "TypeScript",
+    "Zustand/Redux",
+    "CI/CD"
+   ],
+   "why": "Product-focused React role at a business-education company; UX sense is a differentiator.",
+   "eligibility_note": "Must be eligible to work in Canada. Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/2274572/900115860/software-developer-front-end-react",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-n-ord-technologies-unnamed-client-react-developer",
+   "title": "React Developer",
+   "employer": "Nöord Technologies (unnamed client)",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": null,
+   "employment_type": "permanent full-time",
+   "seniority": "5+ yrs",
+   "role_family": "software_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 50,
+   "ai_related": false,
+   "skills_tags": [
+    "React/Angular",
+    "TypeScript",
+    "RxJS",
+    "Java",
+    "Spring Boot"
+   ],
+   "why": "React front end on a Java/Spring stack; lower fit since it leans on back-end Java.",
+   "eligibility_note": "Full-time; a Jan 2028 target rather than a study-time job.",
+   "url": "https://www.careerbeacon.com/en/job-9/3332119/noord-technologies-corporation/react-developer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-government-of-alberta-full-stack-developer",
+   "title": "Full Stack Developer",
+   "employer": "Government of Alberta",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "software_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-05-25",
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "GoA hires full-stack developers several times a year (three postings in May–Aug 2026); a pipeline for Jan 2028.",
+   "eligibility_note": "Application period closed.",
+   "url": "https://jobpostings.alberta.ca/job/Edmonton-Full-Stack-Developer/602800617/",
+   "source": "jobpostings.alberta.ca",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-government-of-alberta-senior-full-stack-developer",
+   "title": "Senior Full Stack Developer",
+   "employer": "Government of Alberta",
+   "region": "alberta",
+   "city": "Edmonton, AB",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": null,
+   "role_family": "software_dev",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-08-28",
+   "closing_date": null,
+   "first_seen": "2026-11-24",
+   "last_seen": "2026-11-24",
+   "times_seen": 1,
+   "status": "closed",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 55,
+   "ai_related": false,
+   "skills_tags": [],
+   "why": "Closed GoA senior developer post; watch for the next intake.",
+   "eligibility_note": "Application period closed.",
+   "url": "https://jobpostings.alberta.ca/job/Edmonton-Senior-Full-Stack-Developer/605656717/",
+   "source": "jobpostings.alberta.ca",
    "verified": "page-fetched",
    "history": [
     {

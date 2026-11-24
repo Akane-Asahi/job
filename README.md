@@ -28,7 +28,7 @@ To view it locally: `python3 -m http.server` in this folder, then open http://lo
 ## Daily run (what the scheduled task does)
 
 1. Clone this repo; read `data/jobs.json` (`meta` holds the profile, scoring and dedupe rules).
-2. Search each region (Regina incl. Saskatoon/SK-remote; Toronto/GTA; Calgary + Edmonton) for: UX/UI/product designer, AI product designer / UX for AI, UX researcher, accessibility specialist, service designer, conversational/AI trainer design roles, graphic/print, AI developer. Check employer boards for the tracked employers too.
+2. Search each region (Regina incl. Saskatoon/SK-remote; Toronto/GTA; Calgary + Edmonton) for: UX/UI/product designer, AI product designer / UX for AI, UX researcher, accessibility specialist, service designer, conversational/AI trainer design roles, graphic/print, AI developer; software development (front-end/React, full-stack, QA/test automation, UX engineer/design technologist); and side-income work doable while studying (freelance/part-time UX, AI-training gigs, U of R casual roles). Check employer boards for the tracked employers too.
 3. Write today's finds to a temp `candidates.json` (schema in `scripts/merge.py`) with a match score, role family and categories, then run
    `python3 scripts/merge.py candidates.json --date YYYY-MM-DD --notes "..." --coverage coverage.json`.
 4. Re-list jobs already on the radar that are still posted, so they get a new `last_seen`.
