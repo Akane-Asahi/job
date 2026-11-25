@@ -3,7 +3,7 @@
   "schema_version": 1,
   "name": "Job Radar — Regina · Toronto · Alberta",
   "created": "2026-11-23",
-  "last_run": "2026-11-24",
+  "last_run": "2026-11-25",
   "timezone": "America/Regina",
   "schedule": "Daily 06:40 America/Regina",
   "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
@@ -137,6 +137,36 @@
     ]
    },
    "notes": "Add-on scans on request: (1) side-income/freelance work while studying, 10 added incl. ImageX freelance UX at $75–85/h; (2) link check of all open jobs: 10 closed (incl. Scotiabank and Wealthsimple interns, Kobo, Visionpool), 13 search-page links replaced with direct postings, 6 unreachable marked unknown; (3) software development roles (front-end, full-stack, QA, UX engineering), 20 added, 13 open. | Daily scan: 13 added (8 open/unconfirmed incl. Weekday AI design-evaluation part-time $80-180/h, Randstad Intermediate UX Toronto to Jan 18, League and FanDuel 2027 co-ops, LED PROS graphic Edmonton closing Dec 1; 5 closed for watchlist incl. Jobber Sr PD Fintech, Amii graphic); 22 existing re-sighted; most fresh search hits were stale/closed."
+  },
+  {
+   "date": "2026-11-25",
+   "run_type": "daily",
+   "new": 21,
+   "seen_again": 35,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 35,
+    "toronto": 50,
+    "alberta": 26
+   },
+   "new_by_region": {
+    "regina": 11,
+    "toronto": 6,
+    "alberta": 4
+   },
+   "ai_related_share_active": 0.342,
+   "coverage": {
+    "worked": [
+     "WebSearch: 16 queries across 3 regions + tracked employers (SaskTel, SaskPower, ISC, GoS, SGI, Wealthsimple, Kobo, RBC, TD, GoA)",
+     "Page fetches: 29 new-candidate postings + 36 existing-job re-checks (CareerBeacon, IxDF, Greenhouse, Lever, JobLeads, Randstad, Intuit, Hays, Workable, Remotive)"
+    ],
+    "blocked_or_thin": [
+     "Fetch of URLs not surfaced by today's searches was refused (permission/provenance), so ~55 tracked jobs were not re-checked today",
+     "Client errors: Targeted Talent lead UI/UX (CB), Insight Global conversational design x2, IxDF Edmonton UX, Shabech CB, Univeris Lever, IxDF ux-ui-designer-remote-mdca9y, Wellfound Cameco",
+     "Many search hits stale: SGI Sr UX, SaskPower product analyst, City of Saskatoon x2, RBC DS x2, Kobo contract, City of Edmonton SSD, Messagepoint, HomeTeam AI, Optave"
+    ]
+   },
+   "notes": "Daily scan: 21 new (remote-Canada contracts, part-time AI design/eval, Toronto research), 35 re-checked by page fetch; fetching URLs not surfaced by today's searches was blocked, so ~55 older jobs were not re-verified"
   }
  ],
  "market_signals": [
@@ -870,8 +900,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched"
@@ -908,6 +938,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -927,8 +962,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "student_track"
@@ -965,6 +1000,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -984,8 +1024,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1011,6 +1051,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1030,9 +1075,9 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
-   "status": "active",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "closed",
    "categories": [
     "ai_frontier",
     "watchlist"
@@ -1055,6 +1100,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: active -> closed"
     }
    ]
   },
@@ -1252,11 +1302,11 @@
    "salary_min_cad": 65000,
    "salary_max_cad": 82000,
    "posted_date": "2026-08-05",
-   "closing_date": null,
+   "closing_date": "2026-08-19",
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
-   "status": "active",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "closed",
    "categories": [
     "watchlist"
    ],
@@ -1264,7 +1314,7 @@
    "ai_related": false,
    "skills_tags": [],
    "why": "Posted Aug 5; likely closed. Shows SGI's creative services hires temps.",
-   "eligibility_note": "",
+   "eligibility_note": "JobAds mirror shows closing date August 19, 2026; 100% in office, GDC certification asked.",
    "url": "https://designproject.io/jobs/graphic-designer-at-sgi-q0zm5t",
    "source": "DesignProject",
    "verified": "page-fetched",
@@ -1283,6 +1333,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: active -> closed; closing_date: None -> 2026-08-19"
     }
    ]
   },
@@ -1384,8 +1439,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1399,7 +1454,7 @@
     "UX/UI"
    ],
    "why": "AI product design with a year-end delivery push, so hiring is likely fast. 3–5 years asked; you exceed it.",
-   "eligibility_note": "",
+   "eligibility_note": " CareerBeacon copy: Toronto in-office, background check required; security clearance nice-to-have.",
    "url": "https://employmenthero.com/en-ca/jobs/position/careerbeacon-demo-ai-product-designer-j084b/",
    "source": "Employment Hero / CareerBeacon",
    "verified": "page-fetched",
@@ -1421,6 +1476,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1555,8 +1615,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1588,6 +1648,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1711,8 +1776,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched"
@@ -1749,6 +1814,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1823,8 +1893,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1859,6 +1929,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2140,8 +2215,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [],
    "match_score": 75,
@@ -2168,6 +2243,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2741,14 +2821,14 @@
    "employment_type": "co-op",
    "seniority": null,
    "role_family": "service_design",
-   "salary_text": null,
+   "salary_text": "$804.10 - $1072.13 weekly before tax",
    "salary_min_cad": null,
    "salary_max_cad": null,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "student_track"
@@ -2781,6 +2861,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "salary_text: None -> $804.10 - $1072.13 weekly before tax"
     }
    ]
   },
@@ -2844,8 +2929,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2885,6 +2970,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3001,8 +3091,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -3034,6 +3124,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3668,8 +3763,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -3699,6 +3794,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3718,8 +3818,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "most_matched",
@@ -3749,6 +3849,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3768,8 +3873,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "most_matched",
@@ -3799,6 +3904,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3813,14 +3923,14 @@
    "seniority": "lead (5+ yrs)",
    "role_family": "ux_product_design",
    "salary_text": "Competitive salary; bonus; relocation package",
-   "salary_min_cad": null,
-   "salary_max_cad": null,
+   "salary_min_cad": 100000,
+   "salary_max_cad": 130000,
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
-   "status": "unknown",
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
+   "status": "active",
    "categories": [
     "watchlist"
    ],
@@ -3846,6 +3956,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: unknown -> active"
     }
    ]
   },
@@ -3947,8 +4062,8 @@
    "posted_date": "2026-08-27",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -3975,6 +4090,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4201,8 +4321,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4232,6 +4352,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4251,9 +4376,9 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
-   "status": "unknown",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "active",
    "categories": [
     "ai_frontier"
    ],
@@ -4276,6 +4401,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: unknown -> active"
     }
    ]
   },
@@ -4341,9 +4471,9 @@
    "posted_date": "2026-03-31",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
-   "status": "likely_closed",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "unknown",
    "categories": [
     "watchlist"
    ],
@@ -4365,6 +4495,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: likely_closed -> unknown"
     }
    ]
   },
@@ -4384,8 +4519,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-25",
+   "times_seen": 3,
    "status": "active",
    "categories": [],
    "match_score": 64,
@@ -4408,6 +4543,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4505,8 +4645,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -4534,6 +4674,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4553,8 +4698,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -4582,6 +4727,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4601,8 +4751,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -4630,6 +4780,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4649,8 +4804,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "remote_canada",
@@ -4676,6 +4831,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4695,8 +4855,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -4723,6 +4883,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4742,8 +4907,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4770,6 +4935,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4789,8 +4959,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "remote_canada",
@@ -4816,6 +4986,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -5807,9 +5982,9 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
-   "status": "unknown",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "active",
    "categories": [
     "ai_frontier",
     "most_matched",
@@ -5835,6 +6010,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: unknown -> active"
     }
    ]
   },
@@ -5940,8 +6120,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -5964,6 +6144,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -5983,8 +6168,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "student_track"
@@ -6006,6 +6191,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6025,8 +6215,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [],
    "match_score": 68,
@@ -6046,6 +6236,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6065,9 +6260,9 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
-   "status": "unknown",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "active",
    "categories": [
     "ai_frontier",
     "watchlist"
@@ -6089,6 +6284,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: unknown -> active"
     }
    ]
   },
@@ -6108,9 +6308,9 @@
    "posted_date": "2026-07-30",
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
-   "status": "likely_closed",
+   "last_seen": "2026-11-25",
+   "times_seen": 2,
+   "status": "unknown",
    "categories": [
     "watchlist"
    ],
@@ -6132,6 +6332,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "status: likely_closed -> unknown"
     }
    ]
   },
@@ -6346,6 +6551,919 @@
    "history": [
     {
      "date": "2026-11-24",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-targeted-talent-unnamed-client-senior-product-ui-ux-designer",
+   "title": "Senior Product (UI/UX) Designer",
+   "employer": "Targeted Talent (unnamed client)",
+   "region": "regina",
+   "city": "Saskatoon, SK (remote, later relocation to Winnipeg)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "senior (2+ yrs senior)",
+   "role_family": "ux_product_design",
+   "salary_text": "CAD 70,000 - 90,000",
+   "salary_min_cad": 70000,
+   "salary_max_cad": 90000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "remote_canada"
+   ],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [
+    "user research",
+    "portfolio",
+    "mentoring"
+   ],
+   "why": "Senior UI/UX role with user research and mentoring, a fit for 9 years across QA and enterprise UX; remote start from Saskatoon.",
+   "eligibility_note": "Full-time; later relocation to Winnipeg expected. Not compatible with full-time study until Jan 2028.",
+   "url": "https://www.jobleads.com/ca/job/senior-product-ui-ux-designer--saskatoon--e539f32d36365ddf4029803c21e0d9575",
+   "source": "JobLeads",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-vendasta-senior-product-designer",
+   "title": "Senior Product Designer",
+   "employer": "Vendasta",
+   "region": "regina",
+   "city": "Saskatoon, SK",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "5+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "grad_2027_pipeline",
+    "most_matched",
+    "watchlist"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "Figma",
+    "design systems",
+    "accessibility",
+    "AI design"
+   ],
+   "why": "SaaS platform for SMBs; asks for deep Figma, design systems and accessibility with AI-design awareness, matching his enterprise SaaS and design-system work.",
+   "eligibility_note": "Page shows 'posted yesterday' but body says apply by July 11, 2025; status unclear. Full-time Saskatoon role.",
+   "url": "https://www.careerbeacon.com/en/job-9/2254231/vendasta/senior-product-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-reuters-parent-company-via-ixdf-sr-ux-designer-ai-llm-products",
+   "title": "Sr. UX Designer (AI/LLM products)",
+   "employer": "Confidential (Reuters parent company, via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid 2-3 days)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "6+ yrs",
+   "role_family": "ai_product_design",
+   "salary_text": "105,000 - 155,000 CAD annually",
+   "salary_min_cad": 105000,
+   "salary_max_cad": 155000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "grad_2027_pipeline",
+    "most_matched"
+   ],
+   "match_score": 85,
+   "ai_related": true,
+   "skills_tags": [
+    "AI/LLM UX",
+    "prototyping with models",
+    "WCAG 2.1 AA",
+    "research",
+    "Figma"
+   ],
+   "why": "Designing AI/LLM features for professional enterprise tools with WCAG 2.1 AA and research: lines up with his enterprise SaaS work and AI-assisted search thesis.",
+   "eligibility_note": "Full-time hybrid in Toronto; not compatible with full-time study in Regina.",
+   "url": "https://ixdf.org/jobs/sr-ux-designer-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-randstad-unnamed-health-public-sector-client-senior-ux-researcher-5-month-contract",
+   "title": "Senior UX Researcher (5-month contract)",
+   "employer": "Randstad (unnamed health/public-sector client)",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid, up to 3 days onsite)",
+   "work_mode": "hybrid",
+   "employment_type": "contract, 5 months",
+   "seniority": "7+ yrs",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-09-18",
+   "closing_date": "2026-12-17",
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "UX research",
+    "AODA",
+    "WCAG 2.1 AA",
+    "regulated sectors"
+   ],
+   "why": "Research plus AODA/WCAG in a regulated public/health setting fits his accessibility focus, but the 7+ years of pure research is a stretch.",
+   "eligibility_note": "Strict 7+ yrs UX research and 7+ yrs AODA/WCAG; hybrid in Toronto; background checks.",
+   "url": "https://www.randstad.com/jobs/senior-ux-researcher_toronto_47466515/",
+   "source": "Randstad",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-cohere-staff-ux-researcher",
+   "title": "Staff UX Researcher",
+   "employer": "Cohere",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "7+ yrs",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 66,
+   "ai_related": true,
+   "skills_tags": [
+    "AI research",
+    "enterprise",
+    "agentic systems"
+   ],
+   "why": "Research on enterprise AI and agentic systems at a tracked AI employer; staff level is above his research seniority, so treat as a watch.",
+   "eligibility_note": "Staff level, 7+ years of UX research; full-time.",
+   "url": "https://www.careerbeacon.com/en/job-4/3264055/cohere/staff-ux-researcher",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-haptiq-user-experience-researcher",
+   "title": "User Experience Researcher",
+   "employer": "Haptiq",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "3+ yrs",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "user research",
+    "client projects"
+   ],
+   "why": "Leads research on client enterprise projects with a 3+ year bar he clears through his UX and QA testing background and HCI research.",
+   "eligibility_note": "Full-time hybrid in Toronto; not compatible with full-time study.",
+   "url": "https://www.careerbeacon.com/en/job-9/2033359/haptiq/user-experience-researcher",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-intuit-product-designer-co-op-12-months",
+   "title": "Product Designer Co-op (12 months)",
+   "employer": "Intuit",
+   "region": "toronto",
+   "city": "Toronto, ON (office 3 days/week)",
+   "work_mode": "hybrid",
+   "employment_type": "co-op, 12 months, 40 h/wk",
+   "seniority": "student",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "student_track"
+   ],
+   "match_score": 62,
+   "ai_related": false,
+   "skills_tags": [
+    "fintech",
+    "TurboTax",
+    "co-op"
+   ],
+   "why": "Fintech product design co-op on TurboTax; a good pipeline target for a 2027 co-op term given his financial-rules-engine background.",
+   "eligibility_note": "Must be enrolled; 12-month full-time Toronto term; must be legally eligible to work in Canada without sponsorship now or later.",
+   "url": "https://jobs.intuit.com/job/toronto/product-designer-co-op-12-months/27595/82439397408",
+   "source": "Intuit Careers",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-wealthsimple-staff-product-designer-cx-productivity",
+   "title": "Staff Product Designer, CX Productivity",
+   "employer": "Wealthsimple",
+   "region": "toronto",
+   "city": "Toronto, ON / remote-first",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "staff",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada",
+    "watchlist"
+   ],
+   "match_score": 74,
+   "ai_related": true,
+   "skills_tags": [
+    "AI for CX workflows",
+    "fintech",
+    "research"
+   ],
+   "why": "Uses AI to streamline customer-support workflows at a fintech; his loyalty/financial rules-engine and internal-tools work map well, though staff level is a reach.",
+   "eligibility_note": "Staff level, full-time.",
+   "url": "https://jobs.lever.co/wealthsimple/e2cc4a5f-928b-4de0-999a-651d9834eabf",
+   "source": "Lever",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-aequilibrium-senior-product-designer-digital-banking-financial-services-canada",
+   "title": "Senior Product Designer — Digital Banking & Financial Services (Canada)",
+   "employer": "Aequilibrium",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "independent contractor, full- or part-time",
+   "seniority": "5+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 84,
+   "ai_related": false,
+   "skills_tags": [
+    "digital banking",
+    "Figma",
+    "WCAG",
+    "contract"
+   ],
+   "why": "Digital-banking product design with WCAG, open to part-time contractors in Canada: his loyalty/financial engines and Figma systems work fit, and the hours can flex around study.",
+   "eligibility_note": "Must be based in Canada and legally eligible; contractor (asks for CAD hourly rate).",
+   "url": "https://ixdf.org/jobs/senior-product-designer-digital-banking-financial-services-canada-remote",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-government-services-firm-a-via-ixdf-product-designer-contractor-govern",
+   "title": "Product Designer (Contractor, government services)",
+   "employer": "Confidential government-services firm A (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "contract, 9-10 months",
+   "seniority": "3-5+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": "$52.00-$65.00 per hour",
+   "salary_min_cad": 108160,
+   "salary_max_cad": 135200,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada",
+    "side_income"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "WCAG 2.1+",
+    "Figma",
+    "AI-assisted tools",
+    "government"
+   ],
+   "why": "Government-services product design with WCAG 2.1+ and AI-assisted tooling, remote in Canada; a close fit for his accessibility and enterprise UX skills.",
+   "eligibility_note": "Must be in Canada with a Canadian business number; likely full-time hours, so check flexibility while studying.",
+   "url": "https://ixdf.org/jobs/product-designer-contractor-remote-ouma3v",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-government-product-company-b-via-ixdf-product-designer-contract-govern",
+   "title": "Product Designer (Contract, government product)",
+   "employer": "Confidential government product company B (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "contract to Dec 31, 2026 (possible 4-6 month extension)",
+   "seniority": "4+ yrs",
+   "role_family": "ai_product_design",
+   "salary_text": "$70-100/hour",
+   "salary_min_cad": 145600,
+   "salary_max_cad": 208000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched",
+    "remote_canada",
+    "side_income"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "Claude + Figma workflow",
+    "government SaaS",
+    "WCAG 2.1+"
+   ],
+   "why": "Government SaaS design using a Claude + Figma AI workflow; his Figma-plus-code background and accessibility work are exactly what it asks.",
+   "eligibility_note": "Full-time contract through Dec 31, 2026; background checks; occasional travel.",
+   "url": "https://ixdf.org/jobs/product-designer-contract-remote",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-thrillworks-product-designer-web-ux-3-month-contract",
+   "title": "Product Designer (Web & UX, 3-month contract)",
+   "employer": "Thrillworks",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "contract, 3 months",
+   "seniority": null,
+   "role_family": "web_design",
+   "salary_text": "$90,000 - $120,000",
+   "salary_min_cad": 90000,
+   "salary_max_cad": 120000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "Figma",
+    "responsive web",
+    "accessibility"
+   ],
+   "why": "Responsive web and UX design for a digital agency; uses his Figma and HTML/CSS skills on a short contract.",
+   "eligibility_note": "Criminal background and sanctions checks.",
+   "url": "https://ixdf.org/jobs/product-designer-web-ux-remote-sidnsc",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-confidential-drupal-wordpress-agency-via-ixdf-senior-ux-ui-designer-freelance",
+   "title": "Senior UX/UI Designer (freelance)",
+   "employer": "Confidential Drupal/WordPress agency (via IxDF)",
+   "region": "alberta",
+   "city": "Remote (BC, AB, YT, NWT residents)",
+   "work_mode": "remote",
+   "employment_type": "freelance, hours vary",
+   "seniority": "senior",
+   "role_family": "web_design",
+   "salary_text": "50 - 70 CAD hourly",
+   "salary_min_cad": 104000,
+   "salary_max_cad": 145600,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "side_income"
+   ],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [
+    "Figma",
+    "accessible UI",
+    "web"
+   ],
+   "why": "Flexible-hours freelance UX/UI that would suit study, but limited to western-province residents.",
+   "eligibility_note": "Must reside in BC, Alberta, Yukon or NWT; no visa sponsorship. He lives in Saskatchewan, so not eligible today.",
+   "url": "https://ixdf.org/jobs/senior-ux-ui-designer-remote-uphxfz",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-mercor-product-designer-ai-trainer-part-time",
+   "title": "Product Designer – AI Trainer (part-time)",
+   "employer": "Mercor",
+   "region": "regina",
+   "city": "Remote (US/UK/Canada)",
+   "work_mode": "remote",
+   "employment_type": "part-time contract, 3-4 weeks, 15+ h/wk",
+   "seniority": null,
+   "role_family": "ai_training_eval",
+   "salary_text": "$50–$125/hour",
+   "salary_min_cad": 104000,
+   "salary_max_cad": 260000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "AI training",
+    "Figma",
+    "design critique"
+   ],
+   "why": "Short part-time work evaluating AI design output; uses his design judgement and QA background and fits around classes.",
+   "eligibility_note": "Asks for 3+ years at a 'prestigious tech firm'; AI interview. Rate may be USD.",
+   "url": "https://remotive.com/remote/jobs/design/product-designer-ai-trainer-4561097",
+   "source": "Remotive",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-sizanid-staffing-unnamed-client-ai-product-ux-instructor-part-time",
+   "title": "AI Product & UX Instructor (part-time)",
+   "employer": "Sizanid Staffing (unnamed client)",
+   "region": "regina",
+   "city": "Remote",
+   "work_mode": "remote",
+   "employment_type": "part-time",
+   "seniority": "4-5+ yrs",
+   "role_family": "instructional_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "teaching",
+    "AI product",
+    "Figma"
+   ],
+   "why": "Part-time teaching of AI product and UX: combines his VFX instructor and TA experience with 9 years of UX.",
+   "eligibility_note": "Must be legally authorized to work in the USA or Canada.",
+   "url": "https://jobs.workable.com/jobs/f4fc053e-26c1-48ab-83d2-667bf58188c8.md",
+   "source": "Workable",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-indie-game-studio-via-ixdf-technical-ui-ux-designer-6-month-contract-g",
+   "title": "Technical UI/UX Designer (6-month contract, games)",
+   "employer": "Confidential indie game studio (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "contract, 6 months",
+   "seniority": "3+ yrs games UI",
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada"
+   ],
+   "match_score": 50,
+   "ai_related": false,
+   "skills_tags": [
+    "Scaleform",
+    "console UX",
+    "implementation"
+   ],
+   "why": "Remote Canada contract, but it needs games UI and Scaleform implementation he hasn't done.",
+   "eligibility_note": "Requires 3+ years of games UI/UX; must reside in Canada.",
+   "url": "https://ixdf.org/jobs/technical-ui-ux-designer-6-month-contract-remote-vrtt9e",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-hays-client-banking-firm-mobile-accessibility-subject-matter-expert-contract",
+   "title": "Mobile Accessibility Subject Matter Expert (contract)",
+   "employer": "Hays (client: banking firm)",
+   "region": "regina",
+   "city": "Remote (Canada)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": "5-7+ yrs native mobile dev",
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada",
+    "watchlist"
+   ],
+   "match_score": 50,
+   "ai_related": false,
+   "skills_tags": [
+    "TalkBack",
+    "VoiceOver",
+    "WCAG",
+    "iOS/Android"
+   ],
+   "why": "Remote accessibility work at a bank, but it is a native mobile developer role.",
+   "eligibility_note": "Asks for 5+ years of native iOS/Android development.",
+   "url": "https://www.hays.ca/job-detail/mobile-accessibility-subject-matter-expert-canada---remote_1120565",
+   "source": "Hays",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-randstad-client-edmonton-educational-institution-intermediate-service-designer-on-",
+   "title": "Intermediate Service Designer (on-site, 10-month contract)",
+   "employer": "Randstad (client: Edmonton educational institution)",
+   "region": "alberta",
+   "city": "Edmonton, AB (on-site)",
+   "work_mode": "onsite",
+   "employment_type": "contract, 10 months",
+   "seniority": "3+ yrs",
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "service blueprints",
+    "journey maps",
+    "co-design"
+   ],
+   "why": "Service design at an education institution with blueprints and co-design workshops; fits his research and edtech/HCI angle.",
+   "eligibility_note": "On-site in Edmonton; not compatible with full-time study in Regina.",
+   "url": "https://www.randstad.ca/jobs/intermediate-service-designer-on-site_edmonton_46114570",
+   "source": "Randstad",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-randstad-unnamed-edmonton-client-senior-service-designer-6-month-contract",
+   "title": "Senior Service Designer (6-month contract)",
+   "employer": "Randstad (unnamed Edmonton client)",
+   "region": "alberta",
+   "city": "Edmonton area (remote per URL)",
+   "work_mode": "remote",
+   "employment_type": "contract, 6 months",
+   "seniority": "8+ yrs",
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 66,
+   "ai_related": false,
+   "skills_tags": [
+    "co-design",
+    "service blueprints",
+    "usability testing",
+    "government data"
+   ],
+   "why": "Government-data service design with usability testing; his enterprise UX fits but the 8+ years of pure service design is a stretch.",
+   "eligibility_note": "Asks for 8+ years human-centred design.",
+   "url": "https://www.randstad.ca/jobs/senior-service-designer-remote_saint-albert_45869815",
+   "source": "Randstad",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-clutch-canada-remote-staff-product-designer-ai-driven-systems",
+   "title": "Remote Staff Product Designer — AI-Driven Systems",
+   "employer": "Clutch Canada",
+   "region": "alberta",
+   "city": "Calgary, AB (page conflicts: remote vs onsite)",
+   "work_mode": null,
+   "employment_type": "full-time",
+   "seniority": "8+ yrs",
+   "role_family": "ai_product_design",
+   "salary_text": "$131,000 CAD and $159,000 CAD",
+   "salary_min_cad": 131000,
+   "salary_max_cad": 159000,
+   "posted_date": "2026-04-08",
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": true,
+   "skills_tags": [
+    "AI tools",
+    "systems thinking"
+   ],
+   "why": "Staff-level design of AI-driven systems; his 9 years in rules engines is relevant, but the post is old and the 8+ years design bar is high.",
+   "eligibility_note": "Posted April 2026 on an aggregator; work mode unclear.",
+   "url": "https://www.tryapplynow.com/jobs/clutch-canada-remote-staff-product-designer-ai-driven-systems-7f5057c2-08b2-4b77-9823-7e833c050896",
+   "source": "TryApplyNow",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-saskatchewan-research-council-senior-ai-and-automation-programmer",
+   "title": "Senior AI and Automation Programmer",
+   "employer": "Saskatchewan Research Council",
+   "region": "regina",
+   "city": "Saskatoon, SK (onsite)",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs",
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-25",
+   "last_seen": "2026-11-25",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 38,
+   "ai_related": true,
+   "skills_tags": [
+    "Python",
+    "TensorFlow",
+    "PLC/SCADA"
+   ],
+   "why": "SK AI engineering role; mostly Python/TensorFlow plus industrial automation, far from his design profile.",
+   "eligibility_note": "Onsite; criminal record check; 5+ years programming.",
+   "url": "https://www.tealhq.com/job/senior-ai-and-automation-programmer_7ea1a086ed959128c77e70cda03d9b690cb00",
+   "source": "Teal",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
     }
