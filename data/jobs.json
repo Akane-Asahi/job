@@ -3,7 +3,7 @@
   "schema_version": 1,
   "name": "Job Radar — Regina · Toronto · Alberta",
   "created": "2026-11-23",
-  "last_run": "2026-11-25",
+  "last_run": "2026-11-26",
   "timezone": "America/Regina",
   "schedule": "Daily 06:40 America/Regina",
   "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
@@ -167,6 +167,46 @@
     ]
    },
    "notes": "Daily scan: 21 new (remote-Canada contracts, part-time AI design/eval, Toronto research), 35 re-checked by page fetch; fetching URLs not surfaced by today's searches was blocked, so ~55 older jobs were not re-verified"
+  },
+  {
+   "date": "2026-11-26",
+   "run_type": "daily",
+   "new": 12,
+   "seen_again": 41,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 35,
+    "toronto": 57,
+    "alberta": 31
+   },
+   "new_by_region": {
+    "regina": 0,
+    "toronto": 7,
+    "alberta": 5
+   },
+   "ai_related_share_active": 0.366,
+   "coverage": {
+    "worked": [
+     "Web search (all 3 regions, ~20 queries)",
+     "CareerBeacon",
+     "IxDF",
+     "Rippling (Neo)",
+     "Greenhouse (Robots & Pencils)",
+     "Randstad (some)",
+     "Talentify/jobleads/tryapplynow (SGI history)",
+     "jobs.sasktel.com",
+     "jobs.toronto.ca"
+    ],
+    "blocked_or_thin": [
+     "Lever (Apply Digital, Univeris) fetch blocked",
+     "Insight Global fetch blocked",
+     "some Randstad/IxDF/CareerBeacon pages returned client errors",
+     "Indeed/LinkedIn/Glassdoor search pages not usable",
+     "urcareers and Government of Saskatchewan showed no new design postings",
+     "No new Regina/SK postings found"
+    ]
+   },
+   "notes": "Thin day for Regina/SK (no new posts); 12 new, mostly Toronto research/co-op and Calgary fintech; 42 re-seen via search"
   }
  ],
  "market_signals": [
@@ -800,8 +840,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched"
@@ -832,6 +872,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -900,8 +945,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "most_matched"
@@ -943,6 +988,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -962,8 +1012,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "student_track"
@@ -1003,6 +1053,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1439,8 +1494,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1483,6 +1538,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1502,8 +1562,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [
     "ai_frontier",
@@ -1540,6 +1600,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1615,8 +1680,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1653,6 +1718,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1672,8 +1742,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1709,6 +1779,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1776,8 +1851,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "most_matched"
@@ -1821,6 +1896,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1840,8 +1920,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1874,6 +1954,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1893,8 +1978,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1936,6 +2021,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1955,8 +2045,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1992,6 +2082,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2105,8 +2200,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -2142,6 +2237,11 @@
     },
     {
      "date": "2026-11-24",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2215,8 +2315,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [],
    "match_score": 75,
@@ -2250,6 +2350,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2269,8 +2374,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -2306,6 +2411,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2325,8 +2435,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [],
    "match_score": 74,
@@ -2359,6 +2469,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2378,8 +2493,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2411,6 +2526,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2827,8 +2947,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "student_track"
@@ -2866,6 +2986,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "salary_text: None -> $804.10 - $1072.13 weekly before tax"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2929,8 +3054,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2975,6 +3100,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3043,8 +3173,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched"
@@ -3072,6 +3202,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: replaced search-page link with direct posting"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3197,8 +3332,8 @@
    "posted_date": "2026-09-10",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "most_matched",
@@ -3225,6 +3360,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: replaced search-page link with direct posting"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3291,8 +3431,8 @@
    "posted_date": "2026-07-15",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [
     "remote_canada",
@@ -3324,6 +3464,11 @@
      "date": "2026-11-24",
      "event": "link_check_failed",
      "note": "site returned an error to the checker"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3763,8 +3908,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 3,
+   "last_seen": "2026-11-26",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -3799,6 +3944,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3818,8 +3968,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 3,
+   "last_seen": "2026-11-26",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "most_matched",
@@ -3852,6 +4002,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3928,8 +4083,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 3,
+   "last_seen": "2026-11-26",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "watchlist"
@@ -3961,6 +4116,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: unknown -> active"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4114,8 +4274,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [],
    "match_score": 76,
@@ -4137,6 +4297,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4321,8 +4486,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 3,
+   "last_seen": "2026-11-26",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4357,6 +4522,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4376,8 +4546,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -4406,6 +4576,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: unknown -> active"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4471,8 +4646,8 @@
    "posted_date": "2026-03-31",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [
     "watchlist"
@@ -4500,6 +4675,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: likely_closed -> unknown"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6034,8 +6214,8 @@
    "posted_date": null,
    "closing_date": "2027-01-18",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -6058,6 +6238,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6120,8 +6305,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -6149,6 +6334,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6168,8 +6358,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "student_track"
@@ -6194,6 +6384,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6308,8 +6503,8 @@
    "posted_date": "2026-07-30",
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-26",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [
     "watchlist"
@@ -6337,6 +6532,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: likely_closed -> unknown"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6356,8 +6556,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [
     "grad_2027_pipeline",
@@ -6380,6 +6580,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6572,8 +6777,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -6596,6 +6801,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6615,8 +6825,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [
     "grad_2027_pipeline",
@@ -6641,6 +6851,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6706,8 +6921,8 @@
    "posted_date": "2026-09-18",
    "closing_date": "2026-12-17",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -6730,6 +6945,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6749,8 +6969,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -6773,6 +6993,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6792,8 +7017,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "grad_2027_pipeline"
@@ -6814,6 +7039,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6876,8 +7106,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -6901,6 +7131,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7140,8 +7375,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7166,6 +7401,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7185,8 +7425,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-26",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7211,6 +7451,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7464,6 +7709,536 @@
    "history": [
     {
      "date": "2026-11-25",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-arcanaut-studios-ui-ux-lead-lead-ui-ux-designer",
+   "title": "UI/UX Lead (Lead UI & UX Designer)",
+   "employer": "Arcanaut Studios",
+   "region": "alberta",
+   "city": "Edmonton, AB (remote-friendly, BC or Alberta)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "6+ yrs, shipped AAA title",
+   "role_family": "ux_product_design",
+   "salary_text": "$120,000 - $175,000 / year + bi-yearly bonus",
+   "salary_min_cad": 120000,
+   "salary_max_cad": 175000,
+   "posted_date": "2026-11-25",
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 52,
+   "ai_related": false,
+   "skills_tags": [
+    "Unreal Engine 5 UI",
+    "game UI/UX",
+    "accessibility",
+    "team lead"
+   ],
+   "why": "Lead UI/UX role with strong pay, but it needs AAA game shipping experience he doesn't have; his VFX background is the only bridge.",
+   "eligibility_note": "Must live in BC or Alberta; full-time, so not compatible with full-time study; needs demo reel.",
+   "url": "https://www.careerbeacon.com/en/job-23/3708132/arcanaut-studios/ui-ux-lead",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-neo-financial-senior-product-designer",
+   "title": "Senior Product Designer",
+   "employer": "Neo Financial",
+   "region": "alberta",
+   "city": "Calgary, AB (in person)",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "Figma",
+    "design systems",
+    "research synthesis",
+    "IA"
+   ],
+   "why": "Fintech product design with design-system focus fits his rewards/loyalty and financial rules-engine work.",
+   "eligibility_note": "Mainly in-person in Calgary; security screening with criminal-record and credit check; full-time only.",
+   "url": "https://ats.rippling.com/neo-financial/jobs/9df97392-36eb-41f6-a277-e7e1304c1970",
+   "source": "Rippling (Neo careers)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-helcim-product-designer",
+   "title": "Product Designer",
+   "employer": "Helcim",
+   "region": "alberta",
+   "city": "Calgary, AB (hybrid Mon/Wed/Fri in office)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs UX, 2+ mobile",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "mobile POS",
+    "smart terminal",
+    "design systems",
+    "HTML/CSS",
+    "fintech"
+   ],
+   "why": "Mobile POS and payments design is a direct match for his POS/procurement and enterprise fintech work, and they value HTML/CSS literacy.",
+   "eligibility_note": "Must be located in Calgary, 3 office days a week; full-time, not compatible with study until 2028.",
+   "url": "https://careerbeacon.com/en/job-9/1881989/helcim/product-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-robots-pencils-level-4-ai-engineer",
+   "title": "Level 4 AI Engineer",
+   "employer": "Robots & Pencils",
+   "region": "alberta",
+   "city": "Calgary, AB (remote-friendly)",
+   "work_mode": "remote",
+   "employment_type": "full-time",
+   "seniority": "8+ yrs SWE, 4+ applied AI",
+   "role_family": "ai_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 34,
+   "ai_related": true,
+   "skills_tags": [
+    "RAG",
+    "LLM evaluation",
+    "Python",
+    "vector DBs",
+    "Claude/GPT APIs"
+   ],
+   "why": "Senior RAG/LLM engineering, far beyond his engineering depth; useful only as a signal of what Robots & Pencils builds.",
+   "eligibility_note": "Requires 8+ yrs engineering; full-time.",
+   "url": "https://job-boards.greenhouse.io/robotsandpencils/jobs/5096135008",
+   "source": "Greenhouse",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-syndio-staff-software-developer-ai",
+   "title": "Staff Software Developer, AI",
+   "employer": "Syndio",
+   "region": "alberta",
+   "city": "Calgary, AB",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "Staff",
+   "role_family": "ai_engineering",
+   "salary_text": "$83.00 - $205.00 / hour",
+   "salary_min_cad": 172640,
+   "salary_max_cad": 426400,
+   "posted_date": "2026-11-21",
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 30,
+   "ai_related": true,
+   "skills_tags": [
+    "Python",
+    "GCP/Vertex AI",
+    "LLM APIs",
+    "LLM evals",
+    "MCP"
+   ],
+   "why": "Staff-level AI engineering; well outside his design-first profile.",
+   "eligibility_note": "Must live within commuting distance of Calgary; no visa support or transfer; no relocation.",
+   "url": "https://www.careerbeacon.com/en/job-9/3273243/syndio/staff-software-developer-ai-calgary-canada",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-automotive-mobility-tech-supplier-via-ixdf-agentic-ai-application-ui-",
+   "title": "Agentic AI Application UI/UX Co-op",
+   "employer": "Confidential automotive/mobility tech supplier (via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON (672 Dupont St)",
+   "work_mode": "unknown",
+   "employment_type": "co-op",
+   "seniority": "student",
+   "role_family": "ai_product_design",
+   "salary_text": "25 - 29 CAD hourly",
+   "salary_min_cad": 52000,
+   "salary_max_cad": 60320,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched",
+    "student_track"
+   ],
+   "match_score": 82,
+   "ai_related": true,
+   "skills_tags": [
+    "AI UX",
+    "Human-AI interaction (HAX)",
+    "design systems",
+    "usability testing",
+    "prototyping"
+   ],
+   "why": "Human-AI interaction co-op lines up directly with his MSc HCI thesis on AI-assisted search and his design-system work.",
+   "eligibility_note": "Toronto location; co-op terms usually require enrolment and a work term that fits his program; check term dates.",
+   "url": "https://ixdf.org/jobs/agentic-ai-application-ui-ux-co-op-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-international-financial-services-provider-via-ixdf-product-design-ux-",
+   "title": "Product Design (UX) Internship",
+   "employer": "Confidential international financial services provider (via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": "internship",
+   "seniority": "student",
+   "role_family": "ux_product_design",
+   "salary_text": "$40,950.00 CAD - $56,550.00 CAD",
+   "salary_min_cad": 40950,
+   "salary_max_cad": 56550,
+   "posted_date": "2026-11-22",
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "student_track",
+    "watchlist"
+   ],
+   "match_score": 48,
+   "ai_related": false,
+   "skills_tags": [
+    "user-centered design",
+    "interaction design",
+    "user research",
+    "usability testing"
+   ],
+   "why": "Bank UX internship, but aimed at undergraduates; worth watching for a grad-eligible version.",
+   "eligibility_note": "Requires enrolment in an undergraduate program; he is an MSc student.",
+   "url": "https://ixdf.org/jobs/product-design-ux-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-4fmv-inc-client-in-downtown-toronto-senior-accessibility-compliance-analyst",
+   "title": "Senior Accessibility Compliance Analyst",
+   "employer": "4FMV Inc (client in downtown Toronto)",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid, 2 days in office)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "3+ yrs QA/accessibility testing",
+   "role_family": "accessibility",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-11-23",
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "WCAG 2.1 AA",
+    "PDF accessibility",
+    "JAWS/NVDA/VoiceOver",
+    "Axe/WAVE",
+    "CPACC/WAS"
+   ],
+   "why": "Combines his first career in software QA with accessibility, which his dyslexia-focused thesis strengthens.",
+   "eligibility_note": "Toronto hybrid, full-time permanent; not compatible with full-time study; certification preferred.",
+   "url": "https://www.careerbeacon.com/en/job-12/1960453/4fmv-inc/senior-accessibility-compliance-analyst",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-agentic-ai-cx-platform-via-ixdf-ux-researcher",
+   "title": "UX Researcher",
+   "employer": "Confidential agentic-AI CX platform (via IxDF)",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "unknown",
+   "employment_type": "full-time",
+   "seniority": "4-7 yrs",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": true,
+   "skills_tags": [
+    "mixed methods",
+    "usability testing",
+    "B2B/enterprise research",
+    "synthesis"
+   ],
+   "why": "Enterprise SaaS research on an agentic AI product matches his enterprise background and HCI research training.",
+   "eligibility_note": "Full-time; posted ~2 months ago, may close soon.",
+   "url": "https://ixdf.org/jobs/ux-researcher-toronto-bp4ddt",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-scotiabank-ux-researcher-req-278972",
+   "title": "UX Researcher (Req 278972)",
+   "employer": "Scotiabank",
+   "region": "toronto",
+   "city": "Toronto, ON (hybrid)",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "5+ yrs",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "grad_2027_pipeline",
+    "watchlist"
+   ],
+   "match_score": 74,
+   "ai_related": true,
+   "skills_tags": [
+    "discovery research",
+    "service design",
+    "facilitation",
+    "ResearchOps",
+    "AI-assisted research"
+   ],
+   "why": "Banking discovery research with service-design and AI-assisted research angles fits his HCI study and financial-systems background.",
+   "eligibility_note": "Toronto hybrid, full-time; not compatible with full-time study.",
+   "url": "https://ixdf.org/jobs/ux-researcher-toronto-srwxom",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-scotiabank-lead-user-experience-researcher-req-275460",
+   "title": "Lead User Experience Researcher (Req 275460)",
+   "employer": "Scotiabank",
+   "region": "toronto",
+   "city": "Toronto, ON",
+   "work_mode": "unknown",
+   "employment_type": "full-time",
+   "seniority": "7+ yrs research",
+   "role_family": "ux_research",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 60,
+   "ai_related": true,
+   "skills_tags": [
+    "research strategy",
+    "discovery",
+    "stakeholder influence",
+    "ResearchOps"
+   ],
+   "why": "Lead research role; good employer, but 7+ years of dedicated research is above his research depth.",
+   "eligibility_note": "Full-time; 7+ yrs research required.",
+   "url": "https://ixdf.org/jobs/lead-user-experience-researcher-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-randstad-unnamed-public-sector-client-junior-ux-designer-6-month-contract",
+   "title": "Junior UX Designer (6-month contract)",
+   "employer": "Randstad (unnamed public-sector client)",
+   "region": "toronto",
+   "city": "Toronto, ON (fully onsite, 5 days/week)",
+   "work_mode": "onsite",
+   "employment_type": "contract",
+   "seniority": "junior",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-10-24",
+   "closing_date": "2027-01-22",
+   "first_seen": "2026-11-26",
+   "last_seen": "2026-11-26",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 58,
+   "ai_related": false,
+   "skills_tags": [
+    "user research",
+    "Figma",
+    "Ontario Design System",
+    "wireframes",
+    "WCAG 2.1 AA"
+   ],
+   "why": "Public-sector UX with the Ontario Design System; junior level undersells his experience.",
+   "eligibility_note": "Fully onsite in Toronto 5 days/week; not compatible with study in Regina.",
+   "url": "https://www.randstad.com/jobs/junior-ux-designer_toronto_47651157/",
+   "source": "Randstad",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
     }
