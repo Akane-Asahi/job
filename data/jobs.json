@@ -3,7 +3,7 @@
   "schema_version": 1,
   "name": "Job Radar — Regina · Toronto · Alberta",
   "created": "2026-11-23",
-  "last_run": "2026-11-26",
+  "last_run": "2026-11-27",
   "timezone": "America/Regina",
   "schedule": "Daily 06:40 America/Regina",
   "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
@@ -207,6 +207,46 @@
     ]
    },
    "notes": "Thin day for Regina/SK (no new posts); 12 new, mostly Toronto research/co-op and Calgary fintech; 42 re-seen via search"
+  },
+  {
+   "date": "2026-11-27",
+   "run_type": "daily",
+   "new": 3,
+   "seen_again": 45,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 36,
+    "toronto": 58,
+    "alberta": 32
+   },
+   "new_by_region": {
+    "regina": 1,
+    "toronto": 1,
+    "alberta": 1
+   },
+   "ai_related_share_active": 0.365,
+   "coverage": {
+    "worked": [
+     "Web search (3 regions, ~18 queries)",
+     "IxDF",
+     "CareerBeacon",
+     "careers-page.com (Source Code)",
+     "designproject.io",
+     "jobs.sasktel.com",
+     "jobs.toronto.ca",
+     "alis.alberta.ca (some)",
+     "Greenhouse (Critical Mass)"
+    ],
+    "blocked_or_thin": [
+     "Lever (Apply Digital, Univeris) fetch blocked/failed",
+     "Randstad and Insight Global pages returned client errors",
+     "several ALIS and IxDF pages returned 4xx",
+     "Many search hits were stale 2025 postings (SGI, FCC, Vendasta, LawDepot, Autodesk)",
+     "Indeed/LinkedIn/Glassdoor search pages not usable",
+     "No new Regina/SK employer postings found"
+    ]
+   },
+   "notes": "Thin day: 3 new (AI-trainer UX evaluator remote, Toronto OPS service designer contract, Aequilibrium remote gov service/UX contract); 45 re-seen; many search hits were stale 2025 posts"
   }
  ],
  "market_signals": [
@@ -840,8 +880,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "most_matched"
@@ -877,6 +917,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -945,8 +990,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "most_matched"
@@ -993,6 +1038,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1012,8 +1062,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "student_track"
@@ -1060,6 +1110,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1079,8 +1134,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1109,6 +1164,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1271,8 +1331,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "unknown",
    "categories": [
     "ai_frontier",
@@ -1298,6 +1358,11 @@
      "date": "2026-11-24",
      "event": "link_check_failed",
      "note": "site returned an error to the checker"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1494,8 +1559,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1543,6 +1608,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1562,8 +1632,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [
     "ai_frontier",
@@ -1605,6 +1675,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1680,8 +1755,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1723,6 +1798,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1742,8 +1822,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1784,6 +1864,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1851,8 +1936,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "most_matched"
@@ -1901,6 +1986,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1920,8 +2010,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1959,6 +2049,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1978,8 +2073,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2026,6 +2121,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2045,8 +2145,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2087,6 +2187,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2200,8 +2305,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -2242,6 +2347,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2315,8 +2425,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [],
    "match_score": 75,
@@ -2355,6 +2465,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2374,8 +2489,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -2416,6 +2531,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2435,8 +2555,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [],
    "match_score": 74,
@@ -2474,6 +2594,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2493,8 +2618,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2529,6 +2654,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2897,15 +3027,15 @@
    "employment_type": "internship",
    "seniority": null,
    "role_family": "ux_product_design",
-   "salary_text": null,
+   "salary_text": "$40,950–$56,550 CAD annually, pro-rated to term",
    "salary_min_cad": null,
    "salary_max_cad": null,
-   "posted_date": null,
+   "posted_date": "2026-09-01",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
-   "status": "unknown",
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
+   "status": "active",
    "categories": [
     "grad_2027_pipeline",
     "student_track"
@@ -2928,6 +3058,11 @@
      "date": "2026-11-24",
      "event": "link_check_failed",
      "note": "site returned an error to the checker"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "status: unknown -> active; salary_text: None -> $40,950–$56,550 CAD annually, pro-rated to term"
     }
    ]
   },
@@ -2947,8 +3082,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "student_track"
@@ -2989,6 +3124,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3054,8 +3194,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -3105,6 +3245,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3431,8 +3576,8 @@
    "posted_date": "2026-07-15",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [
     "remote_canada",
@@ -3467,6 +3612,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3908,8 +4058,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 4,
+   "last_seen": "2026-11-27",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -3949,6 +4099,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3968,8 +4123,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 4,
+   "last_seen": "2026-11-27",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "most_matched",
@@ -4007,6 +4162,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4083,8 +4243,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 4,
+   "last_seen": "2026-11-27",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "watchlist"
@@ -4119,6 +4279,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4222,8 +4387,8 @@
    "posted_date": "2026-08-27",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4255,6 +4420,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4274,8 +4444,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [],
    "match_score": 76,
@@ -4300,6 +4470,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4362,8 +4537,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-23",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -4386,6 +4561,11 @@
      "date": "2026-11-23",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4486,8 +4666,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 4,
+   "last_seen": "2026-11-27",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4527,6 +4707,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4546,8 +4731,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -4579,6 +4764,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4646,8 +4836,8 @@
    "posted_date": "2026-03-31",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [
     "watchlist"
@@ -4678,6 +4868,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6162,8 +6357,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -6195,6 +6390,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: unknown -> active"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6305,8 +6505,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -6339,6 +6539,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6358,8 +6563,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "student_track"
@@ -6389,6 +6594,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6503,8 +6713,8 @@
    "posted_date": "2026-07-30",
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-26",
-   "times_seen": 3,
+   "last_seen": "2026-11-27",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [
     "watchlist"
@@ -6535,6 +6745,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6647,8 +6862,8 @@
    "posted_date": "2026-11-10",
    "closing_date": "2026-12-01",
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "urgent_apply"
@@ -6671,6 +6886,11 @@
      "date": "2026-11-24",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6777,8 +6997,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -6806,6 +7026,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6825,8 +7050,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "unknown",
    "categories": [
     "grad_2027_pipeline",
@@ -6854,6 +7079,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6921,8 +7151,8 @@
    "posted_date": "2026-09-18",
    "closing_date": "2026-12-17",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "watchlist"
@@ -6948,6 +7178,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -7106,8 +7341,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7134,6 +7369,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -7375,8 +7615,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7406,6 +7646,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7425,8 +7670,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-27",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7454,6 +7699,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -7688,8 +7938,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -7711,6 +7961,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7950,8 +8205,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7977,6 +8232,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7996,8 +8256,8 @@
    "posted_date": "2026-11-22",
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-27",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "student_track",
@@ -8021,6 +8281,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8239,6 +8504,145 @@
    "history": [
     {
      "date": "2026-11-26",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-recruiter-for-ai-research-labs-via-ixdf-ui-ux-design-expert-evaluator-",
+   "title": "UI/UX Design Expert - Evaluator - AI Trainer",
+   "employer": "Confidential recruiter for AI research labs (via IxDF)",
+   "region": "regina",
+   "city": "Remote (Canada eligible)",
+   "work_mode": "remote",
+   "employment_type": "freelance",
+   "seniority": "senior",
+   "role_family": "ai_training_eval",
+   "salary_text": "$80–$150/hour (USD)",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched",
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "design systems",
+    "interaction design",
+    "visual design",
+    "UX writing",
+    "AI evaluation"
+   ],
+   "why": "Freelance remote evaluation of AI-generated UI/UX — uses his 9 yrs of UX plus QA background, and the hours flex around his MSc.",
+   "eligibility_note": "Remote within listed countries incl. Canada; AI interview in application. Pay is in USD.",
+   "url": "https://ixdf.org/jobs/ui-ux-design-expert-evaluator-ai-trainer-remote",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-27",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-source-code-client-ontario-digital-credentials-program-rq11367-ux-designer-senior-",
+   "title": "RQ11367 - UX Designer - Senior (Service Designer)",
+   "employer": "Source Code (client: Ontario digital credentials program)",
+   "region": "toronto",
+   "city": "Toronto, ON (222 Jarvis St)",
+   "work_mode": "onsite",
+   "employment_type": "contract",
+   "seniority": "senior",
+   "role_family": "service_design",
+   "salary_text": "$66.74–$80.08/hr T4; $83.42–$100.10/hr Inc. (11+ months)",
+   "salary_min_cad": 138819,
+   "salary_max_cad": 166566,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "watchlist"
+   ],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "service blueprinting",
+    "user research",
+    "prototyping",
+    "value stream mapping",
+    "Agile",
+    "workshops"
+   ],
+   "why": "Public-sector service design across ministries; his journey-mapping and enterprise workflow work fits, but 7+ yrs pure service design is a stretch.",
+   "eligibility_note": "Toronto contract (address at 222 Jarvis); not compatible with full-time study in Regina.",
+   "url": "https://careers-page.com/source-code/job/V645V396",
+   "source": "Source Code (Manatal)",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-27",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-aequilibrium-senior-service-and-ux-designer-government-digital-transformation",
+   "title": "Senior Service and UX Designer, Government Digital Transformation",
+   "employer": "Aequilibrium",
+   "region": "alberta",
+   "city": "Remote within Canada (Alberta housing programs client)",
+   "work_mode": "remote",
+   "employment_type": "contract",
+   "seniority": "senior",
+   "role_family": "service_design",
+   "salary_text": "$80–$100 per hour (Nov 2026–Nov 2027, extensions possible)",
+   "salary_min_cad": 166400,
+   "salary_max_cad": 208000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
+   "times_seen": 1,
+   "status": "unknown",
+   "categories": [
+    "remote_canada",
+    "watchlist"
+   ],
+   "match_score": 72,
+   "ai_related": false,
+   "skills_tags": [
+    "service design",
+    "journey mapping",
+    "design systems",
+    "WCAG 2.2 AA",
+    "Figma",
+    "Miro"
+   ],
+   "why": "Remote Canadian service + UX design with WCAG 2.2 and enterprise design systems — strong skill overlap, though it asks 10+ yrs and 5+ in government.",
+   "eligibility_note": "Full-time during Alberta business hours (not compatible with full-time study); must live in Canada; requested Nov 2, 2026 start already passed, so may be filled.",
+   "url": "https://ixdf.org/jobs/senior-service-and-ux-designer-government-digital-transformation-remote",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-27",
      "event": "first_seen",
      "note": "Daily scan"
     }
