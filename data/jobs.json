@@ -251,20 +251,20 @@
   {
    "date": "2026-11-28",
    "run_type": "daily",
-   "new": 21,
+   "new": 27,
    "seen_again": 42,
    "closed_today": 0,
    "active_by_region": {
-    "regina": 37,
-    "toronto": 74,
-    "alberta": 35
+    "regina": 38,
+    "toronto": 77,
+    "alberta": 37
    },
    "new_by_region": {
-    "regina": 1,
-    "toronto": 17,
-    "alberta": 3
+    "regina": 2,
+    "toronto": 20,
+    "alberta": 5
    },
-   "ai_related_share_active": 0.404,
+   "ai_related_share_active": 0.408,
    "coverage": {
     "worked": [
      "Web search (3 regions, 18 queries)",
@@ -273,7 +273,8 @@
      "Workable",
      "Greenhouse (R&P, 7shifts, League)",
      "Lever (Cohere)",
-     "designproject.io"
+     "designproject.io",
+     "Indeed connector (12 searches, 6 posts added)"
     ],
     "blocked_or_thin": [
      "Re-check fetches of 19 tracked postings (Lever ImageX/Apply Digital/Wealthsimple, Workable, Rippling, Built In, Wellfound, ALIS, CAA SK) failed with a permission error, so they keep their old last_seen",
@@ -283,7 +284,7 @@
      "Indeed/LinkedIn/Robert Half search pages not usable"
     ]
    },
-   "notes": "21 new, mostly Toronto senior/AI product roles via IxDF plus 2 remote Evans Hunt roles (Calgary); League co-op closed; 19 re-check fetches blocked"
+   "notes": "27 new: Toronto IxDF senior/AI product roles, 2 remote Evans Hunt roles (Calgary), plus 6 Indeed posts (Vita/Intellimedia and BIS Safety in Edmonton, Samsara remote); League co-op closed; 19 re-check fetches blocked"
   }
  ],
  "market_signals": [
@@ -9766,6 +9767,269 @@
    "eligibility_note": "Posted ~1 month ago; employment type not stated.",
    "url": "https://ixdf.org/jobs/conversational-designer-remote-uuman8",
    "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-intellimedia-lp-ux-ui-designer-vita-platform",
+   "title": "UX/UI Designer (Vita platform)",
+   "employer": "Intellimedia LP",
+   "region": "alberta",
+   "city": "Edmonton",
+   "work_mode": "onsite",
+   "employment_type": "permanent",
+   "seniority": "intermediate–senior",
+   "role_family": "ux_product_design",
+   "salary_text": "$47,900.00-$110,000.00 per year",
+   "salary_min_cad": 47900,
+   "salary_max_cad": 110000,
+   "posted_date": "2026-11-12",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 86,
+   "ai_related": true,
+   "skills_tags": [
+    "edtech",
+    "workflows",
+    "AI prototyping",
+    "Claude",
+    "design system",
+    "accessibility"
+   ],
+   "why": "Edtech SaaS (K–12 moving into post-secondary) with complex forms, approvals and dashboards; wants AI-built prototypes with Claude and HTML/CSS, which matches his thesis and Annex Cloud rules-engine work.",
+   "eligibility_note": "In-person Edmonton, full-time; a Jan 2028 target.",
+   "url": "https://to.indeed.com/aa2m7pv66jbm",
+   "source": "Indeed",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-bis-safety-software-ui-ux-designer",
+   "title": "UI/UX Designer",
+   "employer": "BIS Safety Software",
+   "region": "alberta",
+   "city": "Sherwood Park (Edmonton area)",
+   "work_mode": "onsite",
+   "employment_type": "full-time",
+   "seniority": "intermediate",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-11-09",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 82,
+   "ai_related": true,
+   "skills_tags": [
+    "B2B SaaS",
+    "learning/compliance",
+    "design system",
+    "Figma",
+    "AI tools"
+   ],
+   "why": "B2B SaaS for safety training and compliance; asks for design-system building, close QA/dev collaboration and AI tools like Claude, all strengths of his.",
+   "eligibility_note": "In-person Sherwood Park office; full-time.",
+   "url": "https://to.indeed.com/aagqpwzrvrx2",
+   "source": "Indeed",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-samsara-lead-product-designer",
+   "title": "Lead Product Designer",
+   "employer": "Samsara",
+   "region": "toronto",
+   "city": "Mississauga / remote Canada",
+   "work_mode": "remote (Canada)",
+   "employment_type": null,
+   "seniority": "lead (8+ yrs)",
+   "role_family": "ux_engineering",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-11-06",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": true,
+   "skills_tags": [
+    "IoT SaaS",
+    "ship code",
+    "AI tools",
+    "web+mobile"
+   ],
+   "why": "Remote across Canada; designers ship code to the design system and use AI tools (Cursor, Figma Make). That suits his Figma+React skills and enterprise SaaS background.",
+   "eligibility_note": "Full-time; 8+ yrs product design and mentoring required, so his QA years may be counted differently.",
+   "url": "https://to.indeed.com/aaf4wlg9sxq7",
+   "source": "Indeed",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-napkin-marketing-inc-freelance-graphic-designer-15-20-h-wk",
+   "title": "Freelance Graphic Designer (15–20 h/wk)",
+   "employer": "napkin marketing inc.",
+   "region": "regina",
+   "city": "Remote",
+   "work_mode": "remote",
+   "employment_type": "part-time freelance",
+   "seniority": "3+ yrs",
+   "role_family": "graphic_print",
+   "salary_text": "$28.00-$30.00 per hour",
+   "salary_min_cad": 58240,
+   "salary_max_cad": 62400,
+   "posted_date": "2026-11-18",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "remote_canada",
+    "side_income",
+    "student_track"
+   ],
+   "match_score": 68,
+   "ai_related": false,
+   "skills_tags": [
+    "Photoshop",
+    "Illustrator",
+    "Figma",
+    "agency"
+   ],
+   "why": "Steady remote part-time agency work in ads, landing pages and layouts, drawing on his print, graphic and creative-strategist past.",
+   "eligibility_note": "Must be reachable 9–5 ET (7–3 Regina) for Teams calls; prefers GTA candidates.",
+   "url": "https://to.indeed.com/aavfy9wfmjjq",
+   "source": "Indeed",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-lucova-lead-designer-n-wn-pos",
+   "title": "Lead Designer (Nōwn POS)",
+   "employer": "Lucova",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "3+ yrs",
+   "role_family": "ux_product_design",
+   "salary_text": "Commensurate with experience",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": "2026-10-22",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "POS",
+    "loyalty",
+    "Adobe CS",
+    "UI/UX"
+   ],
+   "why": "POS and loyalty domain matches his Annex Cloud and POS work exactly, but the role is half marketing collateral and asks for Sketch/InVision.",
+   "eligibility_note": "Work mode not stated; posted about 5 weeks ago.",
+   "url": "https://to.indeed.com/aagkr7z7ygwh",
+   "source": "Indeed",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-vaza-product-designer-consumer-app",
+   "title": "Product Designer (consumer app)",
+   "employer": "Vaza",
+   "region": "toronto",
+   "city": "Woodbridge",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "3–5 yrs",
+   "role_family": "ux_product_design",
+   "salary_text": "From $55,000.00 per year",
+   "salary_min_cad": 55000,
+   "salary_max_cad": null,
+   "posted_date": "2026-11-11",
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [
+    "consumer",
+    "design system",
+    "motion",
+    "analytics"
+   ],
+   "why": "First in-house designer owning a design system on a social voting app; reward/leaderboard flows echo his loyalty work, but it's consumer and low-paid for his level.",
+   "eligibility_note": "Must commute or relocate to Woodbridge, ON.",
+   "url": "https://to.indeed.com/aanq666jb4sm",
+   "source": "Indeed",
    "verified": "page-fetched",
    "history": [
     {
