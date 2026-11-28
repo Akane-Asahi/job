@@ -3,7 +3,7 @@
   "schema_version": 1,
   "name": "Job Radar — Regina · Toronto · Alberta",
   "created": "2026-11-23",
-  "last_run": "2026-11-27",
+  "last_run": "2026-11-28",
   "timezone": "America/Regina",
   "schedule": "Daily 06:40 America/Regina",
   "profile_summary": "UX/Product designer, 9 yrs (Software QA → UX/UI). Enterprise SaaS, loyalty/financial rules engines, POS/procurement, design systems, Figma + React/HTML/CSS. MSc HCI (University of Regina, thesis: AI-assisted search for students with dyslexia), graduating Dec 2027. Past: VFX rotoscoping lead + instructor, creative strategist/print.",
@@ -247,6 +247,43 @@
     ]
    },
    "notes": "Thin day: 3 new (AI-trainer UX evaluator remote, Toronto OPS service designer contract, Aequilibrium remote gov service/UX contract); 45 re-seen; many search hits were stale 2025 posts"
+  },
+  {
+   "date": "2026-11-28",
+   "run_type": "daily",
+   "new": 21,
+   "seen_again": 42,
+   "closed_today": 0,
+   "active_by_region": {
+    "regina": 37,
+    "toronto": 74,
+    "alberta": 35
+   },
+   "new_by_region": {
+    "regina": 1,
+    "toronto": 17,
+    "alberta": 3
+   },
+   "ai_related_share_active": 0.404,
+   "coverage": {
+    "worked": [
+     "Web search (3 regions, 18 queries)",
+     "IxDF (20 pages)",
+     "CareerBeacon",
+     "Workable",
+     "Greenhouse (R&P, 7shifts, League)",
+     "Lever (Cohere)",
+     "designproject.io"
+    ],
+    "blocked_or_thin": [
+     "Re-check fetches of 19 tracked postings (Lever ImageX/Apply Digital/Wealthsimple, Workable, Rippling, Built In, Wellfound, ALIS, CAA SK) failed with a permission error, so they keep their old last_seen",
+     "3 IxDF pages and EmploymentHero returned 4xx",
+     "Stale hits: FCC AgExpert, GoSK Digital Citizen Experience manager, Critical Mass contract, Zaber co-op",
+     "No new Regina/SK employer postings found",
+     "Indeed/LinkedIn/Robert Half search pages not usable"
+    ]
+   },
+   "notes": "21 new, mostly Toronto senior/AI product roles via IxDF plus 2 remote Evans Hunt roles (Calgary); League co-op closed; 19 re-check fetches blocked"
   }
  ],
  "market_signals": [
@@ -880,8 +917,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "most_matched"
@@ -922,6 +959,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -990,8 +1032,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "most_matched"
@@ -1043,6 +1085,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1062,8 +1109,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "student_track"
@@ -1113,6 +1160,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1559,8 +1611,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1613,6 +1665,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1632,8 +1689,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "unknown",
    "categories": [
     "ai_frontier",
@@ -1680,6 +1737,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1755,8 +1817,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1803,6 +1865,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -1822,8 +1889,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -1869,6 +1936,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -1936,8 +2008,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "most_matched"
@@ -1991,6 +2063,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2010,8 +2087,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2054,6 +2131,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2073,8 +2155,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2126,6 +2208,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2145,8 +2232,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2192,6 +2279,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2425,8 +2517,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [],
    "match_score": 75,
@@ -2470,6 +2562,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2489,8 +2586,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -2536,6 +2633,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2555,8 +2657,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "unknown",
    "categories": [],
    "match_score": 74,
@@ -2599,6 +2701,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -2618,8 +2725,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -2659,6 +2766,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -2987,8 +3099,8 @@
    "posted_date": "2026-10-04",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-24",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "student_track",
@@ -3014,6 +3126,11 @@
      "date": "2026-11-24",
      "event": "seen_again",
      "note": "link check: posting page loads, no closed notice"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -3082,8 +3199,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "student_track"
@@ -3129,6 +3246,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3194,8 +3316,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -3250,6 +3372,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -3576,8 +3703,8 @@
    "posted_date": "2026-07-15",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [
     "remote_canada",
@@ -3617,6 +3744,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4058,8 +4190,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 5,
+   "last_seen": "2026-11-28",
+   "times_seen": 6,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -4102,6 +4234,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4243,8 +4380,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 5,
+   "last_seen": "2026-11-28",
+   "times_seen": 6,
    "status": "active",
    "categories": [
     "watchlist"
@@ -4284,6 +4421,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4387,8 +4529,8 @@
    "posted_date": "2026-08-27",
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -4425,6 +4567,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -4444,8 +4591,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [],
    "match_score": 76,
@@ -4475,6 +4622,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4537,8 +4689,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 2,
+   "last_seen": "2026-11-28",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "watchlist"
@@ -4564,6 +4716,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4731,8 +4888,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "ai_frontier"
@@ -4769,6 +4926,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -4894,8 +5056,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-23",
-   "last_seen": "2026-11-25",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [],
    "match_score": 64,
@@ -4923,6 +5085,11 @@
     },
     {
      "date": "2026-11-25",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6505,9 +6672,9 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
-   "status": "active",
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
+   "status": "closed",
    "categories": [
     "grad_2027_pipeline",
     "student_track"
@@ -6544,6 +6711,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "status: active -> closed"
     }
    ]
   },
@@ -6563,8 +6735,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "active",
    "categories": [
     "student_track"
@@ -6599,6 +6771,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -6665,8 +6842,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-25",
-   "times_seen": 2,
+   "last_seen": "2026-11-28",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -6694,6 +6871,11 @@
      "date": "2026-11-25",
      "event": "seen_again",
      "note": "status: unknown -> active"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -6713,8 +6895,8 @@
    "posted_date": "2026-07-30",
    "closing_date": null,
    "first_seen": "2026-11-24",
-   "last_seen": "2026-11-27",
-   "times_seen": 4,
+   "last_seen": "2026-11-28",
+   "times_seen": 5,
    "status": "unknown",
    "categories": [
     "watchlist"
@@ -6750,6 +6932,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -7050,8 +7237,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "unknown",
    "categories": [
     "grad_2027_pipeline",
@@ -7086,6 +7273,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7105,8 +7297,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7132,6 +7324,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7151,8 +7348,8 @@
    "posted_date": "2026-09-18",
    "closing_date": "2026-12-17",
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-27",
-   "times_seen": 3,
+   "last_seen": "2026-11-28",
+   "times_seen": 4,
    "status": "active",
    "categories": [
     "watchlist"
@@ -7185,6 +7382,11 @@
      "date": "2026-11-27",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7204,8 +7406,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-28",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -7233,6 +7435,11 @@
      "date": "2026-11-26",
      "event": "seen_again",
      "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -7252,8 +7459,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-26",
-   "times_seen": 2,
+   "last_seen": "2026-11-28",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "grad_2027_pipeline"
@@ -7277,6 +7484,11 @@
     },
     {
      "date": "2026-11-26",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -7767,8 +7979,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-25",
-   "last_seen": "2026-11-25",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "remote_canada",
@@ -7792,6 +8004,11 @@
      "date": "2026-11-25",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8116,8 +8333,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -8142,6 +8359,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8205,8 +8427,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-27",
-   "times_seen": 2,
+   "last_seen": "2026-11-28",
+   "times_seen": 3,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -8235,6 +8457,11 @@
     },
     {
      "date": "2026-11-27",
+     "event": "seen_again",
+     "note": "still listed"
+    },
+    {
+     "date": "2026-11-28",
      "event": "seen_again",
      "note": "still listed"
     }
@@ -8349,8 +8576,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "ai_frontier",
@@ -8374,6 +8601,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8393,8 +8625,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "grad_2027_pipeline",
@@ -8419,6 +8651,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8438,8 +8675,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-26",
-   "last_seen": "2026-11-26",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -8462,6 +8699,11 @@
      "date": "2026-11-26",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8573,8 +8815,8 @@
    "posted_date": null,
    "closing_date": null,
    "first_seen": "2026-11-27",
-   "last_seen": "2026-11-27",
-   "times_seen": 1,
+   "last_seen": "2026-11-28",
+   "times_seen": 2,
    "status": "active",
    "categories": [
     "watchlist"
@@ -8599,6 +8841,11 @@
      "date": "2026-11-27",
      "event": "first_seen",
      "note": "Daily scan"
+    },
+    {
+     "date": "2026-11-28",
+     "event": "seen_again",
+     "note": "still listed"
     }
    ]
   },
@@ -8643,6 +8890,886 @@
    "history": [
     {
      "date": "2026-11-27",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-ai-enterprise-procurement-platform-senior-product-designer-ai-enterpr",
+   "title": "Senior Product Designer (AI enterprise procurement)",
+   "employer": "Confidential – AI enterprise procurement platform",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": null,
+   "seniority": "senior (3-5+ yrs startup)",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 84,
+   "ai_related": true,
+   "skills_tags": [
+    "AI",
+    "procurement",
+    "enterprise SaaS",
+    "prototyping"
+   ],
+   "why": "Procurement + enterprise B2B is his POS/procurement and SaaS background, and the AI-assisted prototyping ask fits his Figma+React workflow.",
+   "eligibility_note": "Hybrid 3 days/wk in Toronto; full-time; a Jan 2028 target rather than now.",
+   "url": "https://ixdf.org/jobs/senior-product-designer-toronto-zmgjz6",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-canadian-audit-accounting-fintech-software-senior-ux-designer-audit-a",
+   "title": "Senior UX Designer (audit & accounting fintech)",
+   "employer": "Confidential – Canadian audit/accounting fintech software",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": "full-time, permanent",
+   "seniority": "senior",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 82,
+   "ai_related": true,
+   "skills_tags": [
+    "fintech",
+    "AI tooling",
+    "design systems"
+   ],
+   "why": "Regulated financial software with rules-heavy workflows mirrors his loyalty/rules-engine work; asks for AI-native tooling (Figma Make, Claude Code) and design systems.",
+   "eligibility_note": "Hybrid 3 days/wk Toronto; full-time.",
+   "url": "https://ixdf.org/jobs/senior-ux-designer-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-canadian-audit-accounting-fintech-software-staff-ux-designer-agentic-",
+   "title": "Staff UX Designer (agentic AI, audit software)",
+   "employer": "Confidential – Canadian audit/accounting fintech software",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": "full-time, permanent",
+   "seniority": "staff (8+ yrs)",
+   "role_family": "ai_product_design",
+   "salary_text": "$120,000–$130,000 CAD",
+   "salary_min_cad": 120000,
+   "salary_max_cad": 130000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": true,
+   "skills_tags": [
+    "agentic AI",
+    "human oversight",
+    "accessibility",
+    "design systems"
+   ],
+   "why": "Agentic UI with human-oversight design is the UX-for-AI niche he targets; 9 yrs incl. QA meets the 8+ bar, plus accessibility and design systems.",
+   "eligibility_note": "Hybrid Toronto; background check on offer.",
+   "url": "https://ixdf.org/jobs/staff-ux-designer-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-caseware-intermediate-ux-designer",
+   "title": "Intermediate UX Designer",
+   "employer": "Caseware",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": "full-time, permanent",
+   "seniority": "intermediate (2-3 yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$90,000–$108,000 CAD",
+   "salary_min_cad": 90000,
+   "salary_max_cad": 108000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 74,
+   "ai_related": true,
+   "skills_tags": [
+    "fintech",
+    "AI tooling",
+    "research"
+   ],
+   "why": "Winnable audit/fintech UX role using AI-assisted design tools and research; under his seniority but a good fit for domain.",
+   "eligibility_note": "Hybrid Toronto full-time; posted ~2 months ago.",
+   "url": "https://ixdf.org/jobs/intermediate-ux-designer-toronto-1uahra",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-b2b-saas-for-marketing-finance-operations-senior-product-designer-b2b",
+   "title": "Senior Product Designer (B2B SaaS, WCAG)",
+   "employer": "Confidential – B2B SaaS for marketing/finance/operations",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched"
+   ],
+   "match_score": 78,
+   "ai_related": true,
+   "skills_tags": [
+    "B2B SaaS",
+    "WCAG",
+    "design systems"
+   ],
+   "why": "Enterprise B2B SaaS, component design systems and WCAG are core strengths from Annex Cloud; AI-UX is a plus.",
+   "eligibility_note": "Work mode not stated; full-time assumed.",
+   "url": "https://ixdf.org/jobs/senior-product-designer-toronto-dlkijt",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-home-care-workforce-platform-senior-product-designer-home-care-workfo",
+   "title": "Senior Product Designer (home-care workforce platform)",
+   "employer": "Confidential – home-care workforce platform",
+   "region": "toronto",
+   "city": "Toronto / Montreal",
+   "work_mode": "hybrid (1 day/wk)",
+   "employment_type": "full-time, permanent",
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "CAD $120,000–$160,000 annually",
+   "salary_min_cad": 120000,
+   "salary_max_cad": 160000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 72,
+   "ai_related": true,
+   "skills_tags": [
+    "gamification",
+    "health",
+    "mobile",
+    "design system"
+   ],
+   "why": "Gamification and engagement UX echo his loyalty/reward-tier engine work; health domain and voice/AI are a plus.",
+   "eligibility_note": "Hiring limited to candidates based in Toronto or Montreal.",
+   "url": "https://ixdf.org/jobs/senior-product-designer-toronto-z6zdyu",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-docebo-senior-product-designer-content-design-language-systems",
+   "title": "Senior Product Designer, Content Design & Language Systems",
+   "employer": "Docebo",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (Tue–Thu)",
+   "employment_type": null,
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 70,
+   "ai_related": true,
+   "skills_tags": [
+    "AI trust",
+    "content design",
+    "accessibility",
+    "localization"
+   ],
+   "why": "AI-review and trust patterns in a learning platform connect to his edtech/AI-search thesis, though the role is content-design heavy.",
+   "eligibility_note": "Hybrid 3 days/wk Toronto; posted ~2 months ago.",
+   "url": "https://ixdf.org/jobs/senior-product-designer-content-design-language-systems-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-ontario-public-sector-digital-services-senior-ux-designer-ontario-pub",
+   "title": "Senior UX Designer (Ontario public sector, ODS)",
+   "employer": "Confidential – Ontario public-sector digital services",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior (5+ yrs UX, 3+ service design)",
+   "role_family": "service_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 74,
+   "ai_related": false,
+   "skills_tags": [
+    "AODA",
+    "WCAG",
+    "Ontario Design System",
+    "service design"
+   ],
+   "why": "AODA/WCAG and Ontario Design System work suits his accessibility focus; service-design years are the gap.",
+   "eligibility_note": "Work mode and contract terms not stated.",
+   "url": "https://ixdf.org/jobs/senior-ux-designer-toronto-wkyt2e",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-ontario-public-sector-contract-rq11362-ux-designer-senior-ops-contrac",
+   "title": "RQ11362 - UX Designer - Senior (OPS contract)",
+   "employer": "Confidential – Ontario public-sector contract",
+   "region": "toronto",
+   "city": "Toronto / St. Catharines",
+   "work_mode": "onsite",
+   "employment_type": "contract (168 business days, possible extension)",
+   "seniority": "senior (10+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "CAD $83.42–$100.09/hr incorporated; $66.74–$80.07/hr T4",
+   "salary_min_cad": 138819,
+   "salary_max_cad": 166546,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 60,
+   "ai_related": false,
+   "skills_tags": [
+    "usability testing",
+    "accessibility",
+    "Figma"
+   ],
+   "why": "Usability testing and accessibility compliance testing draw on his QA + UX history, but 10+ yrs is a stretch.",
+   "eligibility_note": "Onsite contract; not compatible with full-time study in Regina.",
+   "url": "https://ixdf.org/jobs/senior-ux-designer-toronto-pky2qm",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-legal-practice-management-software-senior-product-designer-insights-a",
+   "title": "Senior Product Designer (Insights and Reporting)",
+   "employer": "Confidential – legal practice management software",
+   "region": "toronto",
+   "city": "Toronto / remote Canada",
+   "work_mode": "hybrid / remote-friendly",
+   "employment_type": null,
+   "seniority": "senior",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada"
+   ],
+   "match_score": 74,
+   "ai_related": true,
+   "skills_tags": [
+    "data viz",
+    "AI features",
+    "accessibility"
+   ],
+   "why": "Data-dense reporting and AI features fit his enterprise SaaS dashboards work; open across Canada.",
+   "eligibility_note": "Canada (excluding Quebec) and US candidates.",
+   "url": "https://ixdf.org/jobs/senior-product-designer-insights-and-reporting-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-experience-design-consultancy-ux-designer-senior-experience-consultan",
+   "title": "UX Designer Senior (experience consultancy)",
+   "employer": "Confidential – experience-design consultancy",
+   "region": "toronto",
+   "city": "Toronto / Montreal (remote)",
+   "work_mode": "remote within ON/QC",
+   "employment_type": "full-time",
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 72,
+   "ai_related": true,
+   "skills_tags": [
+    "consulting",
+    "AI tools",
+    "accessibility"
+   ],
+   "why": "Consulting role valuing AI-enabled tools, accessibility and design systems; his agency/creative-strategist past helps.",
+   "eligibility_note": "Applicants must be in Ontario or Quebec.",
+   "url": "https://ixdf.org/jobs/ux-designer-senior-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-robotics-data-labeling-startup-senior-ui-ux-designer-robotics-embodie",
+   "title": "Senior UI/UX Designer (robotics / embodied AI data)",
+   "employer": "Confidential – robotics data-labeling startup",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": null,
+   "employment_type": null,
+   "seniority": "senior",
+   "role_family": "ai_product_design",
+   "salary_text": "CAD 120,000–170,000 annually",
+   "salary_min_cad": 120000,
+   "salary_max_cad": 170000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 76,
+   "ai_related": true,
+   "skills_tags": [
+    "AI data",
+    "0-to-1",
+    "design systems"
+   ],
+   "why": "0-to-1 design system for AI data-labeling tools; his rotoscoping/annotation-adjacent VFX past and AI prototyping are a distinctive fit.",
+   "eligibility_note": "Work mode not stated.",
+   "url": "https://ixdf.org/jobs/senior-ui-ux-designer-toronto-canada",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-consumer-meal-kit-brands-senior-ux-product-designer-growth",
+   "title": "Senior UX Product Designer (Growth)",
+   "employer": "Confidential – consumer meal-kit brands",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (2 days/wk)",
+   "employment_type": null,
+   "seniority": "senior (4-6+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$120,000–$130,000 CAD",
+   "salary_min_cad": 120000,
+   "salary_max_cad": 130000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier"
+   ],
+   "match_score": 64,
+   "ai_related": true,
+   "skills_tags": [
+    "growth",
+    "experimentation",
+    "AI workflow"
+   ],
+   "why": "Growth experimentation plus AI-native workflow; B2C e-commerce is further from his enterprise background.",
+   "eligibility_note": "Hybrid Toronto.",
+   "url": "https://ixdf.org/jobs/senior-ux-product-designer-toronto-drbcgn",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-confidential-b2b-legal-tech-saas-senior-ux-product-designer-legal-tech",
+   "title": "Senior UX Product Designer (legal tech)",
+   "employer": "Confidential – B2B legal-tech SaaS",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": "full-time",
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$100,000–$135,000 CAD (Ontario)",
+   "salary_min_cad": 100000,
+   "salary_max_cad": 135000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 70,
+   "ai_related": true,
+   "skills_tags": [
+    "B2B SaaS",
+    "Microsoft add-ins",
+    "AI"
+   ],
+   "why": "B2B SaaS and Figma depth match; AI design principles a plus.",
+   "eligibility_note": "Hybrid Toronto 3 days/wk.",
+   "url": "https://ixdf.org/jobs/senior-ux-product-designer-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-fulfillment-iq-ui-ux-designer",
+   "title": "UI/UX Designer",
+   "employer": "Fulfillment IQ",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid",
+   "employment_type": "full-time",
+   "seniority": "mid (3-5 yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$85-115K CAD per year (negotiable)",
+   "salary_min_cad": 85000,
+   "salary_max_cad": 115000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 70,
+   "ai_related": false,
+   "skills_tags": [
+    "B2B SaaS",
+    "design systems",
+    "accessibility",
+    "supply chain"
+   ],
+   "why": "0-to-1 B2B SaaS with design-system and accessibility asks; supply-chain workflows echo his procurement/POS work.",
+   "eligibility_note": "Eligible to work in Canada required; hybrid Toronto.",
+   "url": "https://jobs.workable.com/jobs/c28edd9b-a443-4866-abce-3bc2a4d311d4.md",
+   "source": "Workable",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-fulfillment-iq-staff-product-designer-ui-ux",
+   "title": "Staff Product Designer, UI/UX",
+   "employer": "Fulfillment IQ",
+   "region": "toronto",
+   "city": "Toronto",
+   "work_mode": "hybrid (3 days/wk)",
+   "employment_type": "full-time",
+   "seniority": "staff (8+ yrs, 3+ as design owner)",
+   "role_family": "ux_product_design",
+   "salary_text": "$145,000–$170,000 CAD base",
+   "salary_min_cad": 145000,
+   "salary_max_cad": 170000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 66,
+   "ai_related": false,
+   "skills_tags": [
+    "enterprise",
+    "WCAG",
+    "design systems"
+   ],
+   "why": "Data-dense decision-support enterprise UI and WCAG fit; staff-level ownership is a stretch.",
+   "eligibility_note": "Eligible to work in Canada required; hybrid Toronto.",
+   "url": "https://ixdf.org/jobs/staff-product-designer-ui-ux-toronto",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "toronto-infoya-senior-ux-designer",
+   "title": "Senior UX Designer",
+   "employer": "Infoya",
+   "region": "toronto",
+   "city": "East York / Toronto",
+   "work_mode": "hybrid (2 days/wk)",
+   "employment_type": "full-time, permanent",
+   "seniority": "senior (6+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$90,000 - $95,000 / year",
+   "salary_min_cad": 90000,
+   "salary_max_cad": 95000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "Figma",
+    "Miro",
+    "user testing"
+   ],
+   "why": "Generalist UX with user testing and data analysis; modest pay for his level.",
+   "eligibility_note": "Hybrid Toronto.",
+   "url": "https://www.careerbeacon.com/en/job-9/3532725/infoya/senior-ux-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-the-evans-hunt-group-senior-user-experience-designer",
+   "title": "Senior User Experience Designer",
+   "employer": "The Evans Hunt Group",
+   "region": "alberta",
+   "city": "Calgary / remote Canada",
+   "work_mode": "remote (Canada)",
+   "employment_type": "full-time",
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$90,000 - $110,000 per year",
+   "salary_min_cad": 90000,
+   "salary_max_cad": 110000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 80,
+   "ai_related": false,
+   "skills_tags": [
+    "agency",
+    "Figma",
+    "agile"
+   ],
+   "why": "Remote-in-Canada agency UX role; his 9 yrs and creative-strategist agency past fit, and it's doable from Regina.",
+   "eligibility_note": "Full-time; a Jan 2028 target unless hours flex.",
+   "url": "https://www.careerbeacon.com/en/job-9/2211688/900049478/senior-user-experience-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-the-evans-hunt-group-senior-ux-ui-designer-1-year-contract",
+   "title": "Senior UX/UI Designer (1-year contract)",
+   "employer": "The Evans Hunt Group",
+   "region": "alberta",
+   "city": "Calgary / remote",
+   "work_mode": "remote",
+   "employment_type": "contract, 1 year (extendable)",
+   "seniority": "senior (5+ yrs)",
+   "role_family": "ux_product_design",
+   "salary_text": "$90,000 - $110,000 per year",
+   "salary_min_cad": 90000,
+   "salary_max_cad": 110000,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "most_matched",
+    "remote_canada"
+   ],
+   "match_score": 78,
+   "ai_related": false,
+   "skills_tags": [
+    "design systems",
+    "eCommerce",
+    "Figma"
+   ],
+   "why": "Remote one-year contract; design systems and eCommerce assets match his Annex Cloud/POS work.",
+   "eligibility_note": "Full-time contract hours; check flexibility while studying.",
+   "url": "https://www.careerbeacon.com/en/job-9/2190969/900049478/senior-ux-ui-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "alberta-targeted-talent-unnamed-global-enterprise-lead-ux-designer-remote-then-toronto",
+   "title": "Lead UX Designer (remote, then Toronto)",
+   "employer": "Targeted Talent (unnamed global enterprise)",
+   "region": "alberta",
+   "city": "Edmonton (remote to start)",
+   "work_mode": "remote, later relocation to Toronto",
+   "employment_type": "full-time, permanent",
+   "seniority": "lead (5+ yrs, manages 1-2)",
+   "role_family": "ux_research",
+   "salary_text": "Competitive Salary",
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [],
+   "match_score": 64,
+   "ai_related": false,
+   "skills_tags": [
+    "research",
+    "leadership"
+   ],
+   "why": "Research-led UX leadership; possibly the same client as the Saskatoon Lead Product Designer post.",
+   "eligibility_note": "Requires later relocation to Toronto.",
+   "url": "https://www.careerbeacon.com/en/job-9/3493453/targeted-talent/lead-ux-designer",
+   "source": "CareerBeacon",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
+     "event": "first_seen",
+     "note": "Daily scan"
+    }
+   ]
+  },
+  {
+   "id": "regina-confidential-global-it-services-firm-conversational-designer-remote",
+   "title": "Conversational Designer (remote)",
+   "employer": "Confidential – global IT services firm",
+   "region": "regina",
+   "city": "Remote (Canada eligible)",
+   "work_mode": "remote",
+   "employment_type": null,
+   "seniority": "5+ yrs conversational design",
+   "role_family": "ai_product_design",
+   "salary_text": null,
+   "salary_min_cad": null,
+   "salary_max_cad": null,
+   "posted_date": null,
+   "closing_date": null,
+   "first_seen": "2026-11-28",
+   "last_seen": "2026-11-28",
+   "times_seen": 1,
+   "status": "active",
+   "categories": [
+    "ai_frontier",
+    "remote_canada"
+   ],
+   "match_score": 58,
+   "ai_related": true,
+   "skills_tags": [
+    "Dialogflow",
+    "chatbots",
+    "GenAI"
+   ],
+   "why": "Conversational AI is a target area, but Dialogflow/IVR depth is a gap.",
+   "eligibility_note": "Posted ~1 month ago; employment type not stated.",
+   "url": "https://ixdf.org/jobs/conversational-designer-remote-uuman8",
+   "source": "IxDF",
+   "verified": "page-fetched",
+   "history": [
+    {
+     "date": "2026-11-28",
      "event": "first_seen",
      "note": "Daily scan"
     }
